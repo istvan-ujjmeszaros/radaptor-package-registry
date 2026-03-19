@@ -1,0 +1,8 @@
+services:
+  web:
+    container_name: radaptor-plugin-registry
+    image: nginx:alpine
+    ports:
+      - "8091:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
