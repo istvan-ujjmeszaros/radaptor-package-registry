@@ -13,15 +13,19 @@ assert(isset($this) && $this instanceof Template);
  * helloWorldPluginView template below acts like a reusable subcomponent.
  */
 
+$strings = is_array($this->props['strings'] ?? null) ? $this->props['strings'] : [];
 $subtemplate = new Template('helloWorldPluginView', $this->getRenderer(), $this->getWidgetConnection());
 $subtemplate->props = [
-	'headline' => $this->props['title'] ?? 'Hello widget',
-	'lead' => $this->props['lead'] ?? '',
+	'strings' => $strings,
 	'points' => $this->props['points'] ?? [],
-	'footer_note' => $this->props['footer_note'] ?? '',
 ];
 ?>
 <div class="plugin-demo hello-world-plugin-widget">
 	<?= $subtemplate->fetch(); ?>
-	<p><small>Widget connection id: <?= e((string) ($this->props['connectionId'] ?? 'n/a')); ?></small></p>
+	<p>
+		<small>
+			<?= e((string) ($strings['hello_world.widget.connection_id_label'] ?? 'Widget connection id')); ?>:
+			<?= e((string) ($this->props['connectionId'] ?? 'n/a')); ?>
+		</small>
+	</p>
 </div>

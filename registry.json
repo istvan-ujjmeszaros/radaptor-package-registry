@@ -3,14 +3,14 @@
   "name": "Local Radaptor Plugin Registry",
   "packages": {
     "radaptor/hello-world": {
-      "latest": "1.0.0",
+      "latest": "1.1.0",
       "versions": {
-        "1.0.0": {
+        "1.1.0": {
           "plugin_id": "hello-world",
           "dist": {
             "type": "zip",
-            "url": "packages/radaptor-hello-world-1.0.0.zip",
-            "sha256": "d92b7da1ed4425da3ebfef6bb22884535d9cf47748c6f0ed1f1d4e79b40d2af2"
+            "url": "packages/radaptor-hello-world-1.1.0.zip",
+            "sha256": "0a9ac2c483b59fe9320198103c4a6c5a4567faf8722ab33c2020d96d07fa0aee"
           }
         }
       }

@@ -25,7 +25,7 @@ class EventHelloWorldPluginRaw extends AbstractEvent
 	 */
 	public function run(): void
 	{
-		$message = "Hello from the plugin raw event!";
+		$message = t('hello_world.raw.message');
 
 		echo $message;
 	}

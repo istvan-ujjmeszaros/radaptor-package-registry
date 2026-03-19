@@ -15,13 +15,10 @@ class WidgetHelloWorldPluginDemo extends AbstractWidget
 
 	/**
 	 * Return the human label shown in widget pickers.
-	 *
-	 * For now this stays hardcoded, because plugin i18n seed import is not yet
-	 * wired into the install lifecycle.
 	 */
 	public static function getName(): string
 	{
-		return 'Hello World Plugin Demo';
+		return t('widget.' . self::ID . '.name');
 	}
 
 	/**
@@ -29,7 +26,7 @@ class WidgetHelloWorldPluginDemo extends AbstractWidget
 	 */
 	public static function getDescription(): string
 	{
-		return 'Example widget shipped by the Hello World teaching plugin.';
+		return t('widget.' . self::ID . '.description');
 	}
 
 	/**
@@ -57,15 +54,22 @@ class WidgetHelloWorldPluginDemo extends AbstractWidget
 	 */
 	protected function buildAuthorizedTree(iTreeBuildContext $tree_build_context, WidgetConnection $connection, array $build_context = []): array
 	{
+		$strings = [
+			'hello_world.demo.headline' => t('hello_world.demo.headline'),
+			'hello_world.demo.lead' => t('hello_world.demo.lead'),
+			'hello_world.demo.point_one' => t('hello_world.demo.point_one'),
+			'hello_world.demo.point_two' => t('hello_world.demo.point_two'),
+			'hello_world.demo.point_three' => t('hello_world.demo.point_three'),
+			'hello_world.demo.footer_note' => t('hello_world.demo.footer_note'),
+			'hello_world.widget.connection_id_label' => t('hello_world.widget.connection_id_label'),
+		];
 		$props = [
-			'title' => 'Hello World Plugin Widget',
-			'lead' => 'This widget came from an installed plugin package.',
+			'strings' => $strings,
 			'points' => [
-				'Widgets are placed onto CMS pages instead of being hit directly as endpoints.',
-				'The widget template can reuse smaller template fragments when that keeps markup DRY.',
-				'The widget connection id is available for debugging and advanced integrations.',
+				$strings['hello_world.demo.point_one'],
+				$strings['hello_world.demo.point_two'],
+				$strings['hello_world.demo.point_three'],
 			],
-			'footer_note' => 'This widget reuses the same view template as the direct event demo.',
 			'connectionId' => $connection->connection_id,
 		];
 

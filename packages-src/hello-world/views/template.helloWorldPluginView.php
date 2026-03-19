@@ -6,12 +6,18 @@ assert(isset($this) && $this instanceof Template);
  *
  * It can also be reused as a subcomponent from another template when the same
  * markup is useful in more than one place. The widget demo does exactly that.
+ *
+ * Notice the dedicated "strings" bag: resolved translations are passed to the
+ * template under their original i18n keys instead of being flattened into
+ * ad-hoc aliases. That keeps the connection to the source keys obvious.
  */
+
+$strings = is_array($this->props['strings'] ?? null) ? $this->props['strings'] : [];
 ?>
 <section class="plugin-demo hello-world-plugin-view">
-	<h1><?= e($this->props['headline'] ?? 'Hello from plugin'); ?></h1>
+	<h1><?= e((string) ($strings['hello_world.demo.headline'] ?? 'Hello from plugin')); ?></h1>
 
-	<p><?= e($this->props['lead'] ?? 'This page is rendered by a plugin template.'); ?></p>
+	<p><?= e((string) ($strings['hello_world.demo.lead'] ?? 'This page is rendered by a plugin template.')); ?></p>
 
 	<ul>
 		<?php foreach (($this->props['points'] ?? []) as $point): ?>
@@ -19,7 +25,7 @@ assert(isset($this) && $this instanceof Template);
 		<?php endforeach; ?>
 	</ul>
 
-	<?php if (!empty($this->props['footer_note'])): ?>
-		<p><small><?= e((string) $this->props['footer_note']); ?></small></p>
+	<?php if (!empty($strings['hello_world.demo.footer_note'])): ?>
+		<p><small><?= e((string) $strings['hello_world.demo.footer_note']); ?></small></p>
 	<?php endif; ?>
 </section>

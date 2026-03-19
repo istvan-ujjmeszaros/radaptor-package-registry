@@ -22,15 +22,21 @@ class EventHelloWorldPluginView extends AbstractEvent
 	public function run(): void
 	{
 		$template = new Template('helloWorldPluginView');
+		$strings = [
+			'hello_world.demo.headline' => t('hello_world.demo.headline'),
+			'hello_world.demo.lead' => t('hello_world.demo.lead'),
+			'hello_world.demo.point_one' => t('hello_world.demo.point_one'),
+			'hello_world.demo.point_two' => t('hello_world.demo.point_two'),
+			'hello_world.demo.point_three' => t('hello_world.demo.point_three'),
+			'hello_world.demo.footer_note' => t('hello_world.demo.footer_note'),
+		];
 		$props = [
-			'headline' => 'Hello from the plugin view event',
-			'lead' => 'This response is rendered by a plugin template.',
+			'strings' => $strings,
 			'points' => [
-			'The event decides what data the template receives.',
-			'The template decides how that data becomes HTML.',
-			'This split is easier to extend than raw echo output.',
+				$strings['hello_world.demo.point_one'],
+				$strings['hello_world.demo.point_two'],
+				$strings['hello_world.demo.point_three'],
 			],
-			'footer_note' => 'Later this same template can also be embedded by another template.',
 		];
 
 		$template->props = $props;
