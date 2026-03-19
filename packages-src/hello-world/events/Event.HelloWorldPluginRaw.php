@@ -12,13 +12,21 @@
  */
 class EventHelloWorldPluginRaw extends AbstractEvent
 {
+	/**
+	 * Keep the demo endpoint public so it is easy to try.
+	 */
 	public function authorize(PolicyContext $policyContext): PolicyDecision
 	{
 		return PolicyDecision::allow();
 	}
 
+	/**
+	 * Emit a tiny text response directly.
+	 */
 	public function run(): void
 	{
-		echo "Hello from the plugin raw event!";
+		$message = "Hello from the plugin raw event!";
+
+		echo $message;
 	}
 }
