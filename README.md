@@ -47,20 +47,20 @@ http://host.docker.internal:8091/registry.json
 
 ## Sample package
 
-The registry currently includes a minimal sample package:
+The registry currently includes a small teaching plugin package:
 
-- `radaptor/hello-registry` version `1.0.0`
+- `radaptor/hello-world` version `1.0.0`
 
 Its artifact is served from:
 
 ```text
-http://localhost:8091/packages/radaptor-hello-registry-1.0.0.zip
+http://localhost:8091/packages/radaptor-hello-world-1.0.0.zip
 ```
 
 The unpacked source used to build that artifact lives under:
 
 ```text
-packages-src/hello-registry/
+packages-src/hello-world/
 ```
 
 Before starting the registry service, rebuild the package artifacts and `registry.json`:
