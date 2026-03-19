@@ -15,8 +15,9 @@ Current intended roles:
 
 - `radaptor/plugins.json`: desired plugin state for an app
 - `radaptor/plugins.lock.json`: resolved/installed plugin state for an app
-- `radaptor_plugin_registry/registry.json`: available packages in the local registry
+- `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
 - `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for the registry
+- `radaptor_plugin_registry/scripts/build_registry.py`: rebuild package zips + refresh `registry.json`
 
 Initial design goals:
 
@@ -43,3 +44,31 @@ From the `radaptor` PHP container, the same registry is intended to be reachable
 ```text
 http://host.docker.internal:8091/registry.json
 ```
+
+## Sample package
+
+The registry currently includes a minimal sample package:
+
+- `radaptor/hello-registry` version `1.0.0`
+
+Its artifact is served from:
+
+```text
+http://localhost:8091/packages/radaptor-hello-registry-1.0.0.zip
+```
+
+The unpacked source used to build that artifact lives under:
+
+```text
+packages-src/hello-registry/
+```
+
+Before starting the registry service, rebuild the package artifacts and `registry.json`:
+
+```bash
+python3 scripts/build_registry.py
+```
+
+The generated zip files live under `packages/`, which is intentionally git-ignored.
+Only the source under `packages-src/` and the generated text catalog `registry.json`
+are versioned.

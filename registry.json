@@ -1,5 +1,19 @@
 {
   "registry_version": 1,
   "name": "Local Radaptor Plugin Registry",
-  "packages": {}
+  "packages": {
+    "radaptor/hello-registry": {
+      "latest": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "plugin_id": "hello-registry",
+          "dist": {
+            "type": "zip",
+            "url": "packages/radaptor-hello-registry-1.0.0.zip",
+            "sha256": "c2bfaa8ef8c7b2488698de520eb2aa5d57297475bc571ece9144cc15b84c0a4f"
+          }
+        }
+      }
+    }
+  }
 }
