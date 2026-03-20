@@ -21,7 +21,7 @@
       "versions": {
         "1.1.2": {
           "plugin_id": "hello-world",
-          "dependencies": [],
+          "dependencies": {},
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-hello-world/1.1.2/plugin.zip",
