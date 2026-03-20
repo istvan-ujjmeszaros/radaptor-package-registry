@@ -1,11 +1,11 @@
-domain,key,context,locale,source_text,text
-widget,hello_world_plugin_demo.name,,en_US,Hello World Plugin Demo,Hello World Plugin Demo
-widget,hello_world_plugin_demo.description,,en_US,Example widget shipped by the Hello World teaching plugin.,Example widget shipped by the Hello World teaching plugin.
-hello_world,raw.message,,en_US,Hello from the plugin raw event!,Hello from the plugin raw event!
-hello_world,demo.headline,,en_US,Hello from the plugin view event,Hello from the plugin view event
-hello_world,demo.lead,,en_US,This response is rendered by a plugin template.,This response is rendered by a plugin template.
-hello_world,demo.point_one,,en_US,The event decides what data the template receives.,The event decides what data the template receives.
-hello_world,demo.point_two,,en_US,The template decides how that data becomes HTML.,The template decides how that data becomes HTML.
-hello_world,demo.point_three,,en_US,The widget can reuse the same template as a subcomponent.,The widget can reuse the same template as a subcomponent.
-hello_world,demo.footer_note,,en_US,This same template is reused by the widget demo as a subcomponent.,This same template is reused by the widget demo as a subcomponent.
-hello_world,widget.connection_id_label,,en_US,Widget connection id,Widget connection id
+domain,key,context,locale,source_text,expected_text,human_reviewed,text
+widget,hello_world_plugin_demo.name,,en_US,Hello World Plugin Demo,,,Hello World Plugin Demo
+widget,hello_world_plugin_demo.description,,en_US,Example widget shipped by the Hello World teaching plugin.,,,Example widget shipped by the Hello World teaching plugin.
+hello_world,raw.message,,en_US,Hello from the plugin raw event!,,,Hello from the plugin raw event!
+hello_world,demo.headline,,en_US,Hello from the plugin view event,,,Hello from the plugin view event
+hello_world,demo.lead,,en_US,This response is rendered by a plugin template.,,,This response is rendered by a plugin template.
+hello_world,demo.point_one,,en_US,The event decides what data the template receives.,,,The event decides what data the template receives.
+hello_world,demo.point_two,,en_US,The template decides how that data becomes HTML.,,,The template decides how that data becomes HTML.
+hello_world,demo.point_three,,en_US,The widget can reuse the same template as a subcomponent.,,,The widget can reuse the same template as a subcomponent.
+hello_world,demo.footer_note,,en_US,This same template is reused by the widget demo as a subcomponent.,,,This same template is reused by the widget demo as a subcomponent.
+hello_world,widget.connection_id_label,,en_US,Widget connection id,,,Widget connection id

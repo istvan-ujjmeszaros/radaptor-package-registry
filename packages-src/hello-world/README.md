@@ -19,4 +19,6 @@ material when the plugin system is reviewed later.
 
 The widget name and description use the standard `widget.<id>.*` translation
 keys, while the demo content itself is shipped through plugin-local i18n seed
-CSV files under `i18n/seeds/`.
+CSV files under `i18n/seeds/`. These shipped seed files keep both
+`expected_text` and `human_reviewed` empty on purpose, so they behave as
+initialization material instead of guarded or review-state-changing updates.
