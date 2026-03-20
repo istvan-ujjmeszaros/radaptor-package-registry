@@ -1,0 +1,21 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+blog,error_save,,es_ES,"Error: Unable to save post","Error: No se puede guardar la entrada",0,"Error: No se puede guardar la entrada"
+blog,field.body.explanation,,es_ES,"Format text freely, add images, and embed external content. Use HTML view for embed codes.","Formatee el texto libremente, añada imágenes e incruste contenido externo. Use la vista HTML para los códigos de incrustación.",0,"Formatee el texto libremente, añada imágenes e incruste contenido externo. Use la vista HTML para los códigos de incrustación."
+blog,field.body.label,,es_ES,Content,Contenido,0,Contenido
+blog,field.date.explanation,,es_ES,"Visible from this date. Determines sort order in the blog list.","Visible desde esta fecha. Determina el orden de clasificación en la lista del blog.",0,"Visible desde esta fecha. Determina el orden de clasificación en la lista del blog."
+blog,field.date.label,,es_ES,"Publish date","Fecha de publicación",0,"Fecha de publicación"
+blog,field.description.explanation,,es_ES,"Appears in the blog post list.","Aparece en la lista de entradas del blog.",0,"Aparece en la lista de entradas del blog."
+blog,field.description.label,,es_ES,"Short description","Descripción breve",0,"Descripción breve"
+blog,field.slug.explanation,,es_ES,"Lowercase letters, numbers, and hyphens only. Must be unique.","Solo letras minúsculas, números y guiones. Debe ser único.",0,"Solo letras minúsculas, números y guiones. Debe ser único."
+blog,field.slug.label,,es_ES,Slug,Slug,0,Slug
+blog,field.title.explanation,,es_ES,"Unique title for this post","Título único para esta entrada",0,"Título único para esta entrada"
+blog,field.title.label,,es_ES,Title,Título,0,Título
+blog,form.name,,es_ES,"Blog post","Entrada del blog",0,"Entrada del blog"
+blog,form.title_create,,es_ES,"New blog post","Nueva entrada del blog",0,"Nueva entrada del blog"
+blog,form.title_edit,,es_ES,"Edit blog post","Editar entrada del blog",0,"Editar entrada del blog"
+blog,list.new,,es_ES,"New post","Nueva entrada",0,"Nueva entrada"
+blog,list.title,,es_ES,"Blog posts","Entradas del blog",0,"Entradas del blog"
+blog,not_found,,es_ES,"Blog post not found","Entrada del blog no encontrada",0,"Entrada del blog no encontrada"
+blog,saved,,es_ES,"Post saved","Entrada guardada",0,"Entrada guardada"
+blog,updated,,es_ES,"Post updated","Entrada actualizada",0,"Entrada actualizada"
+blog,validation.slug_format,,es_ES,"Slug can only contain lowercase letters, numbers, and hyphens","El slug solo puede contener letras minúsculas, números y guiones",0,"El slug solo puede contener letras minúsculas, números y guiones"

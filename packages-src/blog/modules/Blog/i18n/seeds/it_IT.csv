@@ -1,0 +1,21 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+blog,error_save,,it_IT,"Error: Unable to save post","Errore: Impossibile salvare l'articolo",0,"Errore: Impossibile salvare l'articolo"
+blog,field.body.explanation,,it_IT,"Format text freely, add images, and embed external content. Use HTML view for embed codes.","Formatta liberamente il testo, aggiungi immagini e incorpora contenuti esterni. Usa la vista HTML per i codici di incorporamento.",0,"Formatta liberamente il testo, aggiungi immagini e incorpora contenuti esterni. Usa la vista HTML per i codici di incorporamento."
+blog,field.body.label,,it_IT,Content,Contenuto,0,Contenuto
+blog,field.date.explanation,,it_IT,"Visible from this date. Determines sort order in the blog list.","Visibile da questa data. Determina l'ordine nell'elenco blog.",0,"Visibile da questa data. Determina l'ordine nell'elenco blog."
+blog,field.date.label,,it_IT,"Publish date","Data pubblicazione",0,"Data pubblicazione"
+blog,field.description.explanation,,it_IT,"Appears in the blog post list.","Appare nell'elenco degli articoli del blog.",0,"Appare nell'elenco degli articoli del blog."
+blog,field.description.label,,it_IT,"Short description","Descrizione breve",0,"Descrizione breve"
+blog,field.slug.explanation,,it_IT,"Lowercase letters, numbers, and hyphens only. Must be unique.","Solo lettere minuscole, numeri e trattini. Deve essere univoco.",0,"Solo lettere minuscole, numeri e trattini. Deve essere univoco."
+blog,field.slug.label,,it_IT,Slug,Slug,0,Slug
+blog,field.title.explanation,,it_IT,"Unique title for this post","Titolo univoco per questo articolo",0,"Titolo univoco per questo articolo"
+blog,field.title.label,,it_IT,Title,Titolo,0,Titolo
+blog,form.name,,it_IT,"Blog post","Articolo blog",0,"Articolo blog"
+blog,form.title_create,,it_IT,"New blog post","Nuovo articolo blog",0,"Nuovo articolo blog"
+blog,form.title_edit,,it_IT,"Edit blog post","Modifica articolo blog",0,"Modifica articolo blog"
+blog,list.new,,it_IT,"New post","Nuovo articolo",0,"Nuovo articolo"
+blog,list.title,,it_IT,"Blog posts","Articoli blog",0,"Articoli blog"
+blog,not_found,,it_IT,"Blog post not found","Articolo blog non trovato",0,"Articolo blog non trovato"
+blog,saved,,it_IT,"Post saved","Articolo salvato",0,"Articolo salvato"
+blog,updated,,it_IT,"Post updated","Articolo aggiornato",0,"Articolo aggiornato"
+blog,validation.slug_format,,it_IT,"Slug can only contain lowercase letters, numbers, and hyphens","Lo slug può contenere solo lettere minuscole, numeri e trattini",0,"Lo slug può contenere solo lettere minuscole, numeri e trattini"

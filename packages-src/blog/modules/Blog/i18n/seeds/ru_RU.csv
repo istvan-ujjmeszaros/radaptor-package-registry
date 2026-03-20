@@ -1,0 +1,21 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+blog,error_save,,ru_RU,"Error: Unable to save post","Ошибка: не удалось сохранить запись",0,"Ошибка: не удалось сохранить запись"
+blog,field.body.explanation,,ru_RU,"Format text freely, add images, and embed external content. Use HTML view for embed codes.","Свободно форматируйте текст, добавляйте изображения и встраивайте внешний контент. Для кодов встраивания используйте HTML-режим.",0,"Свободно форматируйте текст, добавляйте изображения и встраивайте внешний контент. Для кодов встраивания используйте HTML-режим."
+blog,field.body.label,,ru_RU,Content,Содержимое,0,Содержимое
+blog,field.date.explanation,,ru_RU,"Visible from this date. Determines sort order in the blog list.","Видимо с этой даты. Определяет порядок сортировки в списке блога.",0,"Видимо с этой даты. Определяет порядок сортировки в списке блога."
+blog,field.date.label,,ru_RU,"Publish date","Дата публикации",0,"Дата публикации"
+blog,field.description.explanation,,ru_RU,"Appears in the blog post list.","Показывается в списке записей блога.",0,"Показывается в списке записей блога."
+blog,field.description.label,,ru_RU,"Short description","Краткое описание",0,"Краткое описание"
+blog,field.slug.explanation,,ru_RU,"Lowercase letters, numbers, and hyphens only. Must be unique.","Только строчные буквы, цифры и дефисы. Значение должно быть уникальным.",0,"Только строчные буквы, цифры и дефисы. Значение должно быть уникальным."
+blog,field.slug.label,,ru_RU,Slug,Слаг,0,Слаг
+blog,field.title.explanation,,ru_RU,"Unique title for this post","Уникальный заголовок для этой записи",0,"Уникальный заголовок для этой записи"
+blog,field.title.label,,ru_RU,Title,Заголовок,0,Заголовок
+blog,form.name,,ru_RU,"Blog post","Запись блога",0,"Запись блога"
+blog,form.title_create,,ru_RU,"New blog post","Новая запись блога",0,"Новая запись блога"
+blog,form.title_edit,,ru_RU,"Edit blog post","Редактировать запись блога",0,"Редактировать запись блога"
+blog,list.new,,ru_RU,"New post","Новая запись",0,"Новая запись"
+blog,list.title,,ru_RU,"Blog posts","Записи блога",0,"Записи блога"
+blog,not_found,,ru_RU,"Blog post not found","Запись блога не найдена",0,"Запись блога не найдена"
+blog,saved,,ru_RU,"Post saved","Запись сохранена",0,"Запись сохранена"
+blog,updated,,ru_RU,"Post updated","Запись обновлена",0,"Запись обновлена"
+blog,validation.slug_format,,ru_RU,"Slug can only contain lowercase letters, numbers, and hyphens","Слаг может содержать только строчные буквы, цифры и дефисы",0,"Слаг может содержать только строчные буквы, цифры и дефисы"

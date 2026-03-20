@@ -1,0 +1,21 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+blog,error_save,,hu_HU,"Error: Unable to save post","Hiba: Nem sikerült a blogbejegyzés mentése",0,"Hiba: Nem sikerült a blogbejegyzés mentése"
+blog,field.body.explanation,,hu_HU,"Format text freely, add images, and embed external content. Use HTML view for embed codes.","Szabadon formázható szöveg, képekkel és külső beágyazásokkal. HTML nézetben végezhető beágyazás.",0,"Szabadon formázható szöveg, képekkel és külső beágyazásokkal. HTML nézetben végezhető beágyazás."
+blog,field.body.label,,hu_HU,Content,Tartalom,0,Tartalom
+blog,field.date.explanation,,hu_HU,"Visible from this date. Determines sort order in the blog list.","Ettől a dátumtól látható. Meghatározza a sorrendet a blog listában.",0,"Ettől a dátumtól látható. Meghatározza a sorrendet a blog listában."
+blog,field.date.label,,hu_HU,"Publish date","Megjelenési dátum",0,"Megjelenési dátum"
+blog,field.description.explanation,,hu_HU,"Appears in the blog post list.","A blog lista nézetben jelenik meg.",0,"A blog lista nézetben jelenik meg."
+blog,field.description.label,,hu_HU,"Short description","Rövid leírás",0,"Rövid leírás"
+blog,field.slug.explanation,,hu_HU,"Lowercase letters, numbers, and hyphens only. Must be unique.","Csak kisbetűk, számok és kötőjelek. Egyedinek kell lennie.",0,"Csak kisbetűk, számok és kötőjelek. Egyedinek kell lennie."
+blog,field.slug.label,,hu_HU,Slug,"URL cím",0,"URL cím"
+blog,field.title.explanation,,hu_HU,"Unique title for this post","Egyedi cím a bejegyzéshez",0,"Egyedi cím a bejegyzéshez"
+blog,field.title.label,,hu_HU,Title,Cím,0,Cím
+blog,form.name,,hu_HU,"Blog post",Blogbejegyzés,0,Blogbejegyzés
+blog,form.title_create,,hu_HU,"New blog post","Új blogbejegyzés létrehozása",0,"Új blogbejegyzés létrehozása"
+blog,form.title_edit,,hu_HU,"Edit blog post","Blogbejegyzés módosítása",0,"Blogbejegyzés módosítása"
+blog,list.new,,hu_HU,"New post","Új bejegyzés",0,"Új bejegyzés"
+blog,list.title,,hu_HU,"Blog posts",Blogbejegyzések,0,Blogbejegyzések
+blog,not_found,,hu_HU,"Blog post not found","Blogbejegyzés nem található",0,"Blogbejegyzés nem található"
+blog,saved,,hu_HU,"Post saved","Blogbejegyzés mentve",0,"Blogbejegyzés mentve"
+blog,updated,,hu_HU,"Post updated","Blogbejegyzés frissítve",0,"Blogbejegyzés frissítve"
+blog,validation.slug_format,,hu_HU,"Slug can only contain lowercase letters, numbers, and hyphens","A slug csak kisbetűket, számokat és kötőjeleket tartalmazhat",0,"A slug csak kisbetűket, számokat és kötőjeleket tartalmazhat"

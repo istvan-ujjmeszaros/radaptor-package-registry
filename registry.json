@@ -2,6 +2,19 @@
     "registry_version": 1,
     "name": "Local Radaptor Plugin Registry",
     "packages": {
+        "radaptor/blog": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "plugin_id": "blog",
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-blog-0.1.0.zip",
+                        "sha256": "fbbdf012aa4e675014e349a9a0484d799289f533bd46c2a28b3f2f51529a47a0"
+                    }
+                }
+            }
+        },
         "radaptor/hello-world": {
             "latest": "1.1.2",
             "versions": {

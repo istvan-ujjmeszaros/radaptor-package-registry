@@ -1,0 +1,21 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+blog,error_save,,zh_Hans_CN,"Error: Unable to save post",错误：无法保存文章,0,错误：无法保存文章
+blog,field.body.explanation,,zh_Hans_CN,"Format text freely, add images, and embed external content. Use HTML view for embed codes.","自由格式化文本、添加图片并嵌入外部内容。使用 HTML 视图输入嵌入代码。",0,"自由格式化文本、添加图片并嵌入外部内容。使用 HTML 视图输入嵌入代码。"
+blog,field.body.label,,zh_Hans_CN,Content,内容,0,内容
+blog,field.date.explanation,,zh_Hans_CN,"Visible from this date. Determines sort order in the blog list.",从此日期起可见。决定博客列表中的排序顺序。,0,从此日期起可见。决定博客列表中的排序顺序。
+blog,field.date.label,,zh_Hans_CN,"Publish date",发布日期,0,发布日期
+blog,field.description.explanation,,zh_Hans_CN,"Appears in the blog post list.",显示在博客文章列表中。,0,显示在博客文章列表中。
+blog,field.description.label,,zh_Hans_CN,"Short description",简短描述,0,简短描述
+blog,field.slug.explanation,,zh_Hans_CN,"Lowercase letters, numbers, and hyphens only. Must be unique.",仅限小写字母、数字和连字符。必须唯一。,0,仅限小写字母、数字和连字符。必须唯一。
+blog,field.slug.label,,zh_Hans_CN,Slug,Slug,0,Slug
+blog,field.title.explanation,,zh_Hans_CN,"Unique title for this post",此文章的唯一标题,0,此文章的唯一标题
+blog,field.title.label,,zh_Hans_CN,Title,标题,0,标题
+blog,form.name,,zh_Hans_CN,"Blog post",博客文章,0,博客文章
+blog,form.title_create,,zh_Hans_CN,"New blog post",新博客文章,0,新博客文章
+blog,form.title_edit,,zh_Hans_CN,"Edit blog post",编辑博客文章,0,编辑博客文章
+blog,list.new,,zh_Hans_CN,"New post",新文章,0,新文章
+blog,list.title,,zh_Hans_CN,"Blog posts",博客文章,0,博客文章
+blog,not_found,,zh_Hans_CN,"Blog post not found",未找到博客文章,0,未找到博客文章
+blog,saved,,zh_Hans_CN,"Post saved",文章已保存,0,文章已保存
+blog,updated,,zh_Hans_CN,"Post updated",文章已更新,0,文章已更新
+blog,validation.slug_format,,zh_Hans_CN,"Slug can only contain lowercase letters, numbers, and hyphens","Slug 只能包含小写字母、数字和连字符",0,"Slug 只能包含小写字母、数字和连字符"
