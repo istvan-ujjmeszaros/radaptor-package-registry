@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,hu_HU,Name,Név,0,Név
+company,contacts,,hu_HU,Contacts,Kapcsolattartók,0,Kapcsolattartók
+company,description.back_to_list,,hu_HU,"Back to company list","Vissza a cégek listájára",0,"Vissza a cégek listájára"
+company,description.widget_description,,hu_HU,"Company datasheet","Cég adatlap",0,"Cég adatlap"
+company,description.widget_name,,hu_HU,"Company datasheet","Cég adatlap",0,"Cég adatlap"
+company,field.company_id.label,,hu_HU,"Company ID","Cég ID",0,"Cég ID"
+company,field.name.explanation,,hu_HU,"Enter the company name (including e.v. suffix for sole traders)","Írd be a cég nevét vagy az egyéni vállalkozó nevét (e.v. végződéssel)",0,"Írd be a cég nevét vagy az egyéni vállalkozó nevét (e.v. végződéssel)"
+company,field.name.label,,hu_HU,"Company name",Cégnév,0,Cégnév
+company,field.name.unique_error,,hu_HU,"A company with this name already exists","Ezzel a névvel már szerepel cég az adatbázisban",0,"Ezzel a névvel már szerepel cég az adatbázisban"
+company,field.shortname.explanation,,hu_HU,"Enter the abbreviated company name for easy searching","Írd be a cég rövidített nevét (a könnyű kereshetőséget szem előtt tartva)",0,"Írd be a cég rövidített nevét (a könnyű kereshetőséget szem előtt tartva)"
+company,field.shortname.label,,hu_HU,"Short name","Rövid név",0,"Rövid név"
+company,form.name,,hu_HU,Company,Cég,0,Cég
+company,form.title_create,,hu_HU,"New company","Új cég adatai",0,"Új cég adatai"
+company,form.title_edit,,hu_HU,"Edit company","Cég adatainak módosítása",0,"Cég adatainak módosítása"
+company,list.new,,hu_HU,"New company","Új cég",0,"Új cég"
+company,list.title,,hu_HU,Companies,Cégek,0,Cégek
+company,list.widget_description,,hu_HU,"Company list","Cég lista",0,"Cég lista"
+company,list.widget_name,,hu_HU,"Company list","Cég lista",0,"Cég lista"
+company,saved,,hu_HU,"Company saved","Cég rögzítve",0,"Cég rögzítve"
+company,unknown,,hu_HU,"Unknown company","Ismeretlen cég",0,"Ismeretlen cég"
+company,updated,,hu_HU,"Company updated","Cég módosítva",0,"Cég módosítva"

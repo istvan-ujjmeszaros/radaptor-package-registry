@@ -1,0 +1,26 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+project,field.comment.label,,de_DE,Comment,Kommentar,0,Kommentar
+project,field.company.explanation,,de_DE,"Enter the company name or short name","Unternehmensnamen oder Kurznamen eingeben",0,"Unternehmensnamen oder Kurznamen eingeben"
+project,field.company.label,,de_DE,"Related company","Zugehöriges Unternehmen",0,"Zugehöriges Unternehmen"
+project,field.name.explanation,,de_DE,"Enter the project name","Projektnamen eingeben",0,"Projektnamen eingeben"
+project,field.name.label,,de_DE,"Project name",Projektname,0,Projektname
+project,field.state.explanation,,de_DE,"Select the project status","Projektstatus auswählen",0,"Projektstatus auswählen"
+project,field.state.label,,de_DE,Status,Status,0,Status
+project,form.name,,de_DE,Project,Projekt,0,Projekt
+project,form.title_create,,de_DE,"New project","Neues Projekt",0,"Neues Projekt"
+project,form.title_edit,,de_DE,"Edit project","Projekt bearbeiten",0,"Projekt bearbeiten"
+project,list.open_tickets,,de_DE,"Open tickets","Offene Tickets",0,"Offene Tickets"
+project,list.ticket_tags,,de_DE,"Ticket tags",Ticket-Tags,0,Ticket-Tags
+project,list.title,,de_DE,Projects,Projekte,0,Projekte
+project,list.total_tickets,,de_DE,"Total tickets","Tickets gesamt",0,"Tickets gesamt"
+project,saved,,de_DE,"Project saved","Projekt gespeichert",0,"Projekt gespeichert"
+project,state.field.name.explanation,,de_DE,"Enter the project status name","Namen des Projektstatus eingeben",0,"Namen des Projektstatus eingeben"
+project,state.field.name.label,,de_DE,"Status name",Statusname,0,Statusname
+project,state.form.name,,de_DE,"Project status",Projektstatus,0,Projektstatus
+project,state.form.title_create,,de_DE,"New project status","Neuer Projektstatus",0,"Neuer Projektstatus"
+project,state.form.title_edit,,de_DE,"Edit project status","Projektstatus bearbeiten",0,"Projektstatus bearbeiten"
+project,state.saved,,de_DE,"Status saved","Status gespeichert",0,"Status gespeichert"
+project,state.validation.name_max_length,,de_DE,"Status name must not exceed 64 characters","Statusname darf 64 Zeichen nicht überschreiten",0,"Statusname darf 64 Zeichen nicht überschreiten"
+project,updated,,de_DE,"Project updated","Projekt aktualisiert",0,"Projekt aktualisiert"
+project,validation.name_max_length,,de_DE,"Project name must not exceed 255 characters","Projektname darf 255 Zeichen nicht überschreiten",0,"Projektname darf 255 Zeichen nicht überschreiten"
+project,validation.state_required,,de_DE,"Select the project status","Projektstatus auswählen",0,"Projektstatus auswählen"

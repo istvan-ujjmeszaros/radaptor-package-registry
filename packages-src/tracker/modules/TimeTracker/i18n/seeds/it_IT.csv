@@ -1,0 +1,34 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+timetracker,control.cancel_confirm,,it_IT,"Are you sure you want to delete the active time entry?","Sei sicuro di voler eliminare la registrazione tempo attiva?",0,"Sei sicuro di voler eliminare la registrazione tempo attiva?"
+timetracker,control.cancel_title,,it_IT,"Delete time entry","Elimina registrazione tempo",0,"Elimina registrazione tempo"
+timetracker,control.start,,it_IT,Start,Inizio,0,Inizio
+timetracker,control.stop,,it_IT,Stop,Ferma,0,Ferma
+timetracker,control.ticket_placeholder,,it_IT,"Select a ticket or enter a new title","Seleziona un ticket o inserisci un nuovo titolo",0,"Seleziona un ticket o inserisci un nuovo titolo"
+timetracker,control.title,,it_IT,"What are you working on?","Su cosa stai lavorando?",0,"Su cosa stai lavorando?"
+timetracker,delete_confirm,,it_IT,"Are you sure you want to delete this time entry?","Sei sicuro di voler eliminare questa registrazione tempo?",0,"Sei sicuro di voler eliminare questa registrazione tempo?"
+timetracker,deleted,,it_IT,"Time entry deleted","Registrazione tempo eliminata",0,"Registrazione tempo eliminata"
+timetracker,duration.hour,,it_IT,hour,ora,0,ora
+timetracker,duration.less_than_one_minute,,it_IT,"<1 minute","<1 minuto",0,"<1 minuto"
+timetracker,duration.minute,,it_IT,minute,minuto,0,minuto
+timetracker,error_save,,it_IT,"Error: Unable to save time entry","Errore: Impossibile salvare la registrazione tempo",0,"Errore: Impossibile salvare la registrazione tempo"
+timetracker,field.date.explanation,,it_IT,"Start time in YYYY-MM-DD HH:mm format","Ora inizio in formato AAAA-MM-GG HH:mm",0,"Ora inizio in formato AAAA-MM-GG HH:mm"
+timetracker,field.date.label,,it_IT,Date,Data,0,Data
+timetracker,field.description.explanation,,it_IT,"Enter a brief description","Inserisci una breve descrizione",0,"Inserisci una breve descrizione"
+timetracker,field.description.label,,it_IT,Description,Descrizione,0,Descrizione
+timetracker,field.hours.explanation,,it_IT,"End time in YYYY-MM-DD HH:mm format","Ora fine in formato AAAA-MM-GG HH:mm",0,"Ora fine in formato AAAA-MM-GG HH:mm"
+timetracker,field.hours.label,,it_IT,Hours,Ore,0,Ore
+timetracker,field.ticket_id.label,,it_IT,"Ticket ID","ID ticket",0,"ID ticket"
+timetracker,field.ticket.explanation,,it_IT,"Select a ticket or enter a new name","Seleziona un ticket o inserisci un nuovo nome",0,"Seleziona un ticket o inserisci un nuovo nome"
+timetracker,field.ticket.label,,it_IT,Ticket,Ticket,0,Ticket
+timetracker,field.user.explanation,,it_IT,"Enter the username for this time entry","Inserisci il nome utente per questa registrazione tempo",0,"Inserisci il nome utente per questa registrazione tempo"
+timetracker,form.name,,it_IT,"Time entry","Registrazione tempo",0,"Registrazione tempo"
+timetracker,form.title_create,,it_IT,"New time entry","Nuova registrazione tempo",0,"Nuova registrazione tempo"
+timetracker,form.title_edit,,it_IT,"Edit time entry","Modifica registrazione tempo",0,"Modifica registrazione tempo"
+timetracker,list.duration,,it_IT,Duration,Durata,0,Durata
+timetracker,list.end_time,,it_IT,End,Fine,0,Fine
+timetracker,list.start_time,,it_IT,Start,Inizio,0,Inizio
+timetracker,list.title,,it_IT,"Time tracking","Monitoraggio tempo",0,"Monitoraggio tempo"
+timetracker,saved,,it_IT,"Time entry saved","Registrazione tempo salvata",0,"Registrazione tempo salvata"
+timetracker,updated,,it_IT,"Time entry updated","Registrazione tempo aggiornata",0,"Registrazione tempo aggiornata"
+timetracker,validation.description_max_length,,it_IT,"Description must not exceed 255 characters","La descrizione non deve superare i 255 caratteri",0,"La descrizione non deve superare i 255 caratteri"
+timetracker,validation.ticket_max_length,,it_IT,"Ticket name must not exceed 255 characters","Il nome ticket non deve superare i 255 caratteri",0,"Il nome ticket non deve superare i 255 caratteri"

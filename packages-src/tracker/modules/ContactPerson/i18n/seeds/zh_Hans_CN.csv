@@ -1,0 +1,24 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+contact,col.company,,zh_Hans_CN,Company,公司,0,公司
+contact,col.name,,zh_Hans_CN,Name,名称,0,名称
+contact,description.back_to_list,,zh_Hans_CN,"Back to contact person list",返回联系人列表,0,返回联系人列表
+contact,description.widget_description,,zh_Hans_CN,"Contact person datasheet",联系人数据表,0,联系人数据表
+contact,description.widget_name,,zh_Hans_CN,"Contact person datasheet",联系人数据表,0,联系人数据表
+contact,field.company_id.label,,zh_Hans_CN,"Connected company ID","关联公司 ID",0,"关联公司 ID"
+contact,field.company.explanation,,zh_Hans_CN,"Enter the company name (you can also use the short name)",输入公司名称（也可使用缩写名称）,0,输入公司名称（也可使用缩写名称）
+contact,field.company.label,,zh_Hans_CN,"Connected company",关联公司,0,关联公司
+contact,field.company.multiple_error,,zh_Hans_CN,"Multiple companies found with that short name, please select one from the list",找到多个同名公司，请从列表中选择一个,0,找到多个同名公司，请从列表中选择一个
+contact,field.company.not_found_error,,zh_Hans_CN,"No company found with that name, please select from the list (or add a new company)",未找到该名称的公司，请从列表中选择（或添加新公司）,0,未找到该名称的公司，请从列表中选择（或添加新公司）
+contact,field.name.explanation,,zh_Hans_CN,"Enter the contact person name",输入联系人姓名,0,输入联系人姓名
+contact,field.name.label,,zh_Hans_CN,"Contact person name",联系人姓名,0,联系人姓名
+contact,field.name.unique_error,,zh_Hans_CN,"A contact with this name already exists for this company",该公司已存在同名联系人,0,该公司已存在同名联系人
+contact,form.name,,zh_Hans_CN,"Contact person",联系人,0,联系人
+contact,form.title_create,,zh_Hans_CN,"New contact person",新联系人,0,新联系人
+contact,form.title_edit,,zh_Hans_CN,"Edit contact person",编辑联系人,0,编辑联系人
+contact,list.new,,zh_Hans_CN,"New contact person",新联系人,0,新联系人
+contact,list.title,,zh_Hans_CN,"Contact persons",联系人,0,联系人
+contact,list.widget_description,,zh_Hans_CN,"Contact person list",联系人列表,0,联系人列表
+contact,list.widget_name,,zh_Hans_CN,"Contact person list",联系人列表,0,联系人列表
+contact,saved,,zh_Hans_CN,"Contact saved",联系人已保存,0,联系人已保存
+contact,unknown,,zh_Hans_CN,"Unknown contact",未知联系人,0,未知联系人
+contact,updated,,zh_Hans_CN,"Contact updated",联系人已更新,0,联系人已更新

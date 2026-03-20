@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,zh_Hans_CN,Name,名称,0,名称
+company,contacts,,zh_Hans_CN,Contacts,联系人,0,联系人
+company,description.back_to_list,,zh_Hans_CN,"Back to company list",返回公司列表,0,返回公司列表
+company,description.widget_description,,zh_Hans_CN,"Company datasheet",公司数据表,0,公司数据表
+company,description.widget_name,,zh_Hans_CN,"Company datasheet",公司数据表,0,公司数据表
+company,field.company_id.label,,zh_Hans_CN,"Company ID","公司 ID",0,"公司 ID"
+company,field.name.explanation,,zh_Hans_CN,"Enter the company name (including e.v. suffix for sole traders)","输入公司名称（个体经营者包括 e.v. 后缀）",0,"输入公司名称（个体经营者包括 e.v. 后缀）"
+company,field.name.label,,zh_Hans_CN,"Company name",公司名称,0,公司名称
+company,field.name.unique_error,,zh_Hans_CN,"A company with this name already exists",同名公司已存在,0,同名公司已存在
+company,field.shortname.explanation,,zh_Hans_CN,"Enter the abbreviated company name for easy searching",输入公司缩写名称以便搜索,0,输入公司缩写名称以便搜索
+company,field.shortname.label,,zh_Hans_CN,"Short name",简称,0,简称
+company,form.name,,zh_Hans_CN,Company,公司,0,公司
+company,form.title_create,,zh_Hans_CN,"New company",新公司,0,新公司
+company,form.title_edit,,zh_Hans_CN,"Edit company",编辑公司,0,编辑公司
+company,list.new,,zh_Hans_CN,"New company",新公司,0,新公司
+company,list.title,,zh_Hans_CN,Companies,公司,0,公司
+company,list.widget_description,,zh_Hans_CN,"Company list",公司列表,0,公司列表
+company,list.widget_name,,zh_Hans_CN,"Company list",公司列表,0,公司列表
+company,saved,,zh_Hans_CN,"Company saved",公司已保存,0,公司已保存
+company,unknown,,zh_Hans_CN,"Unknown company",未知公司,0,未知公司
+company,updated,,zh_Hans_CN,"Company updated",公司已更新,0,公司已更新

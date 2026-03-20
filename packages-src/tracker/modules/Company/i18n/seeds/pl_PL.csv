@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,pl_PL,Name,Nazwa,0,Nazwa
+company,contacts,,pl_PL,Contacts,Kontakty,0,Kontakty
+company,description.back_to_list,,pl_PL,"Back to company list","Powrót do listy firm",0,"Powrót do listy firm"
+company,description.widget_description,,pl_PL,"Company datasheet","Karta firmy",0,"Karta firmy"
+company,description.widget_name,,pl_PL,"Company datasheet","Karta firmy",0,"Karta firmy"
+company,field.company_id.label,,pl_PL,"Company ID","ID firmy",0,"ID firmy"
+company,field.name.explanation,,pl_PL,"Enter the company name (including e.v. suffix for sole traders)","Wpisz nazwę firmy (łącznie z sufiksem e.v. dla jednoosobowych działalności)",0,"Wpisz nazwę firmy (łącznie z sufiksem e.v. dla jednoosobowych działalności)"
+company,field.name.label,,pl_PL,"Company name","Nazwa firmy",0,"Nazwa firmy"
+company,field.name.unique_error,,pl_PL,"A company with this name already exists","Firma o tej nazwie już istnieje",0,"Firma o tej nazwie już istnieje"
+company,field.shortname.explanation,,pl_PL,"Enter the abbreviated company name for easy searching","Wpisz skróconą nazwę firmy dla łatwiejszego wyszukiwania",0,"Wpisz skróconą nazwę firmy dla łatwiejszego wyszukiwania"
+company,field.shortname.label,,pl_PL,"Short name","Krótka nazwa",0,"Krótka nazwa"
+company,form.name,,pl_PL,Company,Firma,0,Firma
+company,form.title_create,,pl_PL,"New company","Nowa firma",0,"Nowa firma"
+company,form.title_edit,,pl_PL,"Edit company","Edytuj firmę",0,"Edytuj firmę"
+company,list.new,,pl_PL,"New company","Nowa firma",0,"Nowa firma"
+company,list.title,,pl_PL,Companies,Firmy,0,Firmy
+company,list.widget_description,,pl_PL,"Company list","Lista firm",0,"Lista firm"
+company,list.widget_name,,pl_PL,"Company list","Lista firm",0,"Lista firm"
+company,saved,,pl_PL,"Company saved","Zapisano firmę",0,"Zapisano firmę"
+company,unknown,,pl_PL,"Unknown company","Nieznana firma",0,"Nieznana firma"
+company,updated,,pl_PL,"Company updated","Zaktualizowano firmę",0,"Zaktualizowano firmę"

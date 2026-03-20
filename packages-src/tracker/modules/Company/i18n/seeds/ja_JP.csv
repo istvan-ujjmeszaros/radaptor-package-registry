@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,ja_JP,Name,名前,0,名前
+company,contacts,,ja_JP,Contacts,担当者,0,担当者
+company,description.back_to_list,,ja_JP,"Back to company list",会社一覧に戻る,0,会社一覧に戻る
+company,description.widget_description,,ja_JP,"Company datasheet",会社データシート,0,会社データシート
+company,description.widget_name,,ja_JP,"Company datasheet",会社データシート,0,会社データシート
+company,field.company_id.label,,ja_JP,"Company ID",会社ID,0,会社ID
+company,field.name.explanation,,ja_JP,"Enter the company name (including e.v. suffix for sole traders)",会社名を入力（個人事業主の場合はe.v.サフィックスを含む）,0,会社名を入力（個人事業主の場合はe.v.サフィックスを含む）
+company,field.name.label,,ja_JP,"Company name",会社名,0,会社名
+company,field.name.unique_error,,ja_JP,"A company with this name already exists",同名の会社が既に存在します,0,同名の会社が既に存在します
+company,field.shortname.explanation,,ja_JP,"Enter the abbreviated company name for easy searching",検索しやすいように会社の略称を入力,0,検索しやすいように会社の略称を入力
+company,field.shortname.label,,ja_JP,"Short name",略称,0,略称
+company,form.name,,ja_JP,Company,会社,0,会社
+company,form.title_create,,ja_JP,"New company",新しい会社,0,新しい会社
+company,form.title_edit,,ja_JP,"Edit company",会社を編集,0,会社を編集
+company,list.new,,ja_JP,"New company",新しい会社,0,新しい会社
+company,list.title,,ja_JP,Companies,会社,0,会社
+company,list.widget_description,,ja_JP,"Company list",会社一覧,0,会社一覧
+company,list.widget_name,,ja_JP,"Company list",会社一覧,0,会社一覧
+company,saved,,ja_JP,"Company saved",会社を保存しました,0,会社を保存しました
+company,unknown,,ja_JP,"Unknown company",不明な会社,0,不明な会社
+company,updated,,ja_JP,"Company updated",会社を更新しました,0,会社を更新しました

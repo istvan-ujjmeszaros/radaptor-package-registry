@@ -1,0 +1,26 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+project,field.comment.label,,ru_RU,Comment,Комментарий,0,Комментарий
+project,field.company.explanation,,ru_RU,"Enter the company name or short name","Введите название компании или краткое название",0,"Введите название компании или краткое название"
+project,field.company.label,,ru_RU,"Related company","Связанная компания",0,"Связанная компания"
+project,field.name.explanation,,ru_RU,"Enter the project name","Введите название проекта",0,"Введите название проекта"
+project,field.name.label,,ru_RU,"Project name","Название проекта",0,"Название проекта"
+project,field.state.explanation,,ru_RU,"Select the project status","Выберите статус проекта",0,"Выберите статус проекта"
+project,field.state.label,,ru_RU,Status,Статус,0,Статус
+project,form.name,,ru_RU,Project,Проект,0,Проект
+project,form.title_create,,ru_RU,"New project","Новый проект",0,"Новый проект"
+project,form.title_edit,,ru_RU,"Edit project","Редактировать проект",0,"Редактировать проект"
+project,list.open_tickets,,ru_RU,"Open tickets","Открытые тикеты",0,"Открытые тикеты"
+project,list.ticket_tags,,ru_RU,"Ticket tags","Теги тикета",0,"Теги тикета"
+project,list.title,,ru_RU,Projects,Проекты,0,Проекты
+project,list.total_tickets,,ru_RU,"Total tickets","Всего тикетов",0,"Всего тикетов"
+project,saved,,ru_RU,"Project saved","Проект сохранён",0,"Проект сохранён"
+project,state.field.name.explanation,,ru_RU,"Enter the project status name","Введите название статуса проекта",0,"Введите название статуса проекта"
+project,state.field.name.label,,ru_RU,"Status name","Название статуса",0,"Название статуса"
+project,state.form.name,,ru_RU,"Project status","Статус проекта",0,"Статус проекта"
+project,state.form.title_create,,ru_RU,"New project status","Новый статус проекта",0,"Новый статус проекта"
+project,state.form.title_edit,,ru_RU,"Edit project status","Редактировать статус проекта",0,"Редактировать статус проекта"
+project,state.saved,,ru_RU,"Status saved","Статус сохранён",0,"Статус сохранён"
+project,state.validation.name_max_length,,ru_RU,"Status name must not exceed 64 characters","Название статуса не должно превышать 64 символа",0,"Название статуса не должно превышать 64 символа"
+project,updated,,ru_RU,"Project updated","Проект обновлён",0,"Проект обновлён"
+project,validation.name_max_length,,ru_RU,"Project name must not exceed 255 characters","Название проекта не должно превышать 255 символов",0,"Название проекта не должно превышать 255 символов"
+project,validation.state_required,,ru_RU,"Select the project status","Выберите статус проекта",0,"Выберите статус проекта"

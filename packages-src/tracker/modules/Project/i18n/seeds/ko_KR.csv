@@ -1,0 +1,26 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+project,field.comment.label,,ko_KR,Comment,코멘트,0,코멘트
+project,field.company.explanation,,ko_KR,"Enter the company name or short name","회사 이름 또는 약식 이름을 입력하세요",0,"회사 이름 또는 약식 이름을 입력하세요"
+project,field.company.label,,ko_KR,"Related company","관련 회사",0,"관련 회사"
+project,field.name.explanation,,ko_KR,"Enter the project name","프로젝트 이름을 입력하세요",0,"프로젝트 이름을 입력하세요"
+project,field.name.label,,ko_KR,"Project name","프로젝트 이름",0,"프로젝트 이름"
+project,field.state.explanation,,ko_KR,"Select the project status","프로젝트 상태를 선택하세요",0,"프로젝트 상태를 선택하세요"
+project,field.state.label,,ko_KR,Status,상태,0,상태
+project,form.name,,ko_KR,Project,프로젝트,0,프로젝트
+project,form.title_create,,ko_KR,"New project","새 프로젝트",0,"새 프로젝트"
+project,form.title_edit,,ko_KR,"Edit project","프로젝트 편집",0,"프로젝트 편집"
+project,list.open_tickets,,ko_KR,"Open tickets","열린 티켓",0,"열린 티켓"
+project,list.ticket_tags,,ko_KR,"Ticket tags","티켓 태그",0,"티켓 태그"
+project,list.title,,ko_KR,Projects,프로젝트,0,프로젝트
+project,list.total_tickets,,ko_KR,"Total tickets","전체 티켓",0,"전체 티켓"
+project,saved,,ko_KR,"Project saved","프로젝트 저장됨",0,"프로젝트 저장됨"
+project,state.field.name.explanation,,ko_KR,"Enter the project status name","프로젝트 상태 이름을 입력하세요",0,"프로젝트 상태 이름을 입력하세요"
+project,state.field.name.label,,ko_KR,"Status name","상태 이름",0,"상태 이름"
+project,state.form.name,,ko_KR,"Project status","프로젝트 상태",0,"프로젝트 상태"
+project,state.form.title_create,,ko_KR,"New project status","새 프로젝트 상태",0,"새 프로젝트 상태"
+project,state.form.title_edit,,ko_KR,"Edit project status","프로젝트 상태 편집",0,"프로젝트 상태 편집"
+project,state.saved,,ko_KR,"Status saved","상태 저장됨",0,"상태 저장됨"
+project,state.validation.name_max_length,,ko_KR,"Status name must not exceed 64 characters","상태 이름은 64자를 초과할 수 없습니다",0,"상태 이름은 64자를 초과할 수 없습니다"
+project,updated,,ko_KR,"Project updated","프로젝트 업데이트됨",0,"프로젝트 업데이트됨"
+project,validation.name_max_length,,ko_KR,"Project name must not exceed 255 characters","프로젝트 이름은 255자를 초과할 수 없습니다",0,"프로젝트 이름은 255자를 초과할 수 없습니다"
+project,validation.state_required,,ko_KR,"Select the project status","프로젝트 상태를 선택하세요",0,"프로젝트 상태를 선택하세요"

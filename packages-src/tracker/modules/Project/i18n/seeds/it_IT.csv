@@ -1,0 +1,26 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+project,field.comment.label,,it_IT,Comment,Commento,0,Commento
+project,field.company.explanation,,it_IT,"Enter the company name or short name","Inserisci il nome o il nome abbreviato dell'azienda",0,"Inserisci il nome o il nome abbreviato dell'azienda"
+project,field.company.label,,it_IT,"Related company","Azienda correlata",0,"Azienda correlata"
+project,field.name.explanation,,it_IT,"Enter the project name","Inserisci il nome del progetto",0,"Inserisci il nome del progetto"
+project,field.name.label,,it_IT,"Project name","Nome progetto",0,"Nome progetto"
+project,field.state.explanation,,it_IT,"Select the project status","Seleziona lo stato del progetto",0,"Seleziona lo stato del progetto"
+project,field.state.label,,it_IT,Status,Stato,0,Stato
+project,form.name,,it_IT,Project,Progetto,0,Progetto
+project,form.title_create,,it_IT,"New project","Nuovo progetto",0,"Nuovo progetto"
+project,form.title_edit,,it_IT,"Edit project","Modifica progetto",0,"Modifica progetto"
+project,list.open_tickets,,it_IT,"Open tickets","Ticket aperti",0,"Ticket aperti"
+project,list.ticket_tags,,it_IT,"Ticket tags","Etichette ticket",0,"Etichette ticket"
+project,list.title,,it_IT,Projects,Progetti,0,Progetti
+project,list.total_tickets,,it_IT,"Total tickets","Ticket totali",0,"Ticket totali"
+project,saved,,it_IT,"Project saved","Progetto salvato",0,"Progetto salvato"
+project,state.field.name.explanation,,it_IT,"Enter the project status name","Inserisci il nome dello stato del progetto",0,"Inserisci il nome dello stato del progetto"
+project,state.field.name.label,,it_IT,"Status name","Nome stato",0,"Nome stato"
+project,state.form.name,,it_IT,"Project status","Stato progetto",0,"Stato progetto"
+project,state.form.title_create,,it_IT,"New project status","Nuovo stato progetto",0,"Nuovo stato progetto"
+project,state.form.title_edit,,it_IT,"Edit project status","Modifica stato progetto",0,"Modifica stato progetto"
+project,state.saved,,it_IT,"Status saved","Stato salvato",0,"Stato salvato"
+project,state.validation.name_max_length,,it_IT,"Status name must not exceed 64 characters","Il nome stato non deve superare i 64 caratteri",0,"Il nome stato non deve superare i 64 caratteri"
+project,updated,,it_IT,"Project updated","Progetto aggiornato",0,"Progetto aggiornato"
+project,validation.name_max_length,,it_IT,"Project name must not exceed 255 characters","Il nome progetto non deve superare i 255 caratteri",0,"Il nome progetto non deve superare i 255 caratteri"
+project,validation.state_required,,it_IT,"Select the project status","Seleziona lo stato del progetto",0,"Seleziona lo stato del progetto"

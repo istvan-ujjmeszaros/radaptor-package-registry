@@ -1,0 +1,34 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+timetracker,control.cancel_confirm,,zh_Hans_CN,"Are you sure you want to delete the active time entry?",确定要删除当前时间记录吗？,0,确定要删除当前时间记录吗？
+timetracker,control.cancel_title,,zh_Hans_CN,"Delete time entry",删除时间记录,0,删除时间记录
+timetracker,control.start,,zh_Hans_CN,Start,开始,0,开始
+timetracker,control.stop,,zh_Hans_CN,Stop,停止,0,停止
+timetracker,control.ticket_placeholder,,zh_Hans_CN,"Select a ticket or enter a new title",选择工单或输入新标题,0,选择工单或输入新标题
+timetracker,control.title,,zh_Hans_CN,"What are you working on?",您在处理什么？,0,您在处理什么？
+timetracker,delete_confirm,,zh_Hans_CN,"Are you sure you want to delete this time entry?",确定要删除此时间记录吗？,0,确定要删除此时间记录吗？
+timetracker,deleted,,zh_Hans_CN,"Time entry deleted",时间记录已删除,0,时间记录已删除
+timetracker,duration.hour,,zh_Hans_CN,hour,小时,0,小时
+timetracker,duration.less_than_one_minute,,zh_Hans_CN,"<1 minute",不足1分钟,0,不足1分钟
+timetracker,duration.minute,,zh_Hans_CN,minute,分钟,0,分钟
+timetracker,error_save,,zh_Hans_CN,"Error: Unable to save time entry",错误：无法保存时间记录,0,错误：无法保存时间记录
+timetracker,field.date.explanation,,zh_Hans_CN,"Start time in YYYY-MM-DD HH:mm format","开始时间，格式为 YYYY-MM-DD HH:mm",0,"开始时间，格式为 YYYY-MM-DD HH:mm"
+timetracker,field.date.label,,zh_Hans_CN,Date,日期,0,日期
+timetracker,field.description.explanation,,zh_Hans_CN,"Enter a brief description",输入简短描述,0,输入简短描述
+timetracker,field.description.label,,zh_Hans_CN,Description,描述,0,描述
+timetracker,field.hours.explanation,,zh_Hans_CN,"End time in YYYY-MM-DD HH:mm format","结束时间，格式为 YYYY-MM-DD HH:mm",0,"结束时间，格式为 YYYY-MM-DD HH:mm"
+timetracker,field.hours.label,,zh_Hans_CN,Hours,小时,0,小时
+timetracker,field.ticket_id.label,,zh_Hans_CN,"Ticket ID","工单 ID",0,"工单 ID"
+timetracker,field.ticket.explanation,,zh_Hans_CN,"Select a ticket or enter a new name",选择工单或输入新名称,0,选择工单或输入新名称
+timetracker,field.ticket.label,,zh_Hans_CN,Ticket,工单,0,工单
+timetracker,field.user.explanation,,zh_Hans_CN,"Enter the username for this time entry",输入此时间记录的用户名,0,输入此时间记录的用户名
+timetracker,form.name,,zh_Hans_CN,"Time entry",时间记录,0,时间记录
+timetracker,form.title_create,,zh_Hans_CN,"New time entry",新时间记录,0,新时间记录
+timetracker,form.title_edit,,zh_Hans_CN,"Edit time entry",编辑时间记录,0,编辑时间记录
+timetracker,list.duration,,zh_Hans_CN,Duration,时长,0,时长
+timetracker,list.end_time,,zh_Hans_CN,End,结束,0,结束
+timetracker,list.start_time,,zh_Hans_CN,Start,开始,0,开始
+timetracker,list.title,,zh_Hans_CN,"Time tracking",时间追踪,0,时间追踪
+timetracker,saved,,zh_Hans_CN,"Time entry saved",时间记录已保存,0,时间记录已保存
+timetracker,updated,,zh_Hans_CN,"Time entry updated",时间记录已更新,0,时间记录已更新
+timetracker,validation.description_max_length,,zh_Hans_CN,"Description must not exceed 255 characters","描述不得超过 255 个字符",0,"描述不得超过 255 个字符"
+timetracker,validation.ticket_max_length,,zh_Hans_CN,"Ticket name must not exceed 255 characters","工单名称不得超过 255 个字符",0,"工单名称不得超过 255 个字符"

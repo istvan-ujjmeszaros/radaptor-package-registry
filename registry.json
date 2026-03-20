@@ -1,19 +1,32 @@
 {
-  "registry_version": 1,
-  "name": "Local Radaptor Plugin Registry",
-  "packages": {
-    "radaptor/hello-world": {
-      "latest": "1.1.2",
-      "versions": {
-        "1.1.2": {
-          "plugin_id": "hello-world",
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-hello-world-1.1.2.zip",
-            "sha256": "0cbc3baf444a2cd2c38f58553fec272bdb83474791b6df302fda6f057c2be93f"
-          }
+    "registry_version": 1,
+    "name": "Local Radaptor Plugin Registry",
+    "packages": {
+        "radaptor/hello-world": {
+            "latest": "1.1.2",
+            "versions": {
+                "1.1.2": {
+                    "plugin_id": "hello-world",
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-hello-world-1.1.2.zip",
+                        "sha256": "fcdd0176f2263b5ff06a367547c078657fade32e301fda82c9e503c72502639c"
+                    }
+                }
+            }
+        },
+        "radaptor/tracker": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "plugin_id": "tracker",
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-tracker-0.1.0.zip",
+                        "sha256": "0a472edb5d54439979478aeeb85f7bcb05adba73ee379b68e1ddb5b1beba2ca7"
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

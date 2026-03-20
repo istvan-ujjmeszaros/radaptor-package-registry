@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,pt_BR,Name,Nome,0,Nome
+company,contacts,,pt_BR,Contacts,Contatos,0,Contatos
+company,description.back_to_list,,pt_BR,"Back to company list","Voltar à lista de empresas",0,"Voltar à lista de empresas"
+company,description.widget_description,,pt_BR,"Company datasheet","Ficha da empresa",0,"Ficha da empresa"
+company,description.widget_name,,pt_BR,"Company datasheet","Ficha da empresa",0,"Ficha da empresa"
+company,field.company_id.label,,pt_BR,"Company ID","ID da empresa",0,"ID da empresa"
+company,field.name.explanation,,pt_BR,"Enter the company name (including e.v. suffix for sole traders)","Insira o nome da empresa (incluindo o sufixo e.v. para autônomos)",0,"Insira o nome da empresa (incluindo o sufixo e.v. para autônomos)"
+company,field.name.label,,pt_BR,"Company name","Nome da empresa",0,"Nome da empresa"
+company,field.name.unique_error,,pt_BR,"A company with this name already exists","Já existe uma empresa com este nome",0,"Já existe uma empresa com este nome"
+company,field.shortname.explanation,,pt_BR,"Enter the abbreviated company name for easy searching","Insira o nome abreviado da empresa para facilitar a busca",0,"Insira o nome abreviado da empresa para facilitar a busca"
+company,field.shortname.label,,pt_BR,"Short name","Nome abreviado",0,"Nome abreviado"
+company,form.name,,pt_BR,Company,Empresa,0,Empresa
+company,form.title_create,,pt_BR,"New company","Nova empresa",0,"Nova empresa"
+company,form.title_edit,,pt_BR,"Edit company","Editar empresa",0,"Editar empresa"
+company,list.new,,pt_BR,"New company","Nova empresa",0,"Nova empresa"
+company,list.title,,pt_BR,Companies,Empresas,0,Empresas
+company,list.widget_description,,pt_BR,"Company list","Lista de empresas",0,"Lista de empresas"
+company,list.widget_name,,pt_BR,"Company list","Lista de empresas",0,"Lista de empresas"
+company,saved,,pt_BR,"Company saved","Empresa salva",0,"Empresa salva"
+company,unknown,,pt_BR,"Unknown company","Empresa desconhecida",0,"Empresa desconhecida"
+company,updated,,pt_BR,"Company updated","Empresa atualizada",0,"Empresa atualizada"

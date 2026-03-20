@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,de_DE,Name,Name,0,Name
+company,contacts,,de_DE,Contacts,Kontakte,0,Kontakte
+company,description.back_to_list,,de_DE,"Back to company list","Zurück zur Unternehmenliste",0,"Zurück zur Unternehmenliste"
+company,description.widget_description,,de_DE,"Company datasheet",Unternehmensblatt,0,Unternehmensblatt
+company,description.widget_name,,de_DE,"Company datasheet",Unternehmensblatt,0,Unternehmensblatt
+company,field.company_id.label,,de_DE,"Company ID",Unternehmens-ID,0,Unternehmens-ID
+company,field.name.explanation,,de_DE,"Enter the company name (including e.v. suffix for sole traders)","Geben Sie den Unternehmensnamen ein (inkl. e.K.-Zusatz für Einzelkaufleute)",0,"Geben Sie den Unternehmensnamen ein (inkl. e.K.-Zusatz für Einzelkaufleute)"
+company,field.name.label,,de_DE,"Company name",Unternehmensname,0,Unternehmensname
+company,field.name.unique_error,,de_DE,"A company with this name already exists","Ein Unternehmen mit diesem Namen existiert bereits",0,"Ein Unternehmen mit diesem Namen existiert bereits"
+company,field.shortname.explanation,,de_DE,"Enter the abbreviated company name for easy searching","Abgekürzten Unternehmensnamen für die Suche eingeben",0,"Abgekürzten Unternehmensnamen für die Suche eingeben"
+company,field.shortname.label,,de_DE,"Short name",Kurzname,0,Kurzname
+company,form.name,,de_DE,Company,Unternehmen,0,Unternehmen
+company,form.title_create,,de_DE,"New company","Neues Unternehmen",0,"Neues Unternehmen"
+company,form.title_edit,,de_DE,"Edit company","Unternehmen bearbeiten",0,"Unternehmen bearbeiten"
+company,list.new,,de_DE,"New company","Neues Unternehmen",0,"Neues Unternehmen"
+company,list.title,,de_DE,Companies,Unternehmen,0,Unternehmen
+company,list.widget_description,,de_DE,"Company list",Unternehmenliste,0,Unternehmenliste
+company,list.widget_name,,de_DE,"Company list",Unternehmenliste,0,Unternehmenliste
+company,saved,,de_DE,"Company saved","Unternehmen gespeichert",0,"Unternehmen gespeichert"
+company,unknown,,de_DE,"Unknown company","Unbekanntes Unternehmen",0,"Unbekanntes Unternehmen"
+company,updated,,de_DE,"Company updated","Unternehmen aktualisiert",0,"Unternehmen aktualisiert"

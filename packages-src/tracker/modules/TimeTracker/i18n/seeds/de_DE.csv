@@ -1,0 +1,34 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+timetracker,control.cancel_confirm,,de_DE,"Are you sure you want to delete the active time entry?","Möchten Sie den aktiven Zeiteintrag wirklich löschen?",0,"Möchten Sie den aktiven Zeiteintrag wirklich löschen?"
+timetracker,control.cancel_title,,de_DE,"Delete time entry","Zeiteintrag löschen",0,"Zeiteintrag löschen"
+timetracker,control.start,,de_DE,Start,Start,0,Start
+timetracker,control.stop,,de_DE,Stop,Stopp,0,Stopp
+timetracker,control.ticket_placeholder,,de_DE,"Select a ticket or enter a new title","Ticket auswählen oder neuen Titel eingeben",0,"Ticket auswählen oder neuen Titel eingeben"
+timetracker,control.title,,de_DE,"What are you working on?","Woran arbeiten Sie?",0,"Woran arbeiten Sie?"
+timetracker,delete_confirm,,de_DE,"Are you sure you want to delete this time entry?","Möchten Sie diesen Zeiteintrag wirklich löschen?",0,"Möchten Sie diesen Zeiteintrag wirklich löschen?"
+timetracker,deleted,,de_DE,"Time entry deleted","Zeiteintrag gelöscht",0,"Zeiteintrag gelöscht"
+timetracker,duration.hour,,de_DE,hour,Stunde,0,Stunde
+timetracker,duration.less_than_one_minute,,de_DE,"<1 minute","<1 Minute",0,"<1 Minute"
+timetracker,duration.minute,,de_DE,minute,Minute,0,Minute
+timetracker,error_save,,de_DE,"Error: Unable to save time entry","Fehler: Zeiteintrag konnte nicht gespeichert werden",0,"Fehler: Zeiteintrag konnte nicht gespeichert werden"
+timetracker,field.date.explanation,,de_DE,"Start time in YYYY-MM-DD HH:mm format","Startzeit im Format JJJJ-MM-TT HH:mm",0,"Startzeit im Format JJJJ-MM-TT HH:mm"
+timetracker,field.date.label,,de_DE,Date,Datum,0,Datum
+timetracker,field.description.explanation,,de_DE,"Enter a brief description","Kurze Beschreibung eingeben",0,"Kurze Beschreibung eingeben"
+timetracker,field.description.label,,de_DE,Description,Beschreibung,0,Beschreibung
+timetracker,field.hours.explanation,,de_DE,"End time in YYYY-MM-DD HH:mm format","Endzeit im Format JJJJ-MM-TT HH:mm",0,"Endzeit im Format JJJJ-MM-TT HH:mm"
+timetracker,field.hours.label,,de_DE,Hours,Stunden,0,Stunden
+timetracker,field.ticket_id.label,,de_DE,"Ticket ID",Ticket-ID,0,Ticket-ID
+timetracker,field.ticket.explanation,,de_DE,"Select a ticket or enter a new name","Ticket auswählen oder neuen Namen eingeben",0,"Ticket auswählen oder neuen Namen eingeben"
+timetracker,field.ticket.label,,de_DE,Ticket,Ticket,0,Ticket
+timetracker,field.user.explanation,,de_DE,"Enter the username for this time entry","Benutzernamen für diesen Zeiteintrag eingeben",0,"Benutzernamen für diesen Zeiteintrag eingeben"
+timetracker,form.name,,de_DE,"Time entry",Zeiteintrag,0,Zeiteintrag
+timetracker,form.title_create,,de_DE,"New time entry","Neuer Zeiteintrag",0,"Neuer Zeiteintrag"
+timetracker,form.title_edit,,de_DE,"Edit time entry","Zeiteintrag bearbeiten",0,"Zeiteintrag bearbeiten"
+timetracker,list.duration,,de_DE,Duration,Dauer,0,Dauer
+timetracker,list.end_time,,de_DE,End,Ende,0,Ende
+timetracker,list.start_time,,de_DE,Start,Start,0,Start
+timetracker,list.title,,de_DE,"Time tracking",Zeiterfassung,0,Zeiterfassung
+timetracker,saved,,de_DE,"Time entry saved","Zeiteintrag gespeichert",0,"Zeiteintrag gespeichert"
+timetracker,updated,,de_DE,"Time entry updated","Zeiteintrag aktualisiert",0,"Zeiteintrag aktualisiert"
+timetracker,validation.description_max_length,,de_DE,"Description must not exceed 255 characters","Beschreibung darf 255 Zeichen nicht überschreiten",0,"Beschreibung darf 255 Zeichen nicht überschreiten"
+timetracker,validation.ticket_max_length,,de_DE,"Ticket name must not exceed 255 characters","Ticket-Name darf 255 Zeichen nicht überschreiten",0,"Ticket-Name darf 255 Zeichen nicht überschreiten"

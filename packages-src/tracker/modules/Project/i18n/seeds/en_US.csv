@@ -1,0 +1,26 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+project,field.comment.label,,en_US,Comment,Comment,0,Comment
+project,field.company.explanation,,en_US,"Enter the company name or short name","Enter the company name or short name",0,"Enter the company name or short name"
+project,field.company.label,,en_US,"Related company","Related company",0,"Related company"
+project,field.name.explanation,,en_US,"Enter the project name","Enter the project name",0,"Enter the project name"
+project,field.name.label,,en_US,"Project name","Project name",0,"Project name"
+project,field.state.explanation,,en_US,"Select the project status","Select the project status",0,"Select the project status"
+project,field.state.label,,en_US,Status,Status,0,Status
+project,form.name,,en_US,Project,Project,0,Project
+project,form.title_create,,en_US,"New project","New project",0,"New project"
+project,form.title_edit,,en_US,"Edit project","Edit project",0,"Edit project"
+project,list.open_tickets,,en_US,"Open tickets","Open tickets",0,"Open tickets"
+project,list.ticket_tags,,en_US,"Ticket tags","Ticket tags",0,"Ticket tags"
+project,list.title,,en_US,Projects,Projects,0,Projects
+project,list.total_tickets,,en_US,"Total tickets","Total tickets",0,"Total tickets"
+project,saved,,en_US,"Project saved","Project saved",0,"Project saved"
+project,state.field.name.explanation,,en_US,"Enter the project status name","Enter the project status name",0,"Enter the project status name"
+project,state.field.name.label,,en_US,"Status name","Status name",0,"Status name"
+project,state.form.name,,en_US,"Project status","Project status",0,"Project status"
+project,state.form.title_create,,en_US,"New project status","New project status",0,"New project status"
+project,state.form.title_edit,,en_US,"Edit project status","Edit project status",0,"Edit project status"
+project,state.saved,,en_US,"Status saved","Status saved",0,"Status saved"
+project,state.validation.name_max_length,,en_US,"Status name must not exceed 64 characters","Status name must not exceed 64 characters",0,"Status name must not exceed 64 characters"
+project,updated,,en_US,"Project updated","Project updated",0,"Project updated"
+project,validation.name_max_length,,en_US,"Project name must not exceed 255 characters","Project name must not exceed 255 characters",0,"Project name must not exceed 255 characters"
+project,validation.state_required,,en_US,"Select the project status","Select the project status",0,"Select the project status"

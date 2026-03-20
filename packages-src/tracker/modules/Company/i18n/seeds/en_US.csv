@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,en_US,Name,Name,0,Name
+company,contacts,,en_US,Contacts,Contacts,0,Contacts
+company,description.back_to_list,,en_US,"Back to company list","Back to company list",0,"Back to company list"
+company,description.widget_description,,en_US,"Company datasheet","Company datasheet",0,"Company datasheet"
+company,description.widget_name,,en_US,"Company datasheet","Company datasheet",0,"Company datasheet"
+company,field.company_id.label,,en_US,"Company ID","Company ID",0,"Company ID"
+company,field.name.explanation,,en_US,"Enter the company name (including e.v. suffix for sole traders)","Enter the company name (including e.v. suffix for sole traders)",0,"Enter the company name (including e.v. suffix for sole traders)"
+company,field.name.label,,en_US,"Company name","Company name",0,"Company name"
+company,field.name.unique_error,,en_US,"A company with this name already exists","A company with this name already exists",0,"A company with this name already exists"
+company,field.shortname.explanation,,en_US,"Enter the abbreviated company name for easy searching","Enter the abbreviated company name for easy searching",0,"Enter the abbreviated company name for easy searching"
+company,field.shortname.label,,en_US,"Short name","Short name",0,"Short name"
+company,form.name,,en_US,Company,Company,0,Company
+company,form.title_create,,en_US,"New company","New company",0,"New company"
+company,form.title_edit,,en_US,"Edit company","Edit company",0,"Edit company"
+company,list.new,,en_US,"New company","New company",0,"New company"
+company,list.title,,en_US,Companies,Companies,0,Companies
+company,list.widget_description,,en_US,"Company list","Company list",0,"Company list"
+company,list.widget_name,,en_US,"Company list","Company list",0,"Company list"
+company,saved,,en_US,"Company saved","Company saved",0,"Company saved"
+company,unknown,,en_US,"Unknown company","Unknown company",0,"Unknown company"
+company,updated,,en_US,"Company updated","Company updated",0,"Company updated"

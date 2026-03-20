@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,fr_FR,Name,Nom,0,Nom
+company,contacts,,fr_FR,Contacts,Contacts,0,Contacts
+company,description.back_to_list,,fr_FR,"Back to company list","Retour à la liste des entreprises",0,"Retour à la liste des entreprises"
+company,description.widget_description,,fr_FR,"Company datasheet","Fiche entreprise",0,"Fiche entreprise"
+company,description.widget_name,,fr_FR,"Company datasheet","Fiche entreprise",0,"Fiche entreprise"
+company,field.company_id.label,,fr_FR,"Company ID","ID de l'entreprise",0,"ID de l'entreprise"
+company,field.name.explanation,,fr_FR,"Enter the company name (including e.v. suffix for sole traders)","Saisir le nom de l'entreprise (y compris le suffixe e.v. pour les auto-entrepreneurs)",0,"Saisir le nom de l'entreprise (y compris le suffixe e.v. pour les auto-entrepreneurs)"
+company,field.name.label,,fr_FR,"Company name","Nom de l'entreprise",0,"Nom de l'entreprise"
+company,field.name.unique_error,,fr_FR,"A company with this name already exists","Une entreprise avec ce nom existe déjà",0,"Une entreprise avec ce nom existe déjà"
+company,field.shortname.explanation,,fr_FR,"Enter the abbreviated company name for easy searching","Saisir le nom abrégé de l'entreprise pour faciliter la recherche",0,"Saisir le nom abrégé de l'entreprise pour faciliter la recherche"
+company,field.shortname.label,,fr_FR,"Short name","Nom abrégé",0,"Nom abrégé"
+company,form.name,,fr_FR,Company,Entreprise,0,Entreprise
+company,form.title_create,,fr_FR,"New company","Nouvelle entreprise",0,"Nouvelle entreprise"
+company,form.title_edit,,fr_FR,"Edit company","Modifier l'entreprise",0,"Modifier l'entreprise"
+company,list.new,,fr_FR,"New company","Nouvelle entreprise",0,"Nouvelle entreprise"
+company,list.title,,fr_FR,Companies,Entreprises,0,Entreprises
+company,list.widget_description,,fr_FR,"Company list","Liste des entreprises",0,"Liste des entreprises"
+company,list.widget_name,,fr_FR,"Company list","Liste des entreprises",0,"Liste des entreprises"
+company,saved,,fr_FR,"Company saved","Entreprise enregistrée",0,"Entreprise enregistrée"
+company,unknown,,fr_FR,"Unknown company","Entreprise inconnue",0,"Entreprise inconnue"
+company,updated,,fr_FR,"Company updated","Entreprise mise à jour",0,"Entreprise mise à jour"

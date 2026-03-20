@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import fnmatch
 import json
 from pathlib import Path
 import zipfile
@@ -12,6 +13,14 @@ ROOT = Path(__file__).resolve().parent.parent
 PACKAGES_SRC_DIR = ROOT / "packages-src"
 PACKAGES_DIR = ROOT / "packages"
 REGISTRY_PATH = ROOT / "registry.json"
+DEFAULT_DIST_EXCLUDE = {
+    ".git",
+    ".githooks",
+    ".gitignore",
+    ".php-cs-fixer.php",
+    ".php-cs-fixer.cache",
+    ".registry-package.json",
+}
 
 
 def load_package_metadata() -> list[tuple[Path, dict]]:
@@ -26,7 +35,25 @@ def load_package_metadata() -> list[tuple[Path, dict]]:
     return packages
 
 
-def build_package_archive(package_root: Path, package_name: str, version: str) -> tuple[str, str]:
+def should_include_in_archive(package_root: Path, path: Path, metadata: dict) -> bool:
+    relative = path.relative_to(package_root).as_posix()
+    parts = relative.split("/")
+
+    if any(part in DEFAULT_DIST_EXCLUDE for part in parts):
+        return False
+
+    extra_patterns = metadata.get("dist_exclude", [])
+
+    for pattern in extra_patterns:
+        if fnmatch.fnmatch(relative, pattern):
+            return False
+
+    return True
+
+
+def build_package_archive(package_root: Path, metadata: dict) -> tuple[str, str]:
+    package_name = metadata["package"]
+    version = metadata["version"]
     archive_name = f"{package_name.replace('/', '-')}-{version}.zip"
     archive_path = PACKAGES_DIR / archive_name
 
@@ -35,7 +62,7 @@ def build_package_archive(package_root: Path, package_name: str, version: str) -
             if not path.is_file():
                 continue
 
-            if path.name == ".registry-package.json":
+            if not should_include_in_archive(package_root, path, metadata):
                 continue
 
             archive.write(path, path.relative_to(package_root))
@@ -58,7 +85,7 @@ def build_registry() -> dict:
         package_name = metadata["package"]
         plugin_id = metadata["plugin_id"]
         version = metadata["version"]
-        archive_name, sha256 = build_package_archive(package_root, package_name, version)
+        archive_name, sha256 = build_package_archive(package_root, metadata)
 
         package_entry = registry["packages"].setdefault(package_name, {
             "latest": version,

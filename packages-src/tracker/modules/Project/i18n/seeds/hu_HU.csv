@@ -1,0 +1,26 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+project,field.comment.label,,hu_HU,Comment,Megjegyzés,0,Megjegyzés
+project,field.company.explanation,,hu_HU,"Enter the company name or short name","Írd be a kapcsolódó cég nevét vagy rövid nevét",0,"Írd be a kapcsolódó cég nevét vagy rövid nevét"
+project,field.company.label,,hu_HU,"Related company","Kapcsolódó cég",0,"Kapcsolódó cég"
+project,field.name.explanation,,hu_HU,"Enter the project name","Írd be a projekt nevét",0,"Írd be a projekt nevét"
+project,field.name.label,,hu_HU,"Project name",Név,0,Név
+project,field.state.explanation,,hu_HU,"Select the project status","Válaszd ki a projekt állapotát",0,"Válaszd ki a projekt állapotát"
+project,field.state.label,,hu_HU,Status,Állapot,0,Állapot
+project,form.name,,hu_HU,Project,Projekt,0,Projekt
+project,form.title_create,,hu_HU,"New project","Új projekt adatai",0,"Új projekt adatai"
+project,form.title_edit,,hu_HU,"Edit project","Projekt adatainak módosítása",0,"Projekt adatainak módosítása"
+project,list.open_tickets,,hu_HU,"Open tickets","Nyitott jegyek",0,"Nyitott jegyek"
+project,list.ticket_tags,,hu_HU,"Ticket tags","Jegy címkék",0,"Jegy címkék"
+project,list.title,,hu_HU,Projects,"Projekt lista",0,"Projekt lista"
+project,list.total_tickets,,hu_HU,"Total tickets","Össz. jegy",0,"Össz. jegy"
+project,saved,,hu_HU,"Project saved","Projekt rögzítve",0,"Projekt rögzítve"
+project,state.field.name.explanation,,hu_HU,"Enter the project status name","Írd be a projekt állapot nevét",0,"Írd be a projekt állapot nevét"
+project,state.field.name.label,,hu_HU,"Status name","Állapot neve",0,"Állapot neve"
+project,state.form.name,,hu_HU,"Project status","Projekt állapot",0,"Projekt állapot"
+project,state.form.title_create,,hu_HU,"New project status","Új projekt állapot adatai",0,"Új projekt állapot adatai"
+project,state.form.title_edit,,hu_HU,"Edit project status","Projekt állapot adatainak módosítása",0,"Projekt állapot adatainak módosítása"
+project,state.saved,,hu_HU,"Status saved","Projekt állapot módosítva",0,"Projekt állapot módosítva"
+project,state.validation.name_max_length,,hu_HU,"Status name must not exceed 64 characters","Az állapot neve maximum 64 karakter lehet",0,"Az állapot neve maximum 64 karakter lehet"
+project,updated,,hu_HU,"Project updated","Projekt adatok módosítva",0,"Projekt adatok módosítva"
+project,validation.name_max_length,,hu_HU,"Project name must not exceed 255 characters","A projekt neve maximum 255 karakter lehet",0,"A projekt neve maximum 255 karakter lehet"
+project,validation.state_required,,hu_HU,"Select the project status","Válaszd ki a projekt állapotát",0,"Válaszd ki a projekt állapotát"

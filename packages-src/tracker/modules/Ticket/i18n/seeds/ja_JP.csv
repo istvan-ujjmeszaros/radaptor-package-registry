@@ -1,0 +1,95 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+ticket,description.heading,,ja_JP,"Ticket #{id}","チケット #{id}",0,"チケット #{id}"
+ticket,description.id_label,,ja_JP,"Ticket ID",チケットID,0,チケットID
+ticket,description.no_assignee,,ja_JP,"No assignee selected",担当者が選択されていません,0,担当者が選択されていません
+ticket,error.no_id,,ja_JP,"No ID provided",IDが指定されていません,0,IDが指定されていません
+ticket,error.not_found,,ja_JP,"No such ticket",チケットが存在しません,0,チケットが存在しません
+ticket,field.assignee_id.label,,ja_JP,"Assignee ID",担当者ID,0,担当者ID
+ticket,field.assignee.label,,ja_JP,Assignee,担当者,0,担当者
+ticket,field.contactperson_id.label,,ja_JP,"Contact person ID",担当者ID,0,担当者ID
+ticket,field.contactperson.label,,ja_JP,"Contact person",担当者,0,担当者
+ticket,field.description.label,,ja_JP,Description,説明,0,説明
+ticket,field.end_date.label,,ja_JP,"Closed date",終了日,0,終了日
+ticket,field.priority.label,,ja_JP,"Ticket priority",チケット優先度,0,チケット優先度
+ticket,field.project_id.label,,ja_JP,"Project ID",プロジェクトID,0,プロジェクトID
+ticket,field.project.label,,ja_JP,Project,プロジェクト,0,プロジェクト
+ticket,field.start_date.label,,ja_JP,Date,日付,0,日付
+ticket,field.state.label,,ja_JP,Status,ステータス,0,ステータス
+ticket,field.subject.label,,ja_JP,Subject,件名,0,件名
+ticket,field.tags.label,,ja_JP,Tags,タグ,0,タグ
+ticket,field.type.label,,ja_JP,"Ticket type",チケットタイプ,0,チケットタイプ
+ticket,form.assignee_explanation,,ja_JP,"Enter username of assignee",担当者のユーザー名を入力,0,担当者のユーザー名を入力
+ticket,form.comment_label,,ja_JP,"Comment (will be added as a note)",コメント（メモとして追加されます）,0,コメント（メモとして追加されます）
+ticket,form.contactperson_explanation,,ja_JP,"Enter contact person name",担当者名を入力,0,担当者名を入力
+ticket,form.end_date_explanation,,ja_JP,"Enter ticket closure date",チケット終了日を入力,0,チケット終了日を入力
+ticket,form.name,,ja_JP,Ticket,チケット,0,チケット
+ticket,form.priority_explanation,,ja_JP,"Select ticket priority",チケット優先度を選択,0,チケット優先度を選択
+ticket,form.project_explanation,,ja_JP,"Select project for this ticket",このチケットのプロジェクトを選択,0,このチケットのプロジェクトを選択
+ticket,form.start_date_explanation,,ja_JP,"Enter observation date",観察日を入力,0,観察日を入力
+ticket,form.state_explanation,,ja_JP,"Select ticket status",チケットステータスを選択,0,チケットステータスを選択
+ticket,form.subject_explanation,,ja_JP,"Enter a brief summary",簡単な要約を入力,0,簡単な要約を入力
+ticket,form.tags_explanation,,ja_JP,"Enter tags separated by commas",カンマ区切りでタグを入力,0,カンマ区切りでタグを入力
+ticket,form.title_create,,ja_JP,"New ticket",新しいチケット,0,新しいチケット
+ticket,form.title_edit,,ja_JP,"Edit ticket",チケットを編集,0,チケットを編集
+ticket,form.type_explanation,,ja_JP,"Select ticket type",チケットタイプを選択,0,チケットタイプを選択
+ticket,history.change.assignee,,ja_JP,"Assignee changed",担当者を変更しました,0,担当者を変更しました
+ticket,history.change.closed_date,,ja_JP,"Closed date changed",終了日を変更しました,0,終了日を変更しました
+ticket,history.change.contactperson,,ja_JP,"Contact person changed",担当者を変更しました,0,担当者を変更しました
+ticket,history.change.date,,ja_JP,"Date changed",日付を変更しました,0,日付を変更しました
+ticket,history.change.description,,ja_JP,"Description changed",説明を変更しました,0,説明を変更しました
+ticket,history.change.priority,,ja_JP,"Priority changed",優先度を変更しました,0,優先度を変更しました
+ticket,history.change.project,,ja_JP,"Project changed",プロジェクトを変更しました,0,プロジェクトを変更しました
+ticket,history.change.status,,ja_JP,"Status changed",ステータスを変更しました,0,ステータスを変更しました
+ticket,history.change.subject,,ja_JP,"Subject changed",件名を変更しました,0,件名を変更しました
+ticket,history.change.type,,ja_JP,"Type changed",タイプを変更しました,0,タイプを変更しました
+ticket,history.comment_prefix,,ja_JP,Comment,コメント,0,コメント
+ticket,history.tags_added,,ja_JP,"Tag added",タグを追加しました,0,タグを追加しました
+ticket,history.tags_removed,,ja_JP,"Tag removed",タグを削除しました,0,タグを削除しました
+ticket,history.title,,ja_JP,"Ticket history",チケット履歴,0,チケット履歴
+ticket,no_description,,ja_JP,"No description",説明なし,0,説明なし
+ticket,no_subject,,ja_JP,"No subject",件名なし,0,件名なし
+ticket,priority.field.name.label,,ja_JP,"Priority name",優先度名,0,優先度名
+ticket,priority.field.seq.label,,ja_JP,Order,順序,0,順序
+ticket,priority.form.name,,ja_JP,"Ticket priority",チケット優先度,0,チケット優先度
+ticket,priority.form.name_explanation,,ja_JP,"Enter priority name",優先度名を入力,0,優先度名を入力
+ticket,priority.form.seq_explanation,,ja_JP,"Determines the sort order for this priority",この優先度の並び順を決定します,0,この優先度の並び順を決定します
+ticket,priority.form.title_create,,ja_JP,"New ticket priority",新しいチケット優先度,0,新しいチケット優先度
+ticket,priority.form.title_edit,,ja_JP,"Edit ticket priority",チケット優先度を編集,0,チケット優先度を編集
+ticket,priority.saved,,ja_JP,"Priority saved",優先度を保存しました,0,優先度を保存しました
+ticket,priority.updated,,ja_JP,"Priority updated",優先度を更新しました,0,優先度を更新しました
+ticket,priority.validation.duplicate,,ja_JP,"This priority already exists",この優先度は既に存在します,0,この優先度は既に存在します
+ticket,priority.validation.seq_number,,ja_JP,"Order must be a number",順序は数字である必要があります,0,順序は数字である必要があります
+ticket,priority.validation.seq_range,,ja_JP,"Order must be between 0 and 255",順序は0から255の間である必要があります,0,順序は0から255の間である必要があります
+ticket,saved,,ja_JP,"Ticket saved",チケットを保存しました,0,チケットを保存しました
+ticket,state.field.is_open.label,,ja_JP,"Open status",オープンステータス,0,オープンステータス
+ticket,state.field.name.label,,ja_JP,"Status name",ステータス名,0,ステータス名
+ticket,state.form.is_open_explanation,,ja_JP,"Open status tickets appear in the list when marked as open",オープンとしてマークされたチケットが一覧に表示されます,0,オープンとしてマークされたチケットが一覧に表示されます
+ticket,state.form.name,,ja_JP,"Ticket status",チケットステータス,0,チケットステータス
+ticket,state.form.name_explanation,,ja_JP,"Enter status name",ステータス名を入力,0,ステータス名を入力
+ticket,state.form.title_create,,ja_JP,"New ticket status",新しいチケットステータス,0,新しいチケットステータス
+ticket,state.form.title_edit,,ja_JP,"Edit ticket status",チケットステータスを編集,0,チケットステータスを編集
+ticket,state.saved,,ja_JP,"Status saved",ステータスを保存しました,0,ステータスを保存しました
+ticket,state.updated,,ja_JP,"Status updated",ステータスを更新しました,0,ステータスを更新しました
+ticket,state.validation.duplicate,,ja_JP,"This status already exists",このステータスは既に存在します,0,このステータスは既に存在します
+ticket,tags_updated,,ja_JP,"Ticket tags updated",チケットタグを更新しました,0,チケットタグを更新しました
+ticket,type.field.name.label,,ja_JP,"Type name",タイプ名,0,タイプ名
+ticket,type.form.name,,ja_JP,"Ticket type",チケットタイプ,0,チケットタイプ
+ticket,type.form.name_explanation,,ja_JP,"Enter type name",タイプ名を入力,0,タイプ名を入力
+ticket,type.form.title_create,,ja_JP,"New ticket type",新しいチケットタイプ,0,新しいチケットタイプ
+ticket,type.form.title_edit,,ja_JP,"Edit ticket type",チケットタイプを編集,0,チケットタイプを編集
+ticket,type.saved,,ja_JP,"Type saved",タイプを保存しました,0,タイプを保存しました
+ticket,type.updated,,ja_JP,"Type updated",タイプを更新しました,0,タイプを更新しました
+ticket,type.validation.duplicate,,ja_JP,"This type already exists",このタイプは既に存在します,0,このタイプは既に存在します
+ticket,updated,,ja_JP,"Ticket updated",チケットを更新しました,0,チケットを更新しました
+ticket,validation.assigned_user_multiple,,ja_JP,"Multiple users found - select one","複数のユーザーが見つかりました - 1つ選択してください",0,"複数のユーザーが見つかりました - 1つ選択してください"
+ticket,validation.assigned_user_not_found,,ja_JP,"User not found - select from list or add new","ユーザーが見つかりません - 一覧から選択するか新規追加してください",0,"ユーザーが見つかりません - 一覧から選択するか新規追加してください"
+ticket,validation.contactperson_multiple,,ja_JP,"Multiple contacts found - select one","複数の担当者が見つかりました - 1つ選択してください",0,"複数の担当者が見つかりました - 1つ選択してください"
+ticket,validation.contactperson_not_found,,ja_JP,"Contact not found - select from list or add new","担当者が見つかりません - 一覧から選択するか新規追加してください",0,"担当者が見つかりません - 一覧から選択するか新規追加してください"
+ticket,validation.project_multiple,,ja_JP,"Multiple projects found - select one","複数のプロジェクトが見つかりました - 1つ選択してください",0,"複数のプロジェクトが見つかりました - 1つ選択してください"
+ticket,validation.project_not_found,,ja_JP,"Project not found",プロジェクトが見つかりません,0,プロジェクトが見つかりません
+ticket,validation.project_required,,ja_JP,"Specify project for this ticket",このチケットのプロジェクトを指定,0,このチケットのプロジェクトを指定
+ticket,widget.description.name,,ja_JP,"Ticket details",チケット詳細,0,チケット詳細
+ticket,widget.list.name,,ja_JP,"Ticket list",チケット一覧,0,チケット一覧
+ticket,widget.priority_list.name,,ja_JP,"Ticket priorities",チケット優先度,0,チケット優先度
+ticket,widget.state_list.name,,ja_JP,"Ticket statuses",チケットステータス,0,チケットステータス
+ticket,widget.type_list.name,,ja_JP,"Ticket types",チケットタイプ,0,チケットタイプ

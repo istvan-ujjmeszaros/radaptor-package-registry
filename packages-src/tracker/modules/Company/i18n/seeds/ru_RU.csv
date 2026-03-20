@@ -1,0 +1,22 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+company,col.name,,ru_RU,Name,Имя,0,Имя
+company,contacts,,ru_RU,Contacts,Контакты,0,Контакты
+company,description.back_to_list,,ru_RU,"Back to company list","Назад к списку компаний",0,"Назад к списку компаний"
+company,description.widget_description,,ru_RU,"Company datasheet","Карточка компании",0,"Карточка компании"
+company,description.widget_name,,ru_RU,"Company datasheet","Карточка компании",0,"Карточка компании"
+company,field.company_id.label,,ru_RU,"Company ID","ID компании",0,"ID компании"
+company,field.name.explanation,,ru_RU,"Enter the company name (including e.v. suffix for sole traders)","Введите название компании (включая суффикс e.v. для индивидуальных предпринимателей)",0,"Введите название компании (включая суффикс e.v. для индивидуальных предпринимателей)"
+company,field.name.label,,ru_RU,"Company name","Название компании",0,"Название компании"
+company,field.name.unique_error,,ru_RU,"A company with this name already exists","Компания с таким названием уже существует",0,"Компания с таким названием уже существует"
+company,field.shortname.explanation,,ru_RU,"Enter the abbreviated company name for easy searching","Введите сокращённое название компании для удобного поиска",0,"Введите сокращённое название компании для удобного поиска"
+company,field.shortname.label,,ru_RU,"Short name","Краткое название",0,"Краткое название"
+company,form.name,,ru_RU,Company,Компания,0,Компания
+company,form.title_create,,ru_RU,"New company","Новая компания",0,"Новая компания"
+company,form.title_edit,,ru_RU,"Edit company","Редактировать компанию",0,"Редактировать компанию"
+company,list.new,,ru_RU,"New company","Новая компания",0,"Новая компания"
+company,list.title,,ru_RU,Companies,Компании,0,Компании
+company,list.widget_description,,ru_RU,"Company list","Список компаний",0,"Список компаний"
+company,list.widget_name,,ru_RU,"Company list","Список компаний",0,"Список компаний"
+company,saved,,ru_RU,"Company saved","Компания сохранена",0,"Компания сохранена"
+company,unknown,,ru_RU,"Unknown company","Неизвестная компания",0,"Неизвестная компания"
+company,updated,,ru_RU,"Company updated","Компания обновлена",0,"Компания обновлена"

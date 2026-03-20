@@ -1,0 +1,34 @@
+﻿domain,key,context,locale,source_text,expected_text,human_reviewed,text
+timetracker,control.cancel_confirm,,hu_HU,"Are you sure you want to delete the active time entry?","Biztosan törölni akarod a folyamatban lévő idő bejegyzést?",0,"Biztosan törölni akarod a folyamatban lévő idő bejegyzést?"
+timetracker,control.cancel_title,,hu_HU,"Delete time entry","Időjegy törlése",0,"Időjegy törlése"
+timetracker,control.start,,hu_HU,Start,Indítás,0,Indítás
+timetracker,control.stop,,hu_HU,Stop,Leállítás,0,Leállítás
+timetracker,control.ticket_placeholder,,hu_HU,"Select a ticket or enter a new title","Válassz jegyet, vagy írj be egy új címet!",0,"Válassz jegyet, vagy írj be egy új címet!"
+timetracker,control.title,,hu_HU,"What are you working on?","Min dolgozol éppen?",0,"Min dolgozol éppen?"
+timetracker,delete_confirm,,hu_HU,"Are you sure you want to delete this time entry?","Biztosan törölni akarod ezt az időbejegyzést?",0,"Biztosan törölni akarod ezt az időbejegyzést?"
+timetracker,deleted,,hu_HU,"Time entry deleted","Idő bejegyzés törölve",0,"Idő bejegyzés törölve"
+timetracker,duration.hour,,hu_HU,hour,óra,0,óra
+timetracker,duration.less_than_one_minute,,hu_HU,"<1 minute","<1 perc",0,"<1 perc"
+timetracker,duration.minute,,hu_HU,minute,perc,0,perc
+timetracker,error_save,,hu_HU,"Error: Unable to save time entry","Ismeretlen hiba történt az időjegy rögzítése közben",0,"Ismeretlen hiba történt az időjegy rögzítése közben"
+timetracker,field.date.explanation,,hu_HU,"Start time in YYYY-MM-DD HH:mm format","Kezdési idő ÉÉÉÉ-HH-NN ÓÓ:pp formátumban",0,"Kezdési idő ÉÉÉÉ-HH-NN ÓÓ:pp formátumban"
+timetracker,field.date.label,,hu_HU,Date,Kezdés,0,Kezdés
+timetracker,field.description.explanation,,hu_HU,"Enter a brief description","Írd be a rövid leírást",0,"Írd be a rövid leírást"
+timetracker,field.description.label,,hu_HU,Description,Leírás,0,Leírás
+timetracker,field.hours.explanation,,hu_HU,"End time in YYYY-MM-DD HH:mm format","Befejezési idő ÉÉÉÉ-HH-NN ÓÓ:pp formátumban",0,"Befejezési idő ÉÉÉÉ-HH-NN ÓÓ:pp formátumban"
+timetracker,field.hours.label,,hu_HU,Hours,Befejezés,0,Befejezés
+timetracker,field.ticket_id.label,,hu_HU,"Ticket ID","Jegy ID",0,"Jegy ID"
+timetracker,field.ticket.explanation,,hu_HU,"Select a ticket or enter a new name","Válassz jegyet vagy írd be az új jegy nevét",0,"Válassz jegyet vagy írd be az új jegy nevét"
+timetracker,field.ticket.label,,hu_HU,Ticket,Jegy,0,Jegy
+timetracker,field.user.explanation,,hu_HU,"Enter the username for this time entry","Írd be a felhasználónevet",0,"Írd be a felhasználónevet"
+timetracker,form.name,,hu_HU,"Time entry","Idő bejegyzés",0,"Idő bejegyzés"
+timetracker,form.title_create,,hu_HU,"New time entry","Idő bejegyzés kézi rögzítése",0,"Idő bejegyzés kézi rögzítése"
+timetracker,form.title_edit,,hu_HU,"Edit time entry","Idő bejegyzés adatainak módosítása",0,"Idő bejegyzés adatainak módosítása"
+timetracker,list.duration,,hu_HU,Duration,Időtartam,0,Időtartam
+timetracker,list.end_time,,hu_HU,End,Befejezés,0,Befejezés
+timetracker,list.start_time,,hu_HU,Start,Kezdés,0,Kezdés
+timetracker,list.title,,hu_HU,"Time tracking","Idő bejegyzés lista",0,"Idő bejegyzés lista"
+timetracker,saved,,hu_HU,"Time entry saved","Idő bejegyzés rögzítve",0,"Idő bejegyzés rögzítve"
+timetracker,updated,,hu_HU,"Time entry updated","Idő bejegyzés módosítva",0,"Idő bejegyzés módosítva"
+timetracker,validation.description_max_length,,hu_HU,"Description must not exceed 255 characters","A leírás maximum 255 karakter lehet",0,"A leírás maximum 255 karakter lehet"
+timetracker,validation.ticket_max_length,,hu_HU,"Ticket name must not exceed 255 characters","A jegy neve maximum 255 karakter lehet",0,"A jegy neve maximum 255 karakter lehet"
