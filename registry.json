@@ -8,6 +8,9 @@
                 "0.1.0": {
                     "plugin_id": "audit",
                     "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-audit/0.1.0/plugin.zip",
@@ -23,6 +26,9 @@
                     "plugin_id": "blog",
                     "dependencies": {
                         "radaptor/history": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
                     },
                     "dist": {
                         "type": "zip",
@@ -54,6 +60,9 @@
                     "dependencies": {
                         "radaptor/audit": "^0.1.0"
                     },
+                    "composer": {
+                        "require": []
+                    },
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-history/0.1.0/plugin.zip",
@@ -70,6 +79,9 @@
                     "dependencies": {
                         "radaptor/audit": "^0.1.0",
                         "radaptor/history": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
                     },
                     "dist": {
                         "type": "zip",
