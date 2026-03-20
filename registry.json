@@ -1,48 +1,83 @@
 {
-  "registry_version": 1,
-  "name": "Local Radaptor Plugin Registry",
-  "packages": {
-    "radaptor/blog": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "plugin_id": "blog",
-          "dependencies": {},
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-blog/0.1.0/plugin.zip",
-            "sha256": "f8e4c73e66a6a92ec9be2509f593368c7216b885403925cee4e799b9ff901202"
-          }
+    "registry_version": 1,
+    "name": "Local Radaptor Plugin Registry",
+    "packages": {
+        "radaptor/audit": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "plugin_id": "audit",
+                    "dependencies": [],
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-audit/0.1.0/plugin.zip",
+                        "sha256": "5581cb2f3b6acbecd47a36559132156de1578ecc2fb087fe7a8f047fb219cd17"
+                    }
+                }
+            }
+        },
+        "radaptor/blog": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "plugin_id": "blog",
+                    "dependencies": {
+                        "radaptor/history": "^0.1.0"
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-blog/0.1.0/plugin.zip",
+                        "sha256": "fc471b32f0b23892e9820272879dc3714c130893f93a39f226db3e3c5f67cb75"
+                    }
+                }
+            }
+        },
+        "radaptor/hello-world": {
+            "latest": "1.1.2",
+            "versions": {
+                "1.1.2": {
+                    "plugin_id": "hello-world",
+                    "dependencies": [],
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-hello-world/1.1.2/plugin.zip",
+                        "sha256": "0cbc3baf444a2cd2c38f58553fec272bdb83474791b6df302fda6f057c2be93f"
+                    }
+                }
+            }
+        },
+        "radaptor/history": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "plugin_id": "history",
+                    "dependencies": {
+                        "radaptor/audit": "^0.1.0"
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-history/0.1.0/plugin.zip",
+                        "sha256": "ed54fdefe6ff2620a3601000ef17d3b88bdab5340e5f61c896856eeb3986d140"
+                    }
+                }
+            }
+        },
+        "radaptor/tracker": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "plugin_id": "tracker",
+                    "dependencies": {
+                        "radaptor/audit": "^0.1.0",
+                        "radaptor/history": "^0.1.0"
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-tracker/0.1.0/plugin.zip",
+                        "sha256": "43bce5d7b8b89c1c2e6d07e75282255821689a6b14f22aabf1bf7883cb0b72c0"
+                    }
+                }
+            }
         }
-      }
-    },
-    "radaptor/hello-world": {
-      "latest": "1.1.2",
-      "versions": {
-        "1.1.2": {
-          "plugin_id": "hello-world",
-          "dependencies": {},
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-hello-world/1.1.2/plugin.zip",
-            "sha256": "0cbc3baf444a2cd2c38f58553fec272bdb83474791b6df302fda6f057c2be93f"
-          }
-        }
-      }
-    },
-    "radaptor/tracker": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "plugin_id": "tracker",
-          "dependencies": [],
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-tracker/0.1.0/plugin.zip",
-            "sha256": "4a87d94f13b554a52a11efe70156d969c852640b0545affd3911daf491386286"
-          }
-        }
-      }
     }
-  }
 }
