@@ -17,14 +17,16 @@ Current intended roles:
 - `radaptor/plugins.lock.json`: resolved/installed plugin state for an app
 - `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
 - `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for the registry
-- `radaptor_plugin_registry/scripts/build_registry.py`: rebuild versioned package artifacts + refresh `registry.json`
-- `radaptor_plugin_registry/scripts/publish_plugin.py`: copy a standalone plugin repo into `packages-src/` and rebuild the registry
+- `radaptor_plugin_registry/scripts/publish_plugin.py`: publish a standalone plugin repo directly into the versioned artifact store and refresh `registry.json`
+- `/apps/_RADAPTOR/plugin-origins/*.git`: local bare origins for standalone plugin repositories
+- `radaptor/plugins/dev/<plugin-id>/`: local development checkouts that point at those bare origins
 
 Initial design goals:
 
 - test install/uninstall/update flows without needing a remote marketplace
 - support both dev checkout plugins and registry-managed plugins
 - keep runtime independent from registry scanning by generating `generated/__plugins__.php`
+- keep plugin source history in the plugin repositories, not in the registry repository
 
 ## Local usage
 
@@ -46,42 +48,50 @@ From the `radaptor` PHP container, the same registry is intended to be reachable
 http://host.docker.internal:8091/registry.json
 ```
 
-## Sample package
+## Published packages
 
 The registry currently includes a small teaching plugin package:
 
 - `radaptor/hello-world` version `1.1.2`
 - `radaptor/tracker` version `0.1.0`
 
-Its current artifact is served from:
+Example artifact URL:
 
 ```text
 http://localhost:8091/packages/radaptor-hello-world/1.1.2/plugin.zip
-```
-
-The unpacked source used to build that artifact lives under:
-
-```text
-packages-src/hello-world/
-```
-
-Before starting the registry service, rebuild the package artifacts and `registry.json`:
-
-```bash
-python3 scripts/build_registry.py
 ```
 
 The generated artifact files live under versioned paths in `packages/`, for example
 `packages/radaptor-tracker/0.1.0/plugin.zip`. `registry.json` is the source that declares which
 version is `latest`; there is no separate `latest/` artifact directory.
 
-`packages-src/` is just the current source mirror used for local publishing. Older published
-versions stay addressable through `registry.json` and their existing artifacts.
-
 ## Publish a dev plugin repo
 
 Standalone plugins can be developed as their own Git repositories and then
-published into the local registry source mirror.
+published into the local registry artifact store.
+
+Recommended local structure:
+
+```text
+/apps/_RADAPTOR/
+├── plugin-origins/
+│   ├── blog.git
+│   ├── hello-world.git
+│   └── tracker.git
+├── radaptor/
+│   └── plugins/
+│       └── dev/
+│           ├── blog/
+│           ├── hello-world/
+│           └── tracker/
+└── radaptor_plugin_registry/
+    ├── registry.json
+    └── packages/
+```
+
+The registry repository stores published artifacts and metadata only. The plugin
+source of truth lives in the standalone plugin repositories and their dev
+checkouts.
 
 Example:
 
@@ -108,9 +118,9 @@ at least:
 
 What the publish script does:
 
-- copies the tracked plugin source into `packages-src/<plugin_id>/`
-- rebuilds the versioned artifacts under `packages/`
-- refreshes `registry.json`
+- reads the tracked files from the plugin Git repository
+- builds a versioned distribution zip under `packages/<package>/<version>/plugin.zip`
+- updates `registry.json`
 
 The published distribution zip intentionally excludes dev-only Git/fixer files
 such as `.git`, `.githooks`, `.gitignore`, `.php-cs-fixer.php`, and

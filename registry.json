@@ -11,7 +11,7 @@
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-blog/0.1.0/plugin.zip",
-            "sha256": "f8c411e90e47afa9f8b99b37290ac54469037ccae3753100ca771782ac3aca8c"
+            "sha256": "f8e4c73e66a6a92ec9be2509f593368c7216b885403925cee4e799b9ff901202"
           }
         }
       }
@@ -21,7 +21,7 @@
       "versions": {
         "1.1.2": {
           "plugin_id": "hello-world",
-          "dependencies": {},
+          "dependencies": [],
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-hello-world/1.1.2/plugin.zip",
@@ -35,11 +35,11 @@
       "versions": {
         "0.1.0": {
           "plugin_id": "tracker",
-          "dependencies": {},
+          "dependencies": [],
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-tracker/0.1.0/plugin.zip",
-            "sha256": "3055dc0ba97d1f7c7406a139c1b24bc0d753868f3a8fac87ef5c9c1e6b12cc44"
+            "sha256": "4a87d94f13b554a52a11efe70156d969c852640b0545affd3911daf491386286"
           }
         }
       }
