@@ -17,7 +17,7 @@ Current intended roles:
 - `radaptor/plugins.lock.json`: resolved/installed plugin state for an app
 - `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
 - `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for the registry
-- `radaptor_plugin_registry/scripts/build_registry.py`: rebuild package zips + refresh `registry.json`
+- `radaptor_plugin_registry/scripts/build_registry.py`: rebuild versioned package artifacts + refresh `registry.json`
 - `radaptor_plugin_registry/scripts/publish_plugin.py`: copy a standalone plugin repo into `packages-src/` and rebuild the registry
 
 Initial design goals:
@@ -53,10 +53,10 @@ The registry currently includes a small teaching plugin package:
 - `radaptor/hello-world` version `1.1.2`
 - `radaptor/tracker` version `0.1.0`
 
-Its artifact is served from:
+Its current artifact is served from:
 
 ```text
-http://localhost:8091/packages/radaptor-hello-world-1.0.0.zip
+http://localhost:8091/packages/radaptor-hello-world/1.1.2/plugin.zip
 ```
 
 The unpacked source used to build that artifact lives under:
@@ -71,9 +71,12 @@ Before starting the registry service, rebuild the package artifacts and `registr
 python3 scripts/build_registry.py
 ```
 
-The generated zip files live under `packages/`, which is intentionally git-ignored.
-Only the source under `packages-src/` and the generated text catalog `registry.json`
-are versioned.
+The generated artifact files live under versioned paths in `packages/`, for example
+`packages/radaptor-tracker/0.1.0/plugin.zip`. `registry.json` is the source that declares which
+version is `latest`; there is no separate `latest/` artifact directory.
+
+`packages-src/` is just the current source mirror used for local publishing. Older published
+versions stay addressable through `registry.json` and their existing artifacts.
 
 ## Publish a dev plugin repo
 
@@ -106,7 +109,7 @@ at least:
 What the publish script does:
 
 - copies the tracked plugin source into `packages-src/<plugin_id>/`
-- rebuilds the zip artifacts under `packages/`
+- rebuilds the versioned artifacts under `packages/`
 - refreshes `registry.json`
 
 The published distribution zip intentionally excludes dev-only Git/fixer files
