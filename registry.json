@@ -36,7 +36,7 @@
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-tracker-0.1.0.zip",
-                        "sha256": "0a472edb5d54439979478aeeb85f7bcb05adba73ee379b68e1ddb5b1beba2ca7"
+                        "sha256": "156a931afc1cbe90b5157c36ec6a9eb3ecf7bf370de11e522a54924240e36898"
                     }
                 }
             }
