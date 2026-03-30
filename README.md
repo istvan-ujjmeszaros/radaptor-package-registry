@@ -1,8 +1,8 @@
-# Local Radaptor Plugin Registry
+# Local Radaptor Package Registry
 
-This directory is the local development registry for Radaptor plugins.
+This directory is the local development registry for Radaptor packages.
 
-It is a catalog of available plugin packages, not the runtime plugin directory.
+It is a catalog of available package artifacts, not the runtime install directory.
 Installed plugins still live under the application repo's `plugins/` folder.
 
 This directory is intended to live as its own Git repository. The outer workspace
@@ -13,8 +13,8 @@ exercise registry-based install/update flows without special filesystem coupling
 
 Current intended roles:
 
-- `radaptor/plugins.json`: desired plugin state for an app
-- `radaptor/plugins.lock.json`: resolved/installed plugin state for an app
+- `radaptor/radaptor.json`: desired package state for an app
+- `radaptor/radaptor.lock.json`: resolved/installed package state for an app
 - `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
 - `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for the registry
 - `radaptor_plugin_registry/scripts/publish_plugin.py`: publish a standalone plugin repo directly into the versioned artifact store and refresh `registry.json`
@@ -25,8 +25,8 @@ Initial design goals:
 
 - test install/uninstall/update flows without needing a remote marketplace
 - support both dev checkout plugins and registry-managed plugins
-- keep runtime independent from registry scanning by generating `generated/__plugins__.php`
-- keep plugin source history in the plugin repositories, not in the registry repository
+- keep runtime independent from registry scanning by generating runtime registries
+- keep package source history in the standalone repositories, not in the registry repository
 
 ## Local usage
 
@@ -50,19 +50,19 @@ http://host.docker.internal:8091/registry.json
 
 ## Published packages
 
-The registry currently includes a small teaching plugin package:
+The registry currently includes first-party plugin packages:
 
-- `radaptor/hello-world` version `1.1.2`
-- `radaptor/tracker` version `0.1.0`
+- `radaptor/plugins/hello-world` version `1.1.2`
+- `radaptor/plugins/tracker` version `0.1.0`
 
 Example artifact URL:
 
 ```text
-http://localhost:8091/packages/radaptor-hello-world/1.1.2/plugin.zip
+http://localhost:8091/packages/radaptor-plugins-hello-world/1.1.2/plugin.zip
 ```
 
 The generated artifact files live under versioned paths in `packages/`, for example
-`packages/radaptor-tracker/0.1.0/plugin.zip`. `registry.json` is the source that declares which
+`packages/radaptor-plugins-tracker/0.1.0/plugin.zip`. `registry.json` is the source that declares which
 version is `latest`; there is no separate `latest/` artifact directory.
 
 ## Publish a dev plugin repo
@@ -105,13 +105,14 @@ The same workflow is also available from the application repo:
 docker compose -f /apps/_RADAPTOR/radaptor/docker-compose-dev.yml exec -T php php radaptor.php plugin:publish tracker --json
 ```
 
-The source plugin repository must contain a `.registry-package.json` file with
+The source package repository must contain a `.registry-package.json` file with
 at least:
 
 ```json
 {
-  "package": "radaptor/tracker",
-  "plugin_id": "tracker",
+  "package": "radaptor/plugins/tracker",
+  "type": "plugin",
+  "id": "tracker",
   "version": "0.1.0"
 }
 ```
