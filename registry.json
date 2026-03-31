@@ -20,7 +20,7 @@
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
-            "sha256": "59eedddfcaeb9164673bedaf11be3b58abbfbd7fbdcb8f195604e55b86feb00e"
+            "sha256": "9a8913f2a617aa729d323364341cd2a3fdec32b83e66f46162eac1b6641d3022"
           }
         }
       }
@@ -41,7 +41,7 @@
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
-            "sha256": "71581319a9fb37dae2b13fb7d441451fa3eedde7c2694575ce8e31ea789bc5ba"
+            "sha256": "6efe9fc1841ef55b44cb71d310958a93fa339de99fe103cf88b3b060d6c9d93d"
           }
         }
       }
