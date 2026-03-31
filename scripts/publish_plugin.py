@@ -21,7 +21,6 @@ DEFAULT_DIST_EXCLUDE = {
     ".gitignore",
     ".php-cs-fixer.php",
     ".php-cs-fixer.cache",
-    ".registry-package.json",
 }
 
 

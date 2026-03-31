@@ -2,6 +2,50 @@
   "registry_version": 1,
   "name": "Local Radaptor Package Registry",
   "packages": {
+    "radaptor/core/cms": {
+      "latest": "0.1.0",
+      "versions": {
+        "0.1.0": {
+          "type": "core",
+          "id": "cms",
+          "dependencies": {
+            "radaptor/core/framework": "^0.1.0"
+          },
+          "composer": {
+            "require": {}
+          },
+          "assets": {
+            "public": []
+          },
+          "dist": {
+            "type": "zip",
+            "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
+            "sha256": "5c04c69f9cfc6c484908cf06a66fc17449dc18804be3313f759e8a91d258316c"
+          }
+        }
+      }
+    },
+    "radaptor/core/framework": {
+      "latest": "0.1.0",
+      "versions": {
+        "0.1.0": {
+          "type": "core",
+          "id": "framework",
+          "dependencies": {},
+          "composer": {
+            "require": {}
+          },
+          "assets": {
+            "public": []
+          },
+          "dist": {
+            "type": "zip",
+            "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
+            "sha256": "7caff7734da26f5a584d3bfcf6f9f86cb08018dfd1dd0e887f154fdafd91fc8c"
+          }
+        }
+      }
+    },
     "radaptor/plugins/audit": {
       "latest": "0.1.0",
       "versions": {
@@ -110,6 +154,66 @@
             "type": "zip",
             "url": "packages/radaptor-plugins-tracker/0.1.0/plugin.zip",
             "sha256": "43bce5d7b8b89c1c2e6d07e75282255821689a6b14f22aabf1bf7883cb0b72c0"
+          }
+        }
+      }
+    },
+    "radaptor/themes/portal-admin": {
+      "latest": "0.1.0",
+      "versions": {
+        "0.1.0": {
+          "type": "theme",
+          "id": "portal-admin",
+          "dependencies": {
+            "radaptor/core/cms": "^0.1.0"
+          },
+          "composer": {
+            "require": {}
+          },
+          "assets": {
+            "public": [
+              {
+                "source": "public/assets/radaptor-portal-admin",
+                "target": "assets/packages/radaptor-portal-admin"
+              },
+              {
+                "source": "public/assets/themes/radaptor-portal-admin",
+                "target": "assets/packages/themes/radaptor-portal-admin"
+              }
+            ]
+          },
+          "dist": {
+            "type": "zip",
+            "url": "packages/radaptor-themes-portal-admin/0.1.0/plugin.zip",
+            "sha256": "9f186bc405dc6a56cfc2780286cd8f332f580462c198ab2f621cf04829824f1c"
+          }
+        }
+      }
+    },
+    "radaptor/themes/so-admin": {
+      "latest": "0.1.0-alpha.1",
+      "versions": {
+        "0.1.0-alpha.1": {
+          "type": "theme",
+          "id": "so-admin",
+          "dependencies": {
+            "radaptor/core/cms": "^0.1.0"
+          },
+          "composer": {
+            "require": {}
+          },
+          "assets": {
+            "public": [
+              {
+                "source": "public/assets/themes/so-admin",
+                "target": "assets/packages/themes/so-admin"
+              }
+            ]
+          },
+          "dist": {
+            "type": "zip",
+            "url": "packages/radaptor-themes-so-admin/0.1.0-alpha.1/plugin.zip",
+            "sha256": "cd21637caf16a6d53d2b89a9f2ecde35a384d6f5995d7cc24a755a2da665f11f"
           }
         }
       }
