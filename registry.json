@@ -41,7 +41,7 @@
           "dist": {
             "type": "zip",
             "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
-            "sha256": "6efe9fc1841ef55b44cb71d310958a93fa339de99fe103cf88b3b060d6c9d93d"
+            "sha256": "058d8361f29cc119aaf064c7751db823bbd7978c469deba20cfd60d5c9c6fd5b"
           }
         }
       }
