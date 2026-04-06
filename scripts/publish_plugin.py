@@ -21,13 +21,12 @@ DEFAULT_DIST_EXCLUDE = {
     ".gitignore",
     ".php-cs-fixer.php",
     ".php-cs-fixer.cache",
-    ".registry-package.json",
 }
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Publish a standalone plugin repository into the local Radaptor plugin registry."
+        description="Publish a standalone package repository into the local Radaptor package registry."
     )
     parser.add_argument("source", help="Path to the standalone plugin repository")
     return parser.parse_args()
@@ -42,7 +41,7 @@ def load_metadata(source_root: Path) -> dict:
     with metadata_path.open("r", encoding="utf-8") as handle:
         metadata = json.load(handle)
 
-    for required_key in ("package", "plugin_id", "version"):
+    for required_key in ("package", "type", "id", "version"):
         if required_key not in metadata or not isinstance(metadata[required_key], str) or metadata[required_key] == "":
             raise RuntimeError(f"Invalid or missing '{required_key}' in {metadata_path}")
 
@@ -135,7 +134,7 @@ def load_existing_registry() -> dict:
     if not REGISTRY_PATH.exists():
         return {
             "registry_version": 1,
-            "name": "Local Radaptor Plugin Registry",
+            "name": "Local Radaptor Package Registry",
             "packages": {},
         }
 
@@ -147,7 +146,7 @@ def load_existing_registry() -> dict:
 
     return {
         "registry_version": 1,
-        "name": data.get("name", "Local Radaptor Plugin Registry"),
+        "name": data.get("name", "Local Radaptor Package Registry"),
         "packages": data.get("packages", {}) if isinstance(data.get("packages"), dict) else {},
     }
 
@@ -227,8 +226,15 @@ def main() -> None:
     )
     package_entry["latest"] = metadata["version"]
     package_entry["versions"][metadata["version"]] = {
-        "plugin_id": metadata["plugin_id"],
+        "type": metadata["type"],
+        "id": metadata["id"],
         "dependencies": metadata["dependencies"],
+        "composer": {
+            "require": metadata.get("composer", {}).get("require", {}),
+        },
+        "assets": {
+            "public": metadata.get("assets", {}).get("public", []),
+        },
         "dist": {
             "type": "zip",
             "url": archive_url,
