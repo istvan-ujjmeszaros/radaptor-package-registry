@@ -1,222 +1,222 @@
 {
-  "registry_version": 1,
-  "name": "Local Radaptor Package Registry",
-  "packages": {
-    "radaptor/core/cms": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "core",
-          "id": "cms",
-          "dependencies": {
-            "radaptor/core/framework": "^0.1.0"
-          },
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
-            "sha256": "9a8913f2a617aa729d323364341cd2a3fdec32b83e66f46162eac1b6641d3022"
-          }
+    "registry_version": 1,
+    "name": "Local Radaptor Package Registry",
+    "packages": {
+        "radaptor/core/cms": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
+                        "sha256": "049d78a13666e97af88d4ba338794811238ff1f78fbfd5f4dcbdbb0a704db5eb"
+                    }
+                }
+            }
+        },
+        "radaptor/core/framework": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
+                        "sha256": "c70f5c9044153a849144417e93db6280236f5b9be0dec99321a1c82299096cb0"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/audit": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "audit",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-audit/0.1.0/plugin.zip",
+                        "sha256": "7bf165de114e340e01cfcdb0025e064ddf8a4c55037760c226c40042d2de945e"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/blog": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "blog",
+                    "dependencies": {
+                        "radaptor/plugins/history": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-blog/0.1.0/plugin.zip",
+                        "sha256": "fc471b32f0b23892e9820272879dc3714c130893f93a39f226db3e3c5f67cb75"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/hello-world": {
+            "latest": "1.1.2",
+            "versions": {
+                "1.1.2": {
+                    "type": "plugin",
+                    "id": "hello-world",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-hello-world/1.1.2/plugin.zip",
+                        "sha256": "0cbc3baf444a2cd2c38f58553fec272bdb83474791b6df302fda6f057c2be93f"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/history": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "history",
+                    "dependencies": {
+                        "radaptor/plugins/audit": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-history/0.1.0/plugin.zip",
+                        "sha256": "ed54fdefe6ff2620a3601000ef17d3b88bdab5340e5f61c896856eeb3986d140"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/tracker": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "tracker",
+                    "dependencies": {
+                        "radaptor/plugins/audit": "^0.1.0",
+                        "radaptor/plugins/history": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-tracker/0.1.0/plugin.zip",
+                        "sha256": "43bce5d7b8b89c1c2e6d07e75282255821689a6b14f22aabf1bf7883cb0b72c0"
+                    }
+                }
+            }
+        },
+        "radaptor/themes/portal-admin": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "theme",
+                    "id": "portal-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/radaptor-portal-admin",
+                                "target": "assets/packages/radaptor-portal-admin"
+                            },
+                            {
+                                "source": "public/assets/themes/radaptor-portal-admin",
+                                "target": "assets/packages/themes/radaptor-portal-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.0/plugin.zip",
+                        "sha256": "50ad18082551c88f220ffa04882a01a0fd69763d17253e8b4b3f55bf967cf81c"
+                    }
+                }
+            }
+        },
+        "radaptor/themes/so-admin": {
+            "latest": "0.1.0-alpha.1",
+            "versions": {
+                "0.1.0-alpha.1": {
+                    "type": "theme",
+                    "id": "so-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/themes/so-admin",
+                                "target": "assets/packages/themes/so-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.0-alpha.1/plugin.zip",
+                        "sha256": "ab9a711c9f59c43c945fc6ddc7aa10ef3ecaeeec70452f698fdbc09c8bda2a83"
+                    }
+                }
+            }
         }
-      }
-    },
-    "radaptor/core/framework": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "core",
-          "id": "framework",
-          "dependencies": {},
-          "composer": {
-            "require": {}
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
-            "sha256": "681e7eab82ab69e173deb8bfedb39539e50de9a21c6d19960387c2085bed5b85"
-          }
-        }
-      }
-    },
-    "radaptor/plugins/audit": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "plugin",
-          "id": "audit",
-          "dependencies": [],
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-plugins-audit/0.1.0/plugin.zip",
-            "sha256": "7bf165de114e340e01cfcdb0025e064ddf8a4c55037760c226c40042d2de945e"
-          }
-        }
-      }
-    },
-    "radaptor/plugins/blog": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "plugin",
-          "id": "blog",
-          "dependencies": {
-            "radaptor/plugins/history": "^0.1.0"
-          },
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-plugins-blog/0.1.0/plugin.zip",
-            "sha256": "fc471b32f0b23892e9820272879dc3714c130893f93a39f226db3e3c5f67cb75"
-          }
-        }
-      }
-    },
-    "radaptor/plugins/hello-world": {
-      "latest": "1.1.2",
-      "versions": {
-        "1.1.2": {
-          "type": "plugin",
-          "id": "hello-world",
-          "dependencies": [],
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-plugins-hello-world/1.1.2/plugin.zip",
-            "sha256": "0cbc3baf444a2cd2c38f58553fec272bdb83474791b6df302fda6f057c2be93f"
-          }
-        }
-      }
-    },
-    "radaptor/plugins/history": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "plugin",
-          "id": "history",
-          "dependencies": {
-            "radaptor/plugins/audit": "^0.1.0"
-          },
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-plugins-history/0.1.0/plugin.zip",
-            "sha256": "ed54fdefe6ff2620a3601000ef17d3b88bdab5340e5f61c896856eeb3986d140"
-          }
-        }
-      }
-    },
-    "radaptor/plugins/tracker": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "plugin",
-          "id": "tracker",
-          "dependencies": {
-            "radaptor/plugins/audit": "^0.1.0",
-            "radaptor/plugins/history": "^0.1.0"
-          },
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": []
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-plugins-tracker/0.1.0/plugin.zip",
-            "sha256": "43bce5d7b8b89c1c2e6d07e75282255821689a6b14f22aabf1bf7883cb0b72c0"
-          }
-        }
-      }
-    },
-    "radaptor/themes/portal-admin": {
-      "latest": "0.1.0",
-      "versions": {
-        "0.1.0": {
-          "type": "theme",
-          "id": "portal-admin",
-          "dependencies": {
-            "radaptor/core/cms": "^0.1.0"
-          },
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": [
-              {
-                "source": "public/assets/radaptor-portal-admin",
-                "target": "assets/packages/radaptor-portal-admin"
-              },
-              {
-                "source": "public/assets/themes/radaptor-portal-admin",
-                "target": "assets/packages/themes/radaptor-portal-admin"
-              }
-            ]
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-themes-portal-admin/0.1.0/plugin.zip",
-            "sha256": "9f186bc405dc6a56cfc2780286cd8f332f580462c198ab2f621cf04829824f1c"
-          }
-        }
-      }
-    },
-    "radaptor/themes/so-admin": {
-      "latest": "0.1.0-alpha.1",
-      "versions": {
-        "0.1.0-alpha.1": {
-          "type": "theme",
-          "id": "so-admin",
-          "dependencies": {
-            "radaptor/core/cms": "^0.1.0"
-          },
-          "composer": {
-            "require": []
-          },
-          "assets": {
-            "public": [
-              {
-                "source": "public/assets/themes/so-admin",
-                "target": "assets/packages/themes/so-admin"
-              }
-            ]
-          },
-          "dist": {
-            "type": "zip",
-            "url": "packages/radaptor-themes-so-admin/0.1.0-alpha.1/plugin.zip",
-            "sha256": "cd21637caf16a6d53d2b89a9f2ecde35a384d6f5995d7cc24a755a2da665f11f"
-          }
-        }
-      }
     }
-  }
 }

@@ -1,36 +1,19 @@
 # Local Radaptor Package Registry
 
-This directory is the local development registry for Radaptor packages.
+This repository is the local development registry for Radaptor packages.
 
-It is a catalog of available package artifacts, not the runtime install directory.
-Installed plugins still live under the application repo's `plugins/` folder.
+It stores published artifacts and `registry.json`. It is not the runtime install directory for an
+app.
 
-This directory is intended to live as its own Git repository. The outer workspace
-repository should ignore it.
+Current roles:
 
-It should normally be served over HTTP in development so the main application can
-exercise registry-based install/update flows without special filesystem coupling.
-
-Current intended roles:
-
-- `radaptor/radaptor.json`: desired package state for an app
-- `radaptor/radaptor.lock.json`: resolved/installed package state for an app
+- `radaptor-app/radaptor.json`: desired package state for a consumer app
+- `radaptor-app/radaptor.lock.json`: resolved package state for a consumer app
 - `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
+- `radaptor_plugin_registry/packages/...`: versioned package artifacts
 - `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for the registry
-- `radaptor_plugin_registry/scripts/publish_plugin.py`: publish a standalone plugin repo directly into the versioned artifact store and refresh `registry.json`
-- `/apps/_RADAPTOR/plugin-origins/*.git`: local bare origins for standalone plugin repositories
-- `radaptor/plugins/dev/<plugin-id>/`: local development checkouts that point at those bare origins
 
-Initial design goals:
-
-- test install/uninstall/update flows without needing a remote marketplace
-- support both dev checkout plugins and registry-managed plugins
-- keep runtime independent from registry scanning by generating runtime registries
-- keep package source history in the standalone repositories, not in the registry repository
-
-## Local usage
-
-Start the registry service:
+## Start the registry
 
 ```bash
 docker compose up -d
@@ -42,71 +25,93 @@ The catalog is then available at:
 http://localhost:8091/registry.json
 ```
 
-From the `radaptor` PHP container, the same registry is intended to be reachable as:
+From the `radaptor-app` `php` container, use:
 
 ```text
 http://host.docker.internal:8091/registry.json
 ```
 
-## Published packages
+## What needs republish
 
-The registry currently includes first-party plugin packages:
+There are two different workflows:
 
-- `radaptor/plugins/hello-world` version `1.1.2`
-- `radaptor/plugins/tracker` version `0.1.0`
+- Dev mode:
+  - the app uses `packages/dev/...` or `plugins/dev/...`
+  - runtime changes come directly from the checkout
+  - no republish is needed
+- Registry-first validation:
+  - the app installs from `registry.json` artifacts
+  - republish is required whenever first-party package contents change
 
-Example artifact URL:
+For non-plugin first-party packages, the source of truth lives in the active consumer app:
 
-```text
-http://localhost:8091/packages/radaptor-plugins-hello-world/1.1.2/plugin.zip
-```
+- `radaptor-app/packages/dev/core/framework`
+- `radaptor-app/packages/dev/core/cms`
+- `radaptor-app/packages/dev/themes/portal-admin`
+- `radaptor-app/packages/dev/themes/so-admin`
 
-The generated artifact files live under versioned paths in `packages/`, for example
-`packages/radaptor-plugins-tracker/0.1.0/plugin.zip`. `registry.json` is the source that declares which
-version is `latest`; there is no separate `latest/` artifact directory.
+## Maintainer republish flow
 
-## Publish a dev plugin repo
+The supported maintainer workflow is Docker-only and runs through `radaptor-app`.
 
-Standalone plugins can be developed as their own Git repositories and then
-published into the local registry artifact store.
+1. Ensure the desired package state is present in `radaptor-app/packages/dev/...`.
+2. Start the app stack if needed:
 
-Recommended local structure:
+   ```bash
+   cd /apps/_RADAPTOR/radaptor-app
+   docker compose -f docker-compose-dev.yml up -d --build
+   ```
 
-```text
-/apps/_RADAPTOR/
-├── plugin-origins/
-│   ├── blog.git
-│   ├── hello-world.git
-│   └── tracker.git
-├── radaptor/
-│   └── plugins/
-│       └── dev/
-│           ├── blog/
-│           ├── hello-world/
-│           └── tracker/
-└── radaptor_plugin_registry/
-    ├── registry.json
-    └── packages/
-```
+3. Republish first-party packages into this registry:
 
-The registry repository stores published artifacts and metadata only. The plugin
-source of truth lives in the standalone plugin repositories and their dev
-checkouts.
+   ```bash
+   docker run --rm --network radaptor-app-dev_default \
+     --env-file /apps/_RADAPTOR/radaptor-app/.env \
+     -v /apps/_RADAPTOR:/workspace -w /workspace/radaptor-app \
+     radaptor-app-phpfpm:8.4-dev \
+     php radaptor.php package:publish-all --registry-root /workspace/radaptor_plugin_registry --json
+   ```
 
-Example:
+   Or publish one package:
+
+   ```bash
+   docker run --rm --network radaptor-app-dev_default \
+     --env-file /apps/_RADAPTOR/radaptor-app/.env \
+     -v /apps/_RADAPTOR:/workspace -w /workspace/radaptor-app \
+     radaptor-app-phpfpm:8.4-dev \
+     php radaptor.php package:publish core:framework --registry-root /workspace/radaptor_plugin_registry --json
+   ```
+
+4. Refresh `radaptor-app/radaptor.lock.json` against the republished artifacts.
+5. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
+
+Important:
+
+- The local development registry uses mutable dev artifacts.
+- After republish, the committed skeleton lockfile must be refreshed so its pinned `dist_sha256`
+  matches the newly published archives.
+- The skeleton bootstrap uses the committed lockfile metadata and only rewrites the placeholder
+  registry authority to the configured runtime registry URL. It does not re-resolve live `dist`
+  metadata on first install.
+
+## Plugin publish flow
+
+Standalone plugins are still published separately.
+
+Example direct publish:
 
 ```bash
-python3 scripts/publish_plugin.py /apps/_RADAPTOR/radaptor/plugins/dev/tracker
+python3 scripts/publish_plugin.py /apps/_RADAPTOR/radaptor-app/plugins/dev/tracker
 ```
 
-The same workflow is also available from the application repo:
+Or from the app:
 
 ```bash
-docker compose -f /apps/_RADAPTOR/radaptor/docker-compose-dev.yml exec -T php php radaptor.php plugin:publish tracker --json
+cd /apps/_RADAPTOR/radaptor-app
+./radaptor.sh plugin:publish tracker --json
 ```
 
-The source package repository must contain a `.registry-package.json` file with
-at least:
+The source plugin repository must contain a `.registry-package.json` file with at least:
 
 ```json
 {
@@ -117,12 +122,15 @@ at least:
 }
 ```
 
-What the publish script does:
+## Artifact policy
 
-- reads the tracked files from the plugin Git repository
-- builds a versioned distribution zip under `packages/<package>/<version>/plugin.zip`
-- updates `registry.json`
+Published package zips are built from tracked repository content plus `.registry-package.json`.
 
-The published distribution zip intentionally excludes dev-only Git/fixer files
-such as `.git`, `.githooks`, `.gitignore`, `.php-cs-fixer.php`, and
-`.php-cs-fixer.cache`.
+Examples:
+
+- `packages/radaptor-core-framework/0.1.0/plugin.zip`
+- `packages/radaptor-core-cms/0.1.0/plugin.zip`
+- `packages/radaptor-themes-portal-admin/0.1.0/plugin.zip`
+- `packages/radaptor-plugins-tracker/0.1.0/plugin.zip`
+
+`registry.json` declares which version is `latest`; there is no separate `latest/` artifact path.
