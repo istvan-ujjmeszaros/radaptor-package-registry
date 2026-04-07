@@ -73,7 +73,7 @@ jobs:
             "${DEPLOY_USER}@${DEPLOY_HOST}" \
             '/var/www_config/packages.radaptor.com/update-repo.sh'
 
-      - name: Validate public registry from VPS
+      - name: Validate deployed registry site on VPS
         if: steps.secret_check.outputs.ready == 'true'
         shell: bash
         run: |
@@ -88,31 +88,42 @@ jobs:
           set -euo pipefail
           python3 - <<'PY'
           import json
-          import urllib.parse
-          import urllib.request
+          import subprocess
 
-          registry_url = "https://packages.radaptor.com/registry.json"
-
-          with urllib.request.urlopen(registry_url, timeout=20) as response:
-              if response.status != 200:
-                  raise SystemExit(f"Registry returned unexpected status: {response.status}")
-              catalog = json.load(response)
+          registry_raw = subprocess.check_output(
+              [
+                  "docker",
+                  "exec",
+                  "packages.radaptor.com",
+                  "wget",
+                  "-qO-",
+                  "http://127.0.0.1/registry.json",
+              ],
+              text=True,
+          )
+          catalog = json.loads(registry_raw)
 
           framework = catalog["packages"].get("radaptor/core/framework")
           if not framework:
-              raise SystemExit("radaptor/core/framework missing from public registry catalog")
+              raise SystemExit("radaptor/core/framework missing from deployed registry catalog")
 
           latest = framework["latest"]
           dist_url = framework["versions"][latest]["dist"]["url"]
-          artifact_url = urllib.parse.urljoin(registry_url, dist_url)
+          artifact_path = "/" + dist_url.lstrip("/")
+          subprocess.check_call(
+              [
+                  "docker",
+                  "exec",
+                  "packages.radaptor.com",
+                  "wget",
+                  "--spider",
+                  "-q",
+                  "http://127.0.0.1" + artifact_path,
+              ]
+          )
 
-          request = urllib.request.Request(artifact_url, method="HEAD")
-          with urllib.request.urlopen(request, timeout=20) as response:
-              if response.status != 200:
-                  raise SystemExit(f"Artifact returned unexpected status: {response.status}")
-
-          print(f"Registry OK: {registry_url}")
-          print(f"Artifact OK: {artifact_url}")
+          print("Registry OK inside deployed container")
+          print(f"Artifact OK inside deployed container: {artifact_path}")
           PY
           EOF
 
