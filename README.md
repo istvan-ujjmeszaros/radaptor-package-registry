@@ -35,17 +35,17 @@ From the `radaptor-app` `php` container, use:
 http://host.docker.internal:8091/registry.json
 ```
 
-## What needs republish
+## What needs release
 
 There are two different workflows:
 
 - Dev mode:
   - the app uses `packages/dev/...` or `plugins/dev/...`
   - runtime changes come directly from the checkout
-  - no republish is needed
+  - no release/publish is needed
 - Registry-first validation:
   - the app installs from `registry.json` artifacts
-  - republish is required whenever first-party package contents change
+  - an immutable first-party package release is required whenever package contents change
 
 For non-plugin first-party packages, the source of truth lives in the active consumer app:
 
@@ -54,7 +54,7 @@ For non-plugin first-party packages, the source of truth lives in the active con
 - `radaptor-app/packages/dev/themes/portal-admin`
 - `radaptor-app/packages/dev/themes/so-admin`
 
-## Maintainer republish flow
+## Maintainer release flow
 
 The supported maintainer workflow is Docker-only and runs through `radaptor-app`.
 
@@ -66,32 +66,34 @@ The supported maintainer workflow is Docker-only and runs through `radaptor-app`
    docker compose -f docker-compose-dev.yml up -d --build
    ```
 
-3. Republish first-party packages into this registry:
+3. Release the changed first-party package into this registry:
 
    ```bash
    cd /apps/_RADAPTOR/radaptor-app
-   ./radaptor.sh package:publish-all --json
+   ./radaptor.sh package:release core:framework --json
    ```
 
-   Or publish one package:
+   Or create a prerelease:
 
    ```bash
    cd /apps/_RADAPTOR/radaptor-app
-   ./radaptor.sh package:publish core:framework --json
+   ./radaptor.sh package:prerelease core:framework --channel alpha --json
    ```
 
-4. Commit + push this `radaptor_plugin_registry` repo.
-5. GitHub Actions auto-deploys `main` to `https://packages.radaptor.com/`.
-6. Refresh `radaptor-app/radaptor.lock.json` against the republished artifacts.
-7. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
+4. Commit the bumped `.registry-package.json` in the package repo.
+5. Commit + push this `radaptor_plugin_registry` repo.
+6. GitHub Actions auto-deploys `main` to `https://packages.radaptor.com/`.
+7. Only after the deploy finishes, refresh the consumer app with `./radaptor.sh update --json`.
+8. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
 
 Important:
 
-- The local development registry uses mutable dev artifacts.
-- `publish` updates the local registry checkout only; it does not create Git commits or push them for you.
+- Package version entries in this registry are immutable.
+- `package:release` / `package:prerelease` create the next version and update the local registry checkout only; they do not create Git commits or push them for you.
+- The low-level `package:publish` / `package:publish-all` commands remain available for bootstrap/internal cases, but they abort if the target version already exists.
 - The VPS registry deploy is triggered by pushes to `main` in this repository.
-- After republish, the committed skeleton lockfile must be refreshed so its pinned `dist_sha256`
-  matches the newly published archives.
+- After release and deploy, the consumer app lockfile/runtime must be refreshed so its pinned
+  `dist_sha256` and installed package versions match the newly published archives.
 - The skeleton bootstrap uses the committed lockfile metadata and only rewrites the placeholder
   registry authority to the configured runtime registry URL. It does not re-resolve live `dist`
   metadata on first install.
