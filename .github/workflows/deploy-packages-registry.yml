@@ -73,10 +73,18 @@ jobs:
             "${DEPLOY_USER}@${DEPLOY_HOST}" \
             '/var/www_config/packages.radaptor.com/update-repo.sh'
 
-      - name: Validate public registry
+      - name: Validate public registry from VPS
         if: steps.secret_check.outputs.ready == 'true'
         shell: bash
         run: |
+          set -euo pipefail
+          port="${DEPLOY_PORT:-22}"
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            -p "$port" \
+            -o BatchMode=yes \
+            -o StrictHostKeyChecking=yes \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" <<'EOF'
           set -euo pipefail
           python3 - <<'PY'
           import json
@@ -106,6 +114,7 @@ jobs:
           print(f"Registry OK: {registry_url}")
           print(f"Artifact OK: {artifact_url}")
           PY
+          EOF
 
       - name: Skip deploy until secrets exist
         if: steps.secret_check.outputs.ready != 'true'
