@@ -1,9 +1,13 @@
-# Local Radaptor Package Registry
+# Radaptor Package Registry
 
-This repository is the local development registry for Radaptor packages.
+This repository is the source of truth for published Radaptor package artifacts.
 
 It stores published artifacts and `registry.json`. It is not the runtime install directory for an
 app.
+
+Production public registry:
+
+- `https://packages.radaptor.com/registry.json`
 
 Current roles:
 
@@ -11,7 +15,7 @@ Current roles:
 - `radaptor-app/radaptor.lock.json`: resolved package state for a consumer app
 - `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
 - `radaptor_plugin_registry/packages/...`: versioned package artifacts
-- `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for the registry
+- `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for local registry testing
 
 ## Start the registry
 
@@ -65,29 +69,26 @@ The supported maintainer workflow is Docker-only and runs through `radaptor-app`
 3. Republish first-party packages into this registry:
 
    ```bash
-   docker run --rm --network radaptor-app-dev_default \
-     --env-file /apps/_RADAPTOR/radaptor-app/.env \
-     -v /apps/_RADAPTOR:/workspace -w /workspace/radaptor-app \
-     radaptor-app-phpfpm:8.4-dev \
-     php radaptor.php package:publish-all --registry-root /workspace/radaptor_plugin_registry --json
+   cd /apps/_RADAPTOR/radaptor-app
+   ./radaptor.sh package:publish-all --json
    ```
 
    Or publish one package:
 
    ```bash
-   docker run --rm --network radaptor-app-dev_default \
-     --env-file /apps/_RADAPTOR/radaptor-app/.env \
-     -v /apps/_RADAPTOR:/workspace -w /workspace/radaptor-app \
-     radaptor-app-phpfpm:8.4-dev \
-     php radaptor.php package:publish core:framework --registry-root /workspace/radaptor_plugin_registry --json
+   cd /apps/_RADAPTOR/radaptor-app
+   ./radaptor.sh package:publish core:framework --json
    ```
 
-4. Refresh `radaptor-app/radaptor.lock.json` against the republished artifacts.
-5. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
+4. Commit + push this `radaptor_plugin_registry` repo.
+5. On the VPS, update the deployed checkout that serves `https://packages.radaptor.com/` (for example via `update-repo.sh`).
+6. Refresh `radaptor-app/radaptor.lock.json` against the republished artifacts.
+7. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
 
 Important:
 
 - The local development registry uses mutable dev artifacts.
+- `publish` updates the local registry checkout only; it does not create Git commits or push them for you.
 - After republish, the committed skeleton lockfile must be refreshed so its pinned `dist_sha256`
   matches the newly published archives.
 - The skeleton bootstrap uses the committed lockfile metadata and only rewrites the placeholder
