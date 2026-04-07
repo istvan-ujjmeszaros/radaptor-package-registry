@@ -1,0 +1,114 @@
+name: Deploy Packages Registry
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-packages-registry
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      DEPLOY_HOST: ${{ secrets.PACKAGES_REGISTRY_DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.PACKAGES_REGISTRY_DEPLOY_USER }}
+      DEPLOY_PORT: ${{ secrets.PACKAGES_REGISTRY_DEPLOY_PORT }}
+      REGISTRY_URL: https://packages.radaptor.com/registry.json
+    steps:
+      - name: Check deploy secrets
+        id: secret_check
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=0
+          for name in DEPLOY_HOST DEPLOY_USER; do
+            if [ -z "${!name:-}" ]; then
+              echo "::warning::Missing required secret: ${name}"
+              missing=1
+            fi
+          done
+          if [ -z "${{ secrets.PACKAGES_REGISTRY_DEPLOY_SSH_KEY }}" ]; then
+            echo "::warning::Missing required secret: PACKAGES_REGISTRY_DEPLOY_SSH_KEY"
+            missing=1
+          fi
+          if [ -z "${{ secrets.PACKAGES_REGISTRY_DEPLOY_KNOWN_HOSTS }}" ]; then
+            echo "::warning::Missing required secret: PACKAGES_REGISTRY_DEPLOY_KNOWN_HOSTS"
+            missing=1
+          fi
+          if [ "$missing" -eq 1 ]; then
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configure SSH
+        if: steps.secret_check.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "${{ secrets.PACKAGES_REGISTRY_DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "${{ secrets.PACKAGES_REGISTRY_DEPLOY_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Deploy VPS checkout
+        if: steps.secret_check.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          port="${DEPLOY_PORT:-22}"
+          ssh \
+            -i ~/.ssh/id_ed25519 \
+            -p "$port" \
+            -o BatchMode=yes \
+            -o StrictHostKeyChecking=yes \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" \
+            '/var/www_config/packages.radaptor.com/update-repo.sh'
+
+      - name: Validate public registry
+        if: steps.secret_check.outputs.ready == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import urllib.parse
+          import urllib.request
+
+          registry_url = "https://packages.radaptor.com/registry.json"
+
+          with urllib.request.urlopen(registry_url, timeout=20) as response:
+              if response.status != 200:
+                  raise SystemExit(f"Registry returned unexpected status: {response.status}")
+              catalog = json.load(response)
+
+          framework = catalog["packages"].get("radaptor/core/framework")
+          if not framework:
+              raise SystemExit("radaptor/core/framework missing from public registry catalog")
+
+          latest = framework["latest"]
+          dist_url = framework["versions"][latest]["dist"]["url"]
+          artifact_url = urllib.parse.urljoin(registry_url, dist_url)
+
+          request = urllib.request.Request(artifact_url, method="HEAD")
+          with urllib.request.urlopen(request, timeout=20) as response:
+              if response.status != 200:
+                  raise SystemExit(f"Artifact returned unexpected status: {response.status}")
+
+          print(f"Registry OK: {registry_url}")
+          print(f"Artifact OK: {artifact_url}")
+          PY
+
+      - name: Skip deploy until secrets exist
+        if: steps.secret_check.outputs.ready != 'true'
+        shell: bash
+        run: |
+          echo "Deploy skipped because repository secrets are not configured yet."

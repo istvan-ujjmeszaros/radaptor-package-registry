@@ -81,7 +81,7 @@ The supported maintainer workflow is Docker-only and runs through `radaptor-app`
    ```
 
 4. Commit + push this `radaptor_plugin_registry` repo.
-5. On the VPS, update the deployed checkout that serves `https://packages.radaptor.com/` (for example via `update-repo.sh`).
+5. GitHub Actions auto-deploys `main` to `https://packages.radaptor.com/`.
 6. Refresh `radaptor-app/radaptor.lock.json` against the republished artifacts.
 7. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
 
@@ -89,11 +89,28 @@ Important:
 
 - The local development registry uses mutable dev artifacts.
 - `publish` updates the local registry checkout only; it does not create Git commits or push them for you.
+- The VPS registry deploy is triggered by pushes to `main` in this repository.
 - After republish, the committed skeleton lockfile must be refreshed so its pinned `dist_sha256`
   matches the newly published archives.
 - The skeleton bootstrap uses the committed lockfile metadata and only rewrites the placeholder
   registry authority to the configured runtime registry URL. It does not re-resolve live `dist`
   metadata on first install.
+
+## GitHub Actions deploy secrets
+
+The auto-deploy workflow expects these repository secrets:
+
+- `PACKAGES_REGISTRY_DEPLOY_HOST`
+- `PACKAGES_REGISTRY_DEPLOY_USER`
+- `PACKAGES_REGISTRY_DEPLOY_SSH_KEY`
+- `PACKAGES_REGISTRY_DEPLOY_KNOWN_HOSTS`
+- optional: `PACKAGES_REGISTRY_DEPLOY_PORT`
+
+The remote command is:
+
+```text
+/var/www_config/packages.radaptor.com/update-repo.sh
+```
 
 ## Plugin publish flow
 
