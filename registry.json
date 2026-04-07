@@ -1,6 +1,6 @@
 {
     "registry_version": 1,
-    "name": "Local Radaptor Package Registry",
+    "name": "Radaptor Package Registry",
     "packages": {
         "radaptor/core/cms": {
             "latest": "0.1.0",
