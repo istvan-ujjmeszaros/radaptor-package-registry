@@ -20,7 +20,7 @@
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
-                        "sha256": "049d78a13666e97af88d4ba338794811238ff1f78fbfd5f4dcbdbb0a704db5eb"
+                        "sha256": "7a7b747053bcd88415fe47b1fee05d68227db2e211d03a02c12fe588bad18bec"
                     }
                 }
             }
@@ -41,7 +41,7 @@
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
-                        "sha256": "c70f5c9044153a849144417e93db6280236f5b9be0dec99321a1c82299096cb0"
+                        "sha256": "5fa8b783b4eaca31ca864e50f3059263007fbff848271ef13b21e605ab56c7b2"
                     }
                 }
             }
@@ -185,7 +185,7 @@
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-themes-portal-admin/0.1.0/plugin.zip",
-                        "sha256": "50ad18082551c88f220ffa04882a01a0fd69763d17253e8b4b3f55bf967cf81c"
+                        "sha256": "6874682fe7333ada22a14ad8aae714b930ef26e663f837c837aab488e4db6c4f"
                     }
                 }
             }
@@ -213,7 +213,7 @@
                     "dist": {
                         "type": "zip",
                         "url": "packages/radaptor-themes-so-admin/0.1.0-alpha.1/plugin.zip",
-                        "sha256": "ab9a711c9f59c43c945fc6ddc7aa10ef3ecaeeec70452f698fdbc09c8bda2a83"
+                        "sha256": "ece0e12f642a6d1aab69b953399fb8cc3cb1a09a688212f4107f015dde56105e"
                     }
                 }
             }
