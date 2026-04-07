@@ -13,7 +13,7 @@ Current roles:
 
 - `radaptor-app/radaptor.json`: desired package state for a consumer app
 - `radaptor-app/radaptor.lock.json`: resolved package state for a consumer app
-- `radaptor_plugin_registry/registry.json`: generated package catalog for the local registry
+- `radaptor_plugin_registry/registry.json`: generated package catalog for this registry checkout
 - `radaptor_plugin_registry/packages/...`: versioned package artifacts
 - `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for local registry testing
 
