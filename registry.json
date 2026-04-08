@@ -3,7 +3,7 @@
     "name": "Radaptor Package Registry",
     "packages": {
         "radaptor/core/cms": {
-            "latest": "0.1.0",
+            "latest": "0.1.5",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -22,11 +22,91 @@
                         "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
                         "sha256": "7a7b747053bcd88415fe47b1fee05d68227db2e211d03a02c12fe588bad18bec"
                     }
+                },
+                "0.1.2": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.2/plugin.zip",
+                        "sha256": "cd6eae587e43eb61a02d972242dcf11fd947b81d61b3fa2dd9833d728fada28e"
+                    },
+                    "source_commit": "a4d79cc30a89001de845fa1f7148483f95f7e6bc",
+                    "released_at": "2026-04-07T19:54:30Z"
+                },
+                "0.1.3": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.3/plugin.zip",
+                        "sha256": "d5a8cfe037b2909afb3a1f6b7a1c7adf0219ccdfa4d1d19383a0344d21972b87"
+                    },
+                    "source_commit": "639d67bf878ef8447c4cdc200064d10be118b97a",
+                    "released_at": "2026-04-07T20:46:48+00:00"
+                },
+                "0.1.4": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.4/plugin.zip",
+                        "sha256": "9accf125567f036d0ff919a23c9ec8c2d89169ca7c1d3d771a76069a6cf9436b"
+                    },
+                    "source_commit": "d6ac51447795749f5b9f3885c35cd8da6b915c40",
+                    "released_at": "2026-04-07T21:49:10Z"
+                },
+                "0.1.5": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.5/plugin.zip",
+                        "sha256": "0e94e04027843c8620981c410ae54ea264683c56461f4b41dc397ee7cfed0539"
+                    },
+                    "source_commit": "df4db4fc92a878ac308e6f02d8bef4bd22fcd342",
+                    "released_at": "2026-04-07T22:11:13+00:00"
                 }
             }
         },
         "radaptor/core/framework": {
-            "latest": "0.1.0",
+            "latest": "0.1.9",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -43,6 +123,96 @@
                         "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
                         "sha256": "5fa8b783b4eaca31ca864e50f3059263007fbff848271ef13b21e605ab56c7b2"
                     }
+                },
+                "0.1.5": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.5/plugin.zip",
+                        "sha256": "fce7e6596d7a28b4da4587224cb22d24a4db2c16506910d07771047bb5fb28d9"
+                    },
+                    "source_commit": "0a04fca390b12957ba64ed33e4683378171725e0",
+                    "released_at": "2026-04-07T19:54:30Z"
+                },
+                "0.1.6": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.6/plugin.zip",
+                        "sha256": "16a421b1bc09f7e6dfae962a5b6c3df05754977536d5684d19f58a38fe1bc186"
+                    },
+                    "source_commit": "fde882eeb686efc4184e8b46c6423e2027c44b17",
+                    "released_at": "2026-04-07T20:46:48+00:00"
+                },
+                "0.1.7": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.7/plugin.zip",
+                        "sha256": "870eb454702e00b2f195f17888a07de8a2227c1200e7cce22e064a7a84759442"
+                    },
+                    "source_commit": "fde882eeb686efc4184e8b46c6423e2027c44b17",
+                    "released_at": "2026-04-07T21:03:48+00:00"
+                },
+                "0.1.8": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.8/plugin.zip",
+                        "sha256": "66e04321faa0edcf245686e3bb29ea67f15f7edfae39ba9fa0f57ee0e41fc60e"
+                    },
+                    "source_commit": "4ee2611773254be928a26da605697b1416e00028",
+                    "released_at": "2026-04-07T21:49:10Z"
+                },
+                "0.1.9": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.9/plugin.zip",
+                        "sha256": "f95eb46306dd7fb1b225f42f4fed74f38cc8301d9801527a45479cce1577a498"
+                    },
+                    "source_commit": "d0b394999121b162baece176b3175618646ecfa2",
+                    "released_at": "2026-04-07T22:11:09+00:00"
                 }
             }
         },
