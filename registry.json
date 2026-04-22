@@ -126,7 +126,7 @@
             }
         },
         "radaptor/core/framework": {
-            "latest": "0.1.12",
+            "latest": "0.1.13",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -197,6 +197,24 @@
                     },
                     "source_commit": "9c13f9c6edddf8c5f63e933b00f0f7a77088b008",
                     "released_at": "2026-04-22T02:05:14+00:00"
+                },
+                "0.1.13": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.13/plugin.zip",
+                        "sha256": "d53ba44107e52358be3d06bf027bc09e6ccad5242fac05c92944acd43b7bb5c0"
+                    },
+                    "source_commit": "3f8d761c5ceb3e0e7999ec68e1354f565cd89d95",
+                    "released_at": "2026-04-22T02:30:35+00:00"
                 },
                 "0.1.5": {
                     "type": "core",
