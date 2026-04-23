@@ -47,12 +47,12 @@ There are two different workflows:
   - the app installs from `registry.json` artifacts
   - an immutable first-party package release is required whenever package contents change
 
-For non-plugin first-party packages, the source of truth lives in the active consumer app:
+For non-plugin first-party packages, the source of truth lives in workspace-level package repos:
 
-- `radaptor-app/packages/dev/core/framework`
-- `radaptor-app/packages/dev/core/cms`
-- `radaptor-app/packages/dev/themes/portal-admin`
-- `radaptor-app/packages/dev/themes/so-admin`
+- `/apps/_RADAPTOR/packages-dev/core/framework`
+- `/apps/_RADAPTOR/packages-dev/core/cms`
+- `/apps/_RADAPTOR/packages-dev/themes/portal-admin`
+- `/apps/_RADAPTOR/packages-dev/themes/so-admin`
 
 ## Maintainer release flow
 
@@ -154,3 +154,14 @@ Examples:
 - `packages/radaptor-plugins-tracker/0.1.0/plugin.zip`
 
 `registry.json` declares which version is `latest`; there is no separate `latest/` artifact path.
+
+## License
+
+This repository is distributed under the proprietary evaluation license in
+[LICENSE](./LICENSE).
+Evaluation-only: no production/commercial/distribution/derivative use without
+a separate license agreement.
+
+## Contact
+
+istvan@radaptor.com
