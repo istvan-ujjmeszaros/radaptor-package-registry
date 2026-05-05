@@ -56,35 +56,49 @@ For non-plugin first-party packages, the source of truth lives in workspace-leve
 
 ## Maintainer release flow
 
-The supported maintainer workflow is Docker-only and runs through `radaptor-app`.
+The supported maintainer workflow is Docker-only and runs through the workspace package-dev
+`radaptor-app` runtime. Do not run host PHP, host Composer, or host Radaptor CLI for release work.
 
-1. Ensure the desired package state is present in `radaptor-app/packages/dev/...`.
-2. Start the app stack if needed:
+1. Ensure the desired package state is merged to `main` in the package repo under
+   `/apps/_RADAPTOR/packages-dev/...`.
+2. Start the package-dev app stack if needed:
 
    ```bash
-   cd /apps/_RADAPTOR/radaptor-app
-   docker compose -f docker-compose-dev.yml up -d --build
+   cd /apps/_RADAPTOR
+   ./bin/docker-compose-packages-dev.sh radaptor-app up -d --build
    ```
 
 3. Release the changed first-party package into this registry:
 
    ```bash
-   cd /apps/_RADAPTOR/radaptor-app
-   ./radaptor.sh package:release core:framework --json
+   cd /apps/_RADAPTOR
+   ./bin/docker-compose-packages-dev.sh radaptor-app exec -T php bash -lc \
+     'cd /app && php radaptor.php package:release core:framework --json'
    ```
 
    Or create a prerelease:
 
    ```bash
-   cd /apps/_RADAPTOR/radaptor-app
-   ./radaptor.sh package:prerelease core:framework --channel alpha --json
+   cd /apps/_RADAPTOR
+   ./bin/docker-compose-packages-dev.sh radaptor-app exec -T php bash -lc \
+     'cd /app && php radaptor.php package:prerelease core:framework --channel alpha --json'
    ```
 
 4. Commit the bumped `.registry-package.json` in the package repo.
 5. Commit + push this `radaptor_plugin_registry` repo.
 6. GitHub Actions auto-deploys `main` to `https://packages.radaptor.com/`.
-7. Only after the deploy finishes, refresh the consumer app with `./radaptor.sh update --json`.
-8. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
+7. Only after the deploy finishes, refresh the consumer app in registry-first mode with
+   `./radaptor.sh update --ignore-local-overrides --json`.
+8. If the consumer has local package overrides, refresh `radaptor.local.lock.json` afterwards with
+   `./radaptor.sh local-lock:refresh --json`.
+9. Run `build:all` and a browser/admin smoke test before declaring the release state healthy.
+
+Package keys:
+
+- `core:framework`
+- `core:cms`
+- `theme:portal-admin`
+- `theme:so-admin`
 
 Important:
 
@@ -97,6 +111,18 @@ Important:
 - The skeleton bootstrap uses the committed lockfile metadata and only rewrites the placeholder
   registry authority to the configured runtime registry URL. It does not re-resolve live `dist`
   metadata on first install.
+
+## PR and review gate
+
+Package artifacts should be released only after the package PR has been reviewed and merged:
+
+1. Open one PR in the package repo.
+2. Comment exactly `@codex review`.
+3. Address actionable review threads using thread-aware review data; outdated comments and
+   unresolved threads are not the same thing.
+4. Wait for repo checks and the latest relevant Codex review to be clean.
+5. Squash-merge the package PR and fast-forward local package `main`.
+6. Release from that clean `main`.
 
 ## GitHub Actions deploy secrets
 
