@@ -3,7 +3,7 @@
     "name": "Radaptor Package Registry",
     "packages": {
         "radaptor/core/cms": {
-            "latest": "0.1.15",
+            "latest": "0.1.16",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -154,6 +154,28 @@
                     },
                     "source_commit": "a7528a379d75290972e060114074dce484a53045",
                     "released_at": "2026-05-05T23:24:37+00:00"
+                },
+                "0.1.16": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.16/plugin.zip",
+                        "sha256": "addf0bd9fa7bec80edb705d7b3a48f4338dcf256a32c11f9cfbd58a5a11200e5"
+                    },
+                    "source_commit": "b1d379676ff250b4e5a024acf0e5fbe170ef5af0",
+                    "released_at": "2026-05-06T00:33:09+00:00"
                 },
                 "0.1.2": {
                     "type": "core",
@@ -799,7 +821,7 @@
             }
         },
         "radaptor/themes/portal-admin": {
-            "latest": "0.1.6",
+            "latest": "0.1.7",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -1007,11 +1029,42 @@
                     },
                     "source_commit": "4b807da1f3f428d11f622fb172d96cfa1dc7d43c",
                     "released_at": "2026-05-05T23:24:37+00:00"
+                },
+                "0.1.7": {
+                    "type": "theme",
+                    "id": "portal-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/radaptor-portal-admin",
+                                "target": "assets/packages/radaptor-portal-admin"
+                            },
+                            {
+                                "source": "public/assets/themes/radaptor-portal-admin",
+                                "target": "assets/packages/themes/radaptor-portal-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.7/plugin.zip",
+                        "sha256": "ab5edeaa3cdda1f5cd6e933aa32b4c1f5a06f5511523842052ca2eb8b36a9c9c"
+                    },
+                    "source_commit": "c45b8777d391f9a12899df086d353e9bfc6039f0",
+                    "released_at": "2026-05-06T00:33:13+00:00"
                 }
             }
         },
         "radaptor/themes/so-admin": {
-            "latest": "0.1.5",
+            "latest": "0.1.6",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -1191,6 +1244,33 @@
                     },
                     "source_commit": "cf0ff6c0a83ce5503796c03b17b43b78f66c96d3",
                     "released_at": "2026-05-05T23:24:37+00:00"
+                },
+                "0.1.6": {
+                    "type": "theme",
+                    "id": "so-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/themes/so-admin",
+                                "target": "assets/packages/themes/so-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.6/plugin.zip",
+                        "sha256": "ae2534fe36f4f9d90e1eda7a33f60b88602e8fbf54be701643129874a520ec90"
+                    },
+                    "source_commit": "f9ca62215d11031fa59ce0040836c5509c94eb95",
+                    "released_at": "2026-05-06T00:33:19+00:00"
                 }
             }
         }
