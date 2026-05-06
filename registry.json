@@ -3,7 +3,7 @@
     "name": "Radaptor Package Registry",
     "packages": {
         "radaptor/core/cms": {
-            "latest": "0.1.16",
+            "latest": "0.1.17",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -177,6 +177,28 @@
                     "source_commit": "b1d379676ff250b4e5a024acf0e5fbe170ef5af0",
                     "released_at": "2026-05-06T00:33:09+00:00"
                 },
+                "0.1.17": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.25"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.17/plugin.zip",
+                        "sha256": "c0a7131f8c1ab3047d7aa1e0f19d15df834cea82d4f7d0640326d3799631b7c2"
+                    },
+                    "source_commit": "6d222329003db02f8e7917d9fd23d4b052e1b186",
+                    "released_at": "2026-05-06T21:25:48+00:00"
+                },
                 "0.1.2": {
                     "type": "core",
                     "id": "cms",
@@ -340,7 +362,7 @@
             }
         },
         "radaptor/core/framework": {
-            "latest": "0.1.24",
+            "latest": "0.1.25",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -616,6 +638,26 @@
                     "source_commit": "5bc48aa7d72169292a1fbe62a3fd66d820adebe5",
                     "released_at": "2026-05-05T23:24:37+00:00"
                 },
+                "0.1.25": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.25/plugin.zip",
+                        "sha256": "ce2d95a364df2712e5732844231351bf0ce3fbb6320add96ddf1cddbff3c1ab5"
+                    },
+                    "source_commit": "aabc0ff9fdb76f76bbf8080ee588a89a78a5a2f2",
+                    "released_at": "2026-05-06T21:25:40+00:00"
+                },
                 "0.1.5": {
                     "type": "core",
                     "id": "framework",
@@ -821,7 +863,7 @@
             }
         },
         "radaptor/themes/portal-admin": {
-            "latest": "0.1.8",
+            "latest": "0.1.9",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -1091,11 +1133,42 @@
                     },
                     "source_commit": "25474aacdc370911de0987d43a7d5b0d448f113d",
                     "released_at": "2026-05-06T00:47:41+00:00"
+                },
+                "0.1.9": {
+                    "type": "theme",
+                    "id": "portal-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.17"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/radaptor-portal-admin",
+                                "target": "assets/packages/radaptor-portal-admin"
+                            },
+                            {
+                                "source": "public/assets/themes/radaptor-portal-admin",
+                                "target": "assets/packages/themes/radaptor-portal-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.9/plugin.zip",
+                        "sha256": "a57b859c310f9b2986bbb1035ede61b0e30e53454da021548f6b4c431e9590b2"
+                    },
+                    "source_commit": "1aaed7c055326c6525ea07ce8d837b66bbb58901",
+                    "released_at": "2026-05-06T21:25:57+00:00"
                 }
             }
         },
         "radaptor/themes/so-admin": {
-            "latest": "0.1.6",
+            "latest": "0.1.7",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -1302,6 +1375,33 @@
                     },
                     "source_commit": "f9ca62215d11031fa59ce0040836c5509c94eb95",
                     "released_at": "2026-05-06T00:33:19+00:00"
+                },
+                "0.1.7": {
+                    "type": "theme",
+                    "id": "so-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.17"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/themes/so-admin",
+                                "target": "assets/packages/themes/so-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.7/plugin.zip",
+                        "sha256": "62568ad096fc24719e30fa0914f9f36c3d4c63774d3374f2068ef80781d7ce00"
+                    },
+                    "source_commit": "00844adea5f42828b080d29d12a72fff759d4555",
+                    "released_at": "2026-05-06T21:26:06+00:00"
                 }
             }
         }
