@@ -1609,7 +1609,7 @@
             }
         },
         "radaptor/themes/so-admin": {
-            "latest": "0.1.10",
+            "latest": "0.1.11",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -1710,6 +1710,33 @@
                     },
                     "source_commit": "cfde194b282ee907e050dddb8a9f041062a97467",
                     "released_at": "2026-05-09T14:21:16+00:00"
+                },
+                "0.1.11": {
+                    "type": "theme",
+                    "id": "so-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.17"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/themes/so-admin",
+                                "target": "assets/packages/themes/so-admin"
+                            }
+                        ]
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.11/plugin.zip",
+                        "sha256": "f3d4f709894be081aa0078f1ab173d15bea9a82dc537e72df07cd0b8ea1a7736"
+                    },
+                    "source_commit": "933996588d8c3b2c0656ef9f030daae2e6ecfb25",
+                    "released_at": "2026-05-13T23:42:24+00:00"
                 },
                 "0.1.2": {
                     "type": "theme",
