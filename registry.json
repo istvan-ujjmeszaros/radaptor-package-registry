@@ -1387,7 +1387,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.13/plugin.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.13/plugin.zip?v=20260514001710",
                         "sha256": "3787d69687fa14cebb423ad6ea28846f66ad0cfb1b23bf7484036f3448776c7b"
                     },
                     "source_commit": "0378d7537e4c2521b48b5c7f4d4dc97fbce0eab0",
