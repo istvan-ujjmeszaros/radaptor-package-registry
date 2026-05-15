@@ -1,6 +1,6 @@
 services:
   web:
-    container_name: radaptor-plugin-registry
+    container_name: radaptor-package-registry
     image: nginx:alpine
     ports:
       - "8091:80"
