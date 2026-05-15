@@ -13,9 +13,9 @@ Current roles:
 
 - `radaptor-app/radaptor.json`: desired package state for a consumer app
 - `radaptor-app/radaptor.lock.json`: resolved package state for a consumer app
-- `radaptor_plugin_registry/registry.json`: generated package catalog for this registry checkout
-- `radaptor_plugin_registry/packages/...`: versioned package artifacts
-- `radaptor_plugin_registry/docker-compose.yml`: simple local HTTP service for local registry testing
+- `radaptor_package_registry/registry.json`: generated package catalog for this registry checkout
+- `radaptor_package_registry/packages/...`: versioned package artifacts
+- `radaptor_package_registry/docker-compose.yml`: simple local HTTP service for local registry testing
 
 ## Start the registry
 
@@ -40,14 +40,14 @@ http://host.docker.internal:8091/registry.json
 There are two different workflows:
 
 - Dev mode:
-  - the app uses `packages/dev/...` or `plugins/dev/...`
+  - the app uses workspace-level `packages-dev/...` checkouts
   - runtime changes come directly from the checkout
   - no release/publish is needed
 - Registry-first validation:
   - the app installs from `registry.json` artifacts
   - an immutable first-party package release is required whenever package contents change
 
-For non-plugin first-party packages, the source of truth lives in workspace-level package repos:
+For first-party packages, the source of truth lives in workspace-level package repos:
 
 - `/apps/_RADAPTOR/packages-dev/core/framework`
 - `/apps/_RADAPTOR/packages-dev/core/cms`
@@ -81,7 +81,7 @@ The supported maintainer workflow is Docker-only and runs through `radaptor-app`
    ```
 
 4. Commit the bumped `.registry-package.json` in the package repo.
-5. Commit + push this `radaptor_plugin_registry` repo.
+5. Commit + push this `radaptor_package_registry` repo.
 6. GitHub Actions auto-deploys `main` to `https://packages.radaptor.com/`.
 7. Only after the deploy finishes, refresh the consumer app with `./radaptor.sh update --json`.
 8. Run a clean registry-first scratch proof before declaring the skeleton release state healthy.
@@ -114,44 +114,15 @@ The remote command is:
 /var/www_config/packages.radaptor.com/update-repo.sh
 ```
 
-## Plugin publish flow
-
-Standalone plugins are still published separately.
-
-Example direct publish:
-
-```bash
-python3 scripts/publish_plugin.py /apps/_RADAPTOR/radaptor-app/plugins/dev/tracker
-```
-
-Or from the app:
-
-```bash
-cd /apps/_RADAPTOR/radaptor-app
-./radaptor.sh plugin:publish tracker --json
-```
-
-The source plugin repository must contain a `.registry-package.json` file with at least:
-
-```json
-{
-  "package": "radaptor/plugins/tracker",
-  "type": "plugin",
-  "id": "tracker",
-  "version": "0.1.0"
-}
-```
-
 ## Artifact policy
 
 Published package zips are built from tracked repository content plus `.registry-package.json`.
 
 Examples:
 
-- `packages/radaptor-core-framework/0.1.0/plugin.zip`
-- `packages/radaptor-core-cms/0.1.0/plugin.zip`
-- `packages/radaptor-themes-portal-admin/0.1.0/plugin.zip`
-- `packages/radaptor-plugins-tracker/0.1.0/plugin.zip`
+- `packages/radaptor-core-framework/0.1.0/package.zip`
+- `packages/radaptor-core-cms/0.1.0/package.zip`
+- `packages/radaptor-themes-portal-admin/0.1.0/package.zip`
 
 `registry.json` declares which version is `latest`; there is no separate `latest/` artifact path.
 
