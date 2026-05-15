@@ -19,7 +19,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.0/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.0/plugin.zip",
                         "sha256": "7a7b747053bcd88415fe47b1fee05d68227db2e211d03a02c12fe588bad18bec"
                     }
                 },
@@ -39,7 +39,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.10/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.10/plugin.zip",
                         "sha256": "53c937a6e51bd74101fbcb32e8ee076846545cee1c4646008ea30a0aaaa762f4"
                     },
                     "source_commit": "7a6f2c80d189f0ac921895f3c680730ec4259186",
@@ -61,7 +61,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.11/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.11/plugin.zip",
                         "sha256": "6183afa78ca68190f538710143b382782f15d8432f1be516485bf5da8245391a"
                     },
                     "source_commit": "205539c488b1da7d14b4414f2ccf4913ba8c7cf3",
@@ -83,7 +83,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.12/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.12/plugin.zip",
                         "sha256": "d1ac1c8a1bff2b623939f34353259e67fd9cf195466da8f1525b16847029d203"
                     },
                     "source_commit": "4fcf341195468991a3d472f0e346b575be6836da",
@@ -105,7 +105,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.13/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.13/plugin.zip",
                         "sha256": "e382ee15dc7c84580cbe8c049510cd003dc6900d6e844879420e22cee07ad17a"
                     },
                     "source_commit": "00880011dd1129e09e43f7c303e1d452786988f5",
@@ -127,7 +127,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.14/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.14/plugin.zip",
                         "sha256": "5c99eeae0feb5659ce370808d15a98ed4240cfa1ebf9e351507bbc91846d0e2d"
                     },
                     "source_commit": "5ae13567570e67c39ece5540a5f0714fcb648fe7",
@@ -149,7 +149,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.15/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.15/plugin.zip",
                         "sha256": "e5a2bec6005c5051d63c119850e6e2a2281f7a9ba379d1435147416d9ec7bb44"
                     },
                     "source_commit": "a7528a379d75290972e060114074dce484a53045",
@@ -171,7 +171,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.16/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.16/plugin.zip",
                         "sha256": "addf0bd9fa7bec80edb705d7b3a48f4338dcf256a32c11f9cfbd58a5a11200e5"
                     },
                     "source_commit": "b1d379676ff250b4e5a024acf0e5fbe170ef5af0",
@@ -193,7 +193,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.17/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.17/plugin.zip",
                         "sha256": "c0a7131f8c1ab3047d7aa1e0f19d15df834cea82d4f7d0640326d3799631b7c2"
                     },
                     "source_commit": "6d222329003db02f8e7917d9fd23d4b052e1b186",
@@ -215,7 +215,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.18/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.18/plugin.zip",
                         "sha256": "07c3503465245a3b6b2e4b895e7545071d8cedc340813deb5d947024c0098996"
                     },
                     "source_commit": "4ec1846129bf265e47b56f6a208ebe8b7cc99d1f",
@@ -237,7 +237,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.19/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.19/plugin.zip",
                         "sha256": "fac8f6fe43698671c2df8c66933b0f5ccc2739ad4bae3222e0bac70e9f4d509e"
                     },
                     "source_commit": "db6068bb26f7d6e5dec76e6db0281246b662c22f",
@@ -257,7 +257,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.2/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.2/plugin.zip",
                         "sha256": "cd6eae587e43eb61a02d972242dcf11fd947b81d61b3fa2dd9833d728fada28e"
                     },
                     "source_commit": "a4d79cc30a89001de845fa1f7148483f95f7e6bc",
@@ -280,7 +280,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.20/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.20/plugin.zip",
                         "sha256": "9b87326cebd0297c4d33b0cf6cde15218820b808ac3c783b0f4f3091be1045e8"
                     },
                     "source_commit": "dae036397089df54ab8f0f0d556106c304accd23",
@@ -303,7 +303,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.21/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.21/plugin.zip",
                         "sha256": "ef2abce6c58b29ca987012b65280b285d90a161031be982e32c9b36119199aaa"
                     },
                     "source_commit": "5bc75df17290d62575d2ccc95bae3a6d82d4a8ed",
@@ -326,7 +326,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.22/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.22/plugin.zip",
                         "sha256": "9d5d1c2d5d85ad0e7a629f6df7981f27ad68278dbfe5cb8e3721fdba71e0f81b"
                     },
                     "source_commit": "11e361dfc17407bfc5e110cbc3b7ddecbc2169f1",
@@ -349,7 +349,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.23/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.23/plugin.zip",
                         "sha256": "2535877f35379d2730d5d7f2e3990cc09a08aacc7c849a850894c78a7fa45389"
                     },
                     "source_commit": "7772d4c801898fe405d3293613c61306a9bfd0b0",
@@ -372,7 +372,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.24/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.24/plugin.zip",
                         "sha256": "456cad6268ecd9933b79968624389b958d3e92afba2604b2bfed5dab746624fb"
                     },
                     "source_commit": "8c1181a09fa255f77c59af8f1178e4376a07d4bc",
@@ -395,7 +395,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.25/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.25/plugin.zip",
                         "sha256": "ed82f76f954d9be292414993e010d2d60a265821651dd3cd087ccfbe72313722"
                     },
                     "source_commit": "eeaffff7f89df2cd6307962e53ea0c0f8a390f30",
@@ -418,7 +418,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.26/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.26/plugin.zip",
                         "sha256": "684483fe2de735fd01752bf7f732793f3680f0b6ddd01e419b803f93b94118ce"
                     },
                     "source_commit": "4618e25883aa891a9f60d231eaa8ee07918ec7ec",
@@ -441,7 +441,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.27/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.27/plugin.zip",
                         "sha256": "393b6e181ea7b90d902ddf4c056231749449d93103786d924b4c91a16bcbb535"
                     },
                     "source_commit": "b13d6892f4d3da6a601680c31c9fbf9fe796c914",
@@ -464,7 +464,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.28/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.28/plugin.zip",
                         "sha256": "81123db6cc42b2c57de2a54568b1708629854e431f5e8e32d7f7d5a37c80085e"
                     },
                     "source_commit": "f9ef398922d0696b9b59fb4cc69b9fb5a3614fb9",
@@ -487,7 +487,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.29/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.29/plugin.zip",
                         "sha256": "63f6d011300a637c5220ebe716d18969b61d59a8777a48d39763b9f463d48feb"
                     },
                     "source_commit": "ce841580942e5b14d115ff4ee2f31bcc328ce427",
@@ -507,7 +507,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.3/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.3/plugin.zip",
                         "sha256": "d5a8cfe037b2909afb3a1f6b7a1c7adf0219ccdfa4d1d19383a0344d21972b87"
                     },
                     "source_commit": "639d67bf878ef8447c4cdc200064d10be118b97a",
@@ -527,7 +527,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.4/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.4/plugin.zip",
                         "sha256": "9accf125567f036d0ff919a23c9ec8c2d89169ca7c1d3d771a76069a6cf9436b"
                     },
                     "source_commit": "d6ac51447795749f5b9f3885c35cd8da6b915c40",
@@ -547,7 +547,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.5/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.5/plugin.zip",
                         "sha256": "0e94e04027843c8620981c410ae54ea264683c56461f4b41dc397ee7cfed0539"
                     },
                     "source_commit": "df4db4fc92a878ac308e6f02d8bef4bd22fcd342",
@@ -567,7 +567,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.6/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.6/plugin.zip",
                         "sha256": "f4d5a312d400522d85a5b89e514f1f016caaab5ee81d62b4e89e73f5f00dd811"
                     },
                     "source_commit": "cccd8284900f525afb3fef6853fe2489522fc833",
@@ -587,7 +587,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.7/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.7/plugin.zip",
                         "sha256": "5ee6b15bffc7a75dd0e9a0f4528de803642ad3ac98a8bec2facfcd59b59281cf"
                     },
                     "source_commit": "cd994a50b5f4b1385d783cf730e622d2fbb204cd",
@@ -607,7 +607,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.8/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.8/plugin.zip",
                         "sha256": "9aac64cfd2749cc4fd86b7fa8cda825d35ac969490565132f347e0552ab97f5d"
                     },
                     "source_commit": "7ee5772e56f93b443aa941f138cf45ae6c684a56",
@@ -627,7 +627,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-cms/0.1.9/package.zip",
+                        "url": "packages/radaptor-core-cms/0.1.9/plugin.zip",
                         "sha256": "d6907d7a6b53deaa114301f3ed80e4c255b46e0b43d2973bbf13de79562dbe2c"
                     },
                     "source_commit": "74add65d2b2fc99b75c356303b03602db21f5e17",
@@ -650,7 +650,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.0/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.0/plugin.zip",
                         "sha256": "5fa8b783b4eaca31ca864e50f3059263007fbff848271ef13b21e605ab56c7b2"
                     }
                 },
@@ -666,7 +666,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.10/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.10/plugin.zip",
                         "sha256": "57d687e20bd7dfd0f14476ac6aa87b2b2a0bb87a12dbe3d70428b54d94d90fa9"
                     },
                     "source_commit": "515eba4de61291b5d9b0eabd71578ed292ff11d3",
@@ -684,7 +684,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.11/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.11/plugin.zip",
                         "sha256": "6d1af8bc5e8464849d873e823369b774ce7a1f77fbd74a90841d2e0457dff85f"
                     },
                     "source_commit": "68c9537e811dbe496f9316fd04f22fc2c757855c",
@@ -702,7 +702,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.12/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.12/plugin.zip",
                         "sha256": "22020ec5fc3a4f2ad76db8f1a09c78d06209360ef4a7a6085453a4b9dab3af59"
                     },
                     "source_commit": "9c13f9c6edddf8c5f63e933b00f0f7a77088b008",
@@ -720,7 +720,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.13/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.13/plugin.zip",
                         "sha256": "d53ba44107e52358be3d06bf027bc09e6ccad5242fac05c92944acd43b7bb5c0"
                     },
                     "source_commit": "3f8d761c5ceb3e0e7999ec68e1354f565cd89d95",
@@ -738,7 +738,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.15/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.15/plugin.zip",
                         "sha256": "6e87d785452cf88a90bc21d27376fea7d40a908a2d288a0301dfe6ff2ee35409"
                     },
                     "source_commit": "e1cb4381d9bc708649ad0e4aaa4c309450231498",
@@ -756,7 +756,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.16/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.16/plugin.zip",
                         "sha256": "90e25a6050b3f4dad58eef22c9c664e9ae1c3c41c154ddce71230cf78780fac9"
                     },
                     "source_commit": "98249573ce4e6c2fb0e1a4dcc6e53e5f7cbeaf35",
@@ -774,7 +774,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.17/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.17/plugin.zip",
                         "sha256": "4c65c72a1d347e854729f087dc348924bacd52c7542534f29bb5f22efe33d124"
                     },
                     "source_commit": "30db88d2a99c3adfe1f0a99cf274c14e4f31d7ec",
@@ -792,7 +792,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.18/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.18/plugin.zip",
                         "sha256": "0407170d0ace6c16bdf08741fa4c39dc115b4c6846fa53e841ad48fe1bcb2bd8"
                     },
                     "source_commit": "642f8d6f44d184eec216da27f793895407c68fb0",
@@ -810,7 +810,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.19/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.19/plugin.zip",
                         "sha256": "3e5fcde96aa7fbc41550f528cd319deb105b62fb11de7a7c899acaf45d3e5970"
                     },
                     "source_commit": "e4ac6efe27a5a2b506fcd1d0fb51d2943b43d8a9",
@@ -828,7 +828,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.20/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.20/plugin.zip",
                         "sha256": "91e4647e5ec952529ee9633a7be4905918aa42e9f96f80709a75609ea1d20bb7"
                     },
                     "source_commit": "47337c855fbbdb5b1ac8bde9dcce4341db85a733",
@@ -846,7 +846,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.21/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.21/plugin.zip",
                         "sha256": "129de24a674cc4bf52e58d79c049c6b24bb1ed0c01c0272e138b45f13754d486"
                     },
                     "source_commit": "9abce8a37df7db772be277979a83a350c0628e66",
@@ -866,7 +866,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.22/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.22/plugin.zip",
                         "sha256": "75859b0f4ff6feb1d1814c6929939352662cf8dfdd36f899d0fbf1543cde06df"
                     },
                     "source_commit": "4ba1ace1d3070b643bcc499c3051241cf35b9cd0",
@@ -886,7 +886,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.23/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.23/plugin.zip",
                         "sha256": "4cb10bc00a9e8491192dbeced0ae2c41d6e22cd497597a89d8ce4a01fee5e57d"
                     },
                     "source_commit": "da47210d6c1c6fc2d4d905659d09151ea82215aa",
@@ -906,7 +906,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.24/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.24/plugin.zip",
                         "sha256": "fc3e57112048871188384cfd8c89ce4815c8cc8bc2cc3eb03fd780718f849009"
                     },
                     "source_commit": "5bc48aa7d72169292a1fbe62a3fd66d820adebe5",
@@ -926,7 +926,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.25/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.25/plugin.zip",
                         "sha256": "ce2d95a364df2712e5732844231351bf0ce3fbb6320add96ddf1cddbff3c1ab5"
                     },
                     "source_commit": "aabc0ff9fdb76f76bbf8080ee588a89a78a5a2f2",
@@ -946,7 +946,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.26/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.26/plugin.zip",
                         "sha256": "d13ed7ca70433505905097ea98c5c45122577ea4bc90b0a56b0bbe4cec406530"
                     },
                     "source_commit": "0bee97bff24ff3731f61e0aa20c93e802f83f1bb",
@@ -966,7 +966,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.27/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.27/plugin.zip",
                         "sha256": "2d77575486d423a2499fb3037952cb4ffc8d4866ac682b0a92c8fb4d66094127"
                     },
                     "source_commit": "fc73e59bef315eb7e7575cb2c049e6286790b2ab",
@@ -986,7 +986,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.28/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.28/plugin.zip",
                         "sha256": "fea69f3ed3d1eb8b2d580a8f8a27b7958fd111c9aedce726067b80e529c69afa"
                     },
                     "source_commit": "9e30257c1fab6d9b3e1e94f77c262cb5ad5add1b",
@@ -1006,7 +1006,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.29/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.29/plugin.zip",
                         "sha256": "0cca28945903dd3031db3d0d2a828b83e9705f406ef06c303872e241ada8aa84"
                     },
                     "source_commit": "25ee00ba06e668fa836704adf88688a555755cc9",
@@ -1026,7 +1026,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.30/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.30/plugin.zip",
                         "sha256": "c0199442fb637bade04576a4991aa7e25448044557b818a7ed83eadb2fc38736"
                     },
                     "source_commit": "b062e3815259118a03fbbeffbb50fce12b2d9992",
@@ -1046,7 +1046,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.31/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.31/plugin.zip",
                         "sha256": "0482898b7eaf74ec7d294146cf9715eee284a60f50c02dbd75422dd367b2096f"
                     },
                     "source_commit": "bbef115d2170a0f22af9fa069fed8e05e924816c",
@@ -1066,7 +1066,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.32/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.32/plugin.zip",
                         "sha256": "65638820e236bbb6507c9776d843a549748cd2ace305341d76b7a48009c9d19f"
                     },
                     "source_commit": "3bc0c205898d0f8927ec71e75f28dc5ca830975f",
@@ -1086,7 +1086,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.33/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.33/plugin.zip",
                         "sha256": "0396b0f1ea106d25a298f0275ca868afcd86f5c0c4d04e32677640787a7162de"
                     },
                     "source_commit": "9986bc257cdd4252fc2f72a8e9984a3d12cc1524",
@@ -1106,7 +1106,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.34/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.34/plugin.zip",
                         "sha256": "2306dba8c91c9f00536e582642565ca6d69870782f7b027e59b713d4bc05f312"
                     },
                     "source_commit": "bdf1ed72525d25e7ebda76fd7f39d56b9138c0f1",
@@ -1124,7 +1124,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.5/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.5/plugin.zip",
                         "sha256": "fce7e6596d7a28b4da4587224cb22d24a4db2c16506910d07771047bb5fb28d9"
                     },
                     "source_commit": "0a04fca390b12957ba64ed33e4683378171725e0",
@@ -1142,7 +1142,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.6/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.6/plugin.zip",
                         "sha256": "16a421b1bc09f7e6dfae962a5b6c3df05754977536d5684d19f58a38fe1bc186"
                     },
                     "source_commit": "fde882eeb686efc4184e8b46c6423e2027c44b17",
@@ -1160,7 +1160,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.7/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.7/plugin.zip",
                         "sha256": "870eb454702e00b2f195f17888a07de8a2227c1200e7cce22e064a7a84759442"
                     },
                     "source_commit": "fde882eeb686efc4184e8b46c6423e2027c44b17",
@@ -1178,7 +1178,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.8/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.8/plugin.zip",
                         "sha256": "66e04321faa0edcf245686e3bb29ea67f15f7edfae39ba9fa0f57ee0e41fc60e"
                     },
                     "source_commit": "4ee2611773254be928a26da605697b1416e00028",
@@ -1196,11 +1196,123 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-core-framework/0.1.9/package.zip",
+                        "url": "packages/radaptor-core-framework/0.1.9/plugin.zip",
                         "sha256": "f95eb46306dd7fb1b225f42f4fed74f38cc8301d9801527a45479cce1577a498"
                     },
                     "source_commit": "d0b394999121b162baece176b3175618646ecfa2",
                     "released_at": "2026-04-07T22:11:09+00:00"
+                }
+            }
+        },
+        "radaptor/plugins/audit": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "audit",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-audit/0.1.0/plugin.zip",
+                        "sha256": "7bf165de114e340e01cfcdb0025e064ddf8a4c55037760c226c40042d2de945e"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/blog": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "blog",
+                    "dependencies": {
+                        "radaptor/plugins/history": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-blog/0.1.0/plugin.zip",
+                        "sha256": "fc471b32f0b23892e9820272879dc3714c130893f93a39f226db3e3c5f67cb75"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/hello-world": {
+            "latest": "1.1.2",
+            "versions": {
+                "1.1.2": {
+                    "type": "plugin",
+                    "id": "hello-world",
+                    "dependencies": [],
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-hello-world/1.1.2/plugin.zip",
+                        "sha256": "0cbc3baf444a2cd2c38f58553fec272bdb83474791b6df302fda6f057c2be93f"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/history": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "history",
+                    "dependencies": {
+                        "radaptor/plugins/audit": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-history/0.1.0/plugin.zip",
+                        "sha256": "ed54fdefe6ff2620a3601000ef17d3b88bdab5340e5f61c896856eeb3986d140"
+                    }
+                }
+            }
+        },
+        "radaptor/plugins/tracker": {
+            "latest": "0.1.0",
+            "versions": {
+                "0.1.0": {
+                    "type": "plugin",
+                    "id": "tracker",
+                    "dependencies": {
+                        "radaptor/plugins/audit": "^0.1.0",
+                        "radaptor/plugins/history": "^0.1.0"
+                    },
+                    "composer": {
+                        "require": []
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-plugins-tracker/0.1.0/plugin.zip",
+                        "sha256": "43bce5d7b8b89c1c2e6d07e75282255821689a6b14f22aabf1bf7883cb0b72c0"
+                    }
                 }
             }
         },
@@ -1230,7 +1342,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.0/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.0/plugin.zip",
                         "sha256": "6874682fe7333ada22a14ad8aae714b930ef26e663f837c837aab488e4db6c4f"
                     }
                 },
@@ -1257,7 +1369,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.1/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.1/plugin.zip",
                         "sha256": "9681ad56b31b8b1c43b9134ab54996516713048d58124d443a2254ded79e7644"
                     },
                     "source_commit": "ac1921013119d6389527ab58e107701c0e3ab542",
@@ -1288,7 +1400,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.10/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.10/plugin.zip",
                         "sha256": "d629648a453de770206103a3afc5a53fc7f8a3339b39e5534c86cafc50742ffe"
                     },
                     "source_commit": "bc6c2857718a37d19cdfbb46ef4295eb5c37c62a",
@@ -1319,7 +1431,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.11/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.11/plugin.zip",
                         "sha256": "45ab5115711f5c93755c3cd5538fdb143d6912057abd8e6b7527a010a011175e"
                     },
                     "source_commit": "595332c6e2e6efdd6a4bc674d29d603d773826a8",
@@ -1350,7 +1462,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.12/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.12/plugin.zip",
                         "sha256": "02e22bb91a4b0895c4189ad21193c503d49b0453b68c3499028f5e2484832ae3"
                     },
                     "source_commit": "06228b329ab70471ba1d0b99f4c22641a5ea4eb1",
@@ -1381,7 +1493,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.13/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.13/plugin.zip",
                         "sha256": "3787d69687fa14cebb423ad6ea28846f66ad0cfb1b23bf7484036f3448776c7b"
                     },
                     "source_commit": "0378d7537e4c2521b48b5c7f4d4dc97fbce0eab0",
@@ -1412,7 +1524,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.14/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.14/plugin.zip",
                         "sha256": "aa2e9bb113f7c8933e2d3d120bb5fdf0fca1d26528efa773efb2dd068921b31c"
                     },
                     "source_commit": "20602b92801243a2f5250f6ae9a00812b9774ca6",
@@ -1443,7 +1555,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.15/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.15/plugin.zip",
                         "sha256": "042e6b40f356b8e842691dfe062dfd3ada3de3ae0d2809781183c6fdc5873ed3"
                     },
                     "source_commit": "ec9d1c8a10734ad5c41ee615c84dd26dbdf18194",
@@ -1472,7 +1584,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.2/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.2/plugin.zip",
                         "sha256": "cfc2d21e6887ed05865ca14b48107c3091338e9a6884c9d6f267127032b16808"
                     },
                     "source_commit": "221bf482b43467c66b6246237984eac776d167c8",
@@ -1501,7 +1613,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.3/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.3/plugin.zip",
                         "sha256": "f353c7ae7003856faf3f91d0cc60e49719d5e8f9c06bd32cde2e32300537c7c8"
                     },
                     "source_commit": "11406f5d6a5969e133579e0dee264da9e9b6462f",
@@ -1532,7 +1644,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.4/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.4/plugin.zip",
                         "sha256": "f93488f535d04562cf2d7f3a97c6ff002ee46085cbb2800530551bcc1bec9279"
                     },
                     "source_commit": "3588d4297aee68d90bad71beda2e631d9933fca7",
@@ -1563,7 +1675,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.5/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.5/plugin.zip",
                         "sha256": "f5c44c08c4a39cd4304f17423b4e5788987bc487c9d9e914f906e79984b9ea96"
                     },
                     "source_commit": "98e4f55d6a6580e07505ec60d11765ec928864bf",
@@ -1594,7 +1706,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.6/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.6/plugin.zip",
                         "sha256": "7bc823ca26ddd091e768dd1ad20c21ef59d1962a6a4e9993389ba55911282d37"
                     },
                     "source_commit": "4b807da1f3f428d11f622fb172d96cfa1dc7d43c",
@@ -1625,7 +1737,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.7/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.7/plugin.zip",
                         "sha256": "ab5edeaa3cdda1f5cd6e933aa32b4c1f5a06f5511523842052ca2eb8b36a9c9c"
                     },
                     "source_commit": "c45b8777d391f9a12899df086d353e9bfc6039f0",
@@ -1656,7 +1768,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.8/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.8/plugin.zip",
                         "sha256": "1ab0ec2a2a8d606b073dcee4604152c2f2e269ec11f6deeca912c5c088cf60ea"
                     },
                     "source_commit": "25474aacdc370911de0987d43a7d5b0d448f113d",
@@ -1687,7 +1799,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-portal-admin/0.1.9/package.zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.9/plugin.zip",
                         "sha256": "a57b859c310f9b2986bbb1035ede61b0e30e53454da021548f6b4c431e9590b2"
                     },
                     "source_commit": "1aaed7c055326c6525ea07ce8d837b66bbb58901",
@@ -1717,7 +1829,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.0/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.0/plugin.zip",
                         "sha256": "21b4b02fbc748ce133c2132e7cae56132598d334c85f2bf1be98c5711a71c6e4"
                     },
                     "source_commit": "d2ca6bd76f718eb89ca6289c559655fd24c4ba5b",
@@ -1742,7 +1854,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.0-alpha.1/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.0-alpha.1/plugin.zip",
                         "sha256": "ece0e12f642a6d1aab69b953399fb8cc3cb1a09a688212f4107f015dde56105e"
                     }
                 },
@@ -1765,7 +1877,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.1/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.1/plugin.zip",
                         "sha256": "461749f06f571cbb5f58b49cb757bb713ca63efab83f359343f0c7e4985ff62b"
                     },
                     "source_commit": "714b196a3c8c3210c02de993a88ee8abec124bf8",
@@ -1792,7 +1904,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.10/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.10/plugin.zip",
                         "sha256": "24f73bc288166cbac58ddc6372a33bcb8fdbb01bbf1912985fef1e2a873933d2"
                     },
                     "source_commit": "cfde194b282ee907e050dddb8a9f041062a97467",
@@ -1819,7 +1931,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.11/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.11/plugin.zip",
                         "sha256": "f3d4f709894be081aa0078f1ab173d15bea9a82dc537e72df07cd0b8ea1a7736"
                     },
                     "source_commit": "933996588d8c3b2c0656ef9f030daae2e6ecfb25",
@@ -1846,7 +1958,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.12/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.12/plugin.zip",
                         "sha256": "107951a3b025b7697c370843f840e8aaed99ce099a3f9abd2a14583f27a11d4c"
                     },
                     "source_commit": "60188f19181f7d63ca24a44d7a64ca1b404fca03",
@@ -1873,7 +1985,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.13/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.13/plugin.zip",
                         "sha256": "1ca2ce4ec7b8e1b13a530592482fd6186799b4d1cb5ef84b2ce3ea1260d63fbf"
                     },
                     "source_commit": "79bb715be7411bab73b9456ec873fa154c933512",
@@ -1900,7 +2012,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.14/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.14/plugin.zip",
                         "sha256": "aef456bfe7a3aa91cafa8bfa74020e9efab4835f3f55c8641246cd04f774fdd0"
                     },
                     "source_commit": "5a63078e40f1d91aa7f351133d4689cb6673c5d1",
@@ -1925,7 +2037,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.2/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.2/plugin.zip",
                         "sha256": "63c2382843d86a6ac684a601786af9797952b694a6ee346683861c59b1cd1f7a"
                     },
                     "source_commit": "ec9cdb1a3093372bd72b72a209f98704a54b238b",
@@ -1952,7 +2064,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.3/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.3/plugin.zip",
                         "sha256": "1fc11d0200004451ba70e7c98ad0f42196d9dc3ddc61674176a950c311687568"
                     },
                     "source_commit": "02a6e363c7f7b8a7afae13a6141efba2b1993745",
@@ -1979,7 +2091,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.4/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.4/plugin.zip",
                         "sha256": "ec4ae7f1e8cd06ad7ed797cdeda89314fab666259b6b3772fa8f1ce970acb7f9"
                     },
                     "source_commit": "a129d0f33bbf4bbf17279023d919316381b99bc5",
@@ -2006,7 +2118,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.5/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.5/plugin.zip",
                         "sha256": "ed7747a2ca00555509fd8b002a48b14aa42f9e59ac149a5216b43e347f1f29bc"
                     },
                     "source_commit": "cf0ff6c0a83ce5503796c03b17b43b78f66c96d3",
@@ -2033,7 +2145,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.6/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.6/plugin.zip",
                         "sha256": "ae2534fe36f4f9d90e1eda7a33f60b88602e8fbf54be701643129874a520ec90"
                     },
                     "source_commit": "f9ca62215d11031fa59ce0040836c5509c94eb95",
@@ -2060,7 +2172,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.7/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.7/plugin.zip",
                         "sha256": "62568ad096fc24719e30fa0914f9f36c3d4c63774d3374f2068ef80781d7ce00"
                     },
                     "source_commit": "00844adea5f42828b080d29d12a72fff759d4555",
@@ -2087,7 +2199,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.8/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.8/plugin.zip",
                         "sha256": "8bc92e51b42bdaa467c06e944d175a19901f34e99f834769f9aa22b5208f8f71"
                     },
                     "source_commit": "1fb569934ebee26ab49cae894a3fc140a00c4e15",
@@ -2114,7 +2226,7 @@
                     },
                     "dist": {
                         "type": "zip",
-                        "url": "packages/radaptor-themes-so-admin/0.1.9/package.zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.9/plugin.zip",
                         "sha256": "18c7aa77cc257c7e6a8ab8d48b90b374eafb724eb81d076216f166eaa9ac9f93"
                     },
                     "source_commit": "6c1df8548e1195ec140333a81611db8528f77607",
