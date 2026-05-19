@@ -1319,7 +1319,7 @@
             }
         },
         "radaptor/themes/portal-admin": {
-            "latest": "0.1.16",
+            "latest": "0.1.17",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -1593,6 +1593,38 @@
                         "sha256": "b838057dbee9b0a7be05fd8368f8029ac2730edf1746c024199603ebfc9cb4f5"
                     }
                 },
+                "0.1.17": {
+                    "type": "theme",
+                    "id": "portal-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.31"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/radaptor-portal-admin",
+                                "target": "assets/packages/radaptor-portal-admin"
+                            },
+                            {
+                                "source": "public/assets/themes/radaptor-portal-admin",
+                                "target": "assets/packages/themes/radaptor-portal-admin"
+                            }
+                        ]
+                    },
+                    "tag_contexts": [],
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-portal-admin/0.1.17/package.zip",
+                        "sha256": "701394056f0e57151e378da0003b6f0d2000c5837eab5cbd6f2de78bb25f1696"
+                    },
+                    "source_commit": "995b1a19d9c83c7a86e492a93129c4d3b695d328",
+                    "released_at": "2026-05-19T01:40:44+00:00"
+                },
                 "0.1.2": {
                     "type": "theme",
                     "id": "portal-admin",
@@ -1840,7 +1872,7 @@
             }
         },
         "radaptor/themes/so-admin": {
-            "latest": "0.1.15",
+            "latest": "0.1.16",
             "versions": {
                 "0.1.0": {
                     "type": "theme",
@@ -2077,6 +2109,34 @@
                     },
                     "source_commit": "de3c520b18a8bab4dde07d750e3175128f47fd05",
                     "released_at": "2026-05-16T01:31:36+00:00"
+                },
+                "0.1.16": {
+                    "type": "theme",
+                    "id": "so-admin",
+                    "dependencies": {
+                        "radaptor/core/cms": "^0.1.31"
+                    },
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": [
+                            {
+                                "source": "public/assets/themes/so-admin",
+                                "target": "assets/packages/themes/so-admin"
+                            }
+                        ]
+                    },
+                    "tag_contexts": [],
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-themes-so-admin/0.1.16/package.zip",
+                        "sha256": "1a7ae2341538de59558f1f2b694cf6b76aff2bf89c837464905e2d2a6f09e533"
+                    },
+                    "source_commit": "d55eee0f983ac23c13acf36d82adbabdfaaf70b4",
+                    "released_at": "2026-05-19T01:40:44+00:00"
                 },
                 "0.1.2": {
                     "type": "theme",
