@@ -3,7 +3,7 @@
     "name": "Radaptor Package Registry",
     "packages": {
         "radaptor/core/cms": {
-            "latest": "0.1.48",
+            "latest": "0.1.49",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -988,6 +988,30 @@
                     },
                     "source_commit": "1654f0a3d82522f131e171755ac8b9d4799fcea4",
                     "released_at": "2026-05-27T11:05:31+00:00"
+                },
+                "0.1.49": {
+                    "type": "core",
+                    "id": "cms",
+                    "dependencies": {
+                        "radaptor/core/framework": "^0.1.36"
+                    },
+                    "composer": {
+                        "require": {
+                            "ext-curl": "*",
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "tag_contexts": [],
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-cms/0.1.49/package.zip",
+                        "sha256": "f84f65eff49449f5bf167aa100612ccdc0850035ffd949904dadbceb7393ec4c"
+                    },
+                    "source_commit": "ecd6651db57a27fef835a641d54ab4a85ba0ce36",
+                    "released_at": "2026-05-27T21:52:18+00:00"
                 },
                 "0.1.5": {
                     "type": "core",
