@@ -1092,7 +1092,7 @@
             }
         },
         "radaptor/core/framework": {
-            "latest": "0.1.40",
+            "latest": "0.1.41",
             "versions": {
                 "0.1.0": {
                     "type": "core",
@@ -1693,6 +1693,27 @@
                     },
                     "source_commit": "181ae035b878f2d5ab70f49b00a6feec2e1998a7",
                     "released_at": "2026-05-27T19:32:34+00:00"
+                },
+                "0.1.41": {
+                    "type": "core",
+                    "id": "framework",
+                    "dependencies": [],
+                    "composer": {
+                        "require": {
+                            "php": "^8.5"
+                        }
+                    },
+                    "assets": {
+                        "public": []
+                    },
+                    "tag_contexts": [],
+                    "dist": {
+                        "type": "zip",
+                        "url": "packages/radaptor-core-framework/0.1.41/package.zip",
+                        "sha256": "9ea6fe4a772827a55f95b064b044104ab89919ebac0d3858acfefbf8dba7889c"
+                    },
+                    "source_commit": "1d47a13e4fca920b7b4bd52087c2905d5185fcdc",
+                    "released_at": "2026-05-27T20:19:00+00:00"
                 },
                 "0.1.5": {
                     "type": "core",
