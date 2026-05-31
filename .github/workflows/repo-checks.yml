@@ -23,7 +23,7 @@ jobs:
         if: ${{ hashFiles('.php-cs-fixer.php') != '' }}
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           coverage: none
 
       - name: Install PHP CS Fixer
@@ -33,6 +33,10 @@ jobs:
       - name: Expose Composer global bin
         if: ${{ hashFiles('.php-cs-fixer.php') != '' }}
         run: echo "$(composer global config home --absolute)/vendor/bin" >> "$GITHUB_PATH"
+
+      - name: Install Git hooks
+        shell: bash
+        run: ./.githooks/install.sh
 
       - name: Run repo checks
         shell: bash
